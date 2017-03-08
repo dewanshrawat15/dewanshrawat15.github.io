@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>Dewansh Rawat | Designer and Developer |</title>
 </head>
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="js.js"></script>
 <script type="text/javascript" src="bootstrap.js"></script>
 <style type="text/css">
+
+	::selection{
+		background: #13171c;
+		color: #fff;
+	}
 	
 	.home{
 		height: 100vh;
@@ -16,7 +20,6 @@
 	}
 
 	.box{
-		background: #AB49FF;
 		padding: 25px;
 		position: absolute;
 		top: 35%;
@@ -32,8 +35,9 @@
 		position: absolute;
 		top: 50%;
 		left: 33%;
+		transition: 700ms ease-in-out;
 		font-size: 32px;
-		color: #AB49FF;
+		color: #F76F6F;
 		font-family: 'Raleway';
 		transform: translate(-50%, -50%);
 	}
@@ -42,20 +46,61 @@
 		position: absolute;
 		top: 92%;
 		height: 8vh;
-		background: #AB49FF;
 		width: 100vw;
-		padding-top: 2.9vh;
-		padding-bottom: 2.5vh;
 		text-align: center;
 		color: #fff;
 		font-size: 18px;
 		font-family: 'Raleway';
 	}
 
+	.directors{
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 45%;
+		padding: 24px;
+		cursor: pointer;
+		transition: 300ms;
+		color: #fff;
+		font-size: 48px;
+		font-family: 'Raleway';
+	}
+
+	.bgcolor{
+		background: #e74c3c;
+		transition: 700ms ease-in-out;
+	}
+
+	.left{
+		left: 5%;
+	}
+
+	.right{
+		left: 95%;
+	}
+
+	.left:hover{
+		transition: 300ms;
+		left: 4%;
+	}
+
+	.right:hover{
+		transition: 300ms;
+		left: 96%;
+	}
+
 </style>
 <script type="text/javascript">
 	
 $(function(){
+
+	var colors=["#3498DB", "#F76F6F", "#2ECC71", "#6F63C5"]
+
+	setInterval(function(){
+		var i=Math.floor(Math.random()*4);
+		$('.bgcolor').css('background-color', ''+colors[i]+'')
+		$('.intro').css('color', ''+colors[i]+'')
+	}, 3500)
+
 	setInterval(function(){
 		var date= new Date();
 		var h=date.getHours();
@@ -80,12 +125,14 @@ $(function(){
 <div class="container-fluid">
 <div class="row">
 	<div class="col-md-12 home">
-	<div class="box">
+	<div class="bgcolor box">
 		<span class="time"></span>
 	</div>
+	<div class="bgcolor directors left"><i class="fa fa-angle-left"></i></div>
+	<div class="bgcolor directors right"><i class="fa fa-angle-right"></i></div>
 	<div class="intro">Hi! I'm Dewansh.</div>
 	</div>
-	<div class="col-md-12 footer">Made With ♡ By Dewansh Rawat!</div>
+	<div class="bgcolor col-md-12 footer"><br>Made With ♡ By Dewansh Rawat!</div>
 </div>
 </div>
 </body>
