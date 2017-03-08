@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<title>Dewansh Rawat | Designer and Developer |</title>
+</head>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+<style type="text/css">
+	
+	.home{
+		height: 100vh;
+		background: #fff;
+	}
+
+	.box{
+		background: #AB49FF;
+		padding: 25px;
+		position: absolute;
+		top: 35%;
+		left: 35%;
+		font-size: 48px;
+		text-align: center;
+		color: #fff;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+	}
+
+	.intro{
+		position: absolute;
+		top: 50%;
+		left: 33%;
+		font-size: 32px;
+		color: #AB49FF;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+	}
+
+	.footer{
+		position: absolute;
+		top: 92%;
+		height: 8vh;
+		background: #AB49FF;
+		width: 100vw;
+		text-align: center;
+		color: #fff;
+		font-size: 18px;
+		font-family: 'Raleway';
+	}
+
+</style>
+<script type="text/javascript">
+	
+$(function(){
+	setInterval(function(){
+		var date= new Date();
+		var h=date.getHours();
+		if(h>=0 && h<12){
+			$('.time').text("Good Morning")
+		}
+		else if(h>=12 && h<17){
+			$('.time').text("Good Afternoon")
+		}
+		else if(h>=17 && h<19){
+			$('.time').text("Good Evening")
+		}
+		else if(h>=19 && h<=23){
+			$('.time').text("Night, Mate")
+		}
+	}, 100)
+})
+
+</script>
+<body>
+<!-- Hamburger Here -->
+<div class="container-fluid">
+<div class="row">
+	<div class="col-md-12 home">
+	<div class="box">
+		<span class="time"></span>
+	</div>
+	<div class="intro">Hi! I'm Dewansh.</div>
+	</div>
+	<div class="col-md-12 footer"><br>Made With ♡ By Dewansh Rawat!</div>
+</div>
+</div>
+</body>
+</html>
