@@ -2,11 +2,11 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
-<link rel="stylesheet" type="text/css" href="font-awesome.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="logo.png">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>Dewansh Rawat | Designer and Developer |</title>
 </head>
-<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="js.js"></script>
 <script type="text/javascript" src="bootstrap.js"></script>
 <style type="text/css">
 
@@ -14,7 +14,16 @@
 		background: #13171c;
 		color: #fff;
 	}
+
+	body{
+		overflow: hidden;
+	}
 	
+	.about{
+		position: absolute;
+		left: 100vw;
+	}
+
 	.home{
 		height: 100vh;
 		background: #fff;
@@ -35,7 +44,7 @@
 	.intro{
 		position: absolute;
 		top: 50%;
-		left: 33%;
+		left: 34%;
 		transition: 700ms ease-in-out;
 		font-size: 32px;
 		color: #F76F6F;
@@ -55,7 +64,7 @@
 	}
 
 	.directors{
-		position: absolute;
+		position: fixed;
 		transform: translate(-50%, -50%);
 		top: 45%;
 		padding: 24px;
@@ -68,6 +77,10 @@
 
 	.bgcolor{
 		background: #e74c3c;
+		transition: 700ms ease-in-out;
+	}
+
+	.text{
 		transition: 700ms ease-in-out;
 	}
 
@@ -89,6 +102,35 @@
 		left: 96%;
 	}
 
+	.viewer{
+		position: absolute;
+		width: 100vw;
+		transition: 300ms ease-in-out;
+		height: 100vh;
+	}
+
+	.about-heading{
+		position: absolute;
+		top: 900%;
+		left: 25%;
+		text-align: center;
+		transform: translate(-50%, -50%);
+		transition: 700ms ease-in-out;
+		font-size: 48px;
+		color: #fff;
+		padding: 35px;
+	}
+
+	.about-content{
+		position: absolute;
+		top: 2200%;
+		left: 25%;
+		transform: translate(-50%, -50%);
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		color: #e74c3c;
+	}
+
 </style>
 <script type="text/javascript">
 	
@@ -99,7 +141,7 @@ $(function(){
 	setInterval(function(){
 		var i=Math.floor(Math.random()*4);
 		$('.bgcolor').css('background-color', ''+colors[i]+'')
-		$('.intro').css('color', ''+colors[i]+'')
+		$('.text').css('color', ''+colors[i]+'')
 	}, 3500)
 
 	setInterval(function(){
@@ -118,6 +160,21 @@ $(function(){
 			$('.time').text("Night, Mate")
 		}
 	}, 100)
+
+	var move=0;
+
+	$('.right').click(function(){
+		++move;
+		if(move==1){
+			$('.viewer').css('left', '-100%')
+		}
+	})
+	$('.left').click(function(){
+		--move;
+		if(move==0){
+			$('.viewer').css('left', '0%')
+		}
+	})
 })
 
 </script>
@@ -125,14 +182,21 @@ $(function(){
 <!-- Hamburger Here -->
 <div class="container-fluid">
 <div class="row">
+<div class="viewer">
 	<div class="col-md-12 home">
-	<div class="bgcolor box">
+	<div class="col-md-3 bgcolor box">
 		<span class="time"></span>
 	</div>
 	<div class="bgcolor directors left"><i class="fa fa-angle-left"></i></div>
 	<div class="bgcolor directors right"><i class="fa fa-angle-right"></i></div>
-	<div class="intro">Hi! I'm Dewansh.</div>
+	<div class="intro col-md-3 text">Hi! I'm Dewansh.</div>
 	</div>
+	<div class="col-md-12 about">
+		<div class="col-md-offset-3 col-md-3 about-heading bgcolor">About</div><br>
+		<div class="col-md-offset-3 col-md-6 about-content text">I'm a web designer at Converge Clan. I've been practising my skills for almost an year. I first analyse then proceed on a problem. I've included some of my work below. I'm your best shot for any work that has to be done..
+		</div>
+	</div>
+</div>
 	<div class="bgcolor col-md-12 footer"><br>Made With ♡ By Dewansh Rawat!</div>
 </div>
 </div>
