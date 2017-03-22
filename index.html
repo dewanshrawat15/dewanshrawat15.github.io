@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="bootstrap.css">
-<link rel="stylesheet" type="text/css" href="logo.png">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+<script src="jquery.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<title>Dewansh Rawat | Designer and Developer |</title>
-</head>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="bootstrap.js"></script>
-<style type="text/css">
+	<style type="text/css">
+		
 
 	::selection{
-		background: #13171c;
-		color: #fff;
+		color: #13171c;
+		background: #e8e8e8;
+	}
+
+	div{
+		transition: 700ms ease-in-out;
 	}
 
 	body{
+		margin: 0;
 		overflow: hidden;
-	}
-	
-	.about{
-		position: absolute;
-		left: 100vw;
+		overflow-y: visible;
 	}
 
 	.home{
 		height: 100vh;
+		position: absolute;
+		width: 100vw;
 		background: #fff;
+	}
+
+	.creds{
+		height: 100vh;
+		position: absolute;
+		width: 100vw;
+		z-index: -10;
+		transition: 700ms ease-in-out;
+		background: #13171c;
+	}
+
+	.password{
+		width: 20vw;
+		height: 5vh;
+		border: 0;
+		border-bottom: 2px solid #fff;
+		text-align: center;
+		color: #13171c;
+		outline: none;
+		font-size: 24px;
+		font-family: 'Raleway';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.password:focus{
+		outline: none;
+	}
+
+	.popup{
+		z-index: 100;
+		transition: 700ms ease-in-out;
 	}
 
 	.box{
 		padding: 25px;
 		position: absolute;
 		top: 35%;
-		left: 35%;
+		left: 32.5%;
 		font-size: 48px;
 		text-align: center;
 		color: #fff;
@@ -45,7 +79,7 @@
 	.intro{
 		position: absolute;
 		top: 50%;
-		left: 34%;
+		left: 30%;
 		transition: 700ms ease-in-out;
 		font-size: 32px;
 		color: #F76F6F;
@@ -72,6 +106,7 @@
 		cursor: pointer;
 		transition: 300ms;
 		color: #fff;
+		z-index: 10;
 		font-size: 48px;
 		font-family: 'Raleway';
 	}
@@ -105,46 +140,174 @@
 
 	.viewer{
 		position: absolute;
+		left: 0%;
+		transition: 700ms ease-in-out;
 		width: 100vw;
-		transition: 300ms ease-in-out;
 		height: 100vh;
+	}
+
+	.about{
+		position: absolute;
+		left: 100%;
+		height: 100vh;
+		width: 100vw;
 	}
 
 	.about-heading{
 		position: absolute;
-		top: 900%;
-		left: 25%;
-		text-align: center;
-		transform: translate(-50%, -50%);
-		font-family: 'Raleway', sans-serif;
-		transition: 700ms ease-in-out;
+		top: 33%;
+		padding: 24px;
 		font-size: 48px;
 		color: #fff;
-		padding: 35px;
+		font-family: 'Raleway';
+		left: 26%;
+		transform: translate(-50%, -50%);
 	}
 
 	.about-content{
 		position: absolute;
-		top: 2200%;
-		left: 25%;
-		font-family: 'Raleway', sans-serif;
+		top: 52%;
+		left: 45%;
+		font-family: 'Raleway';
 		transform: translate(-50%, -50%);
 		transition: 700ms ease-in-out;
 		font-size: 24px;
 		color: #e74c3c;
 	}
 
-</style>
-<script type="text/javascript">
-	
+	.shrink{
+		padding: 16px;
+		transition: 700ms ease-in-out;
+	}
+
+	.contact{
+		position: absolute;
+		left: 200%;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.contact-heading{
+		position: absolute;
+		top: 25%;
+		padding: 24px;
+		font-size: 48px;
+		color: #fff;
+		font-family: 'Raleway';
+		left: 26%;
+		transform: translate(-50%, -50%);
+	}
+
+	.contact-text{
+		position: absolute;
+		top: 43.5%;
+		left: 33.5%;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		color: #e74c3c;
+	}
+
+	.email{
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		cursor: pointer;
+		border-bottom: 2px dashed #e74c3c;
+		color: #e74c3c;
+	}
+
+	.bar1{
+		width: 36px;
+		left: 2.5%;
+		position: absolute;
+		top: 5%;
+		height: 8px;
+		background: #fff;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
+	.bar2{
+		left: 2.5%;
+		top: 5%;
+		position: absolute;
+		width: 36px;
+		height: 8px;
+		background: #fff;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	@media(max-width: 767px){
+
+		.directors{
+			padding: 18px;
+			cursor: pointer;
+			transition: 300ms;
+			font-size: 32px;
+		}
+
+		.box{
+			padding: 15px;
+			font-size: 24px;
+		}
+
+		.intro{
+			font-size: 24px;
+			left: 33%;
+		}
+
+		.about-heading{
+			top: 25%;
+			left: 28%;
+			font-size: 24px;
+		}
+
+		.about-content{
+			font-size: 18px;
+		}
+
+		.contact-heading{
+			font-size: 24px;
+			color: #fff;
+			left: 26%;
+		}
+
+		.contact-text{
+			transition: 700ms ease-in-out;
+			font-size: 18px;
+			left: 42.5%;
+			color: #e74c3c;
+		}
+
+		.email{
+			font-size: 18px;
+		}
+
+		.shrink{
+			padding: 6px;
+			transition: 700ms ease-in-out;
+		}
+
+	}
+
+	</style>
+	<script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript">
+		
+
 $(function(){
 
-	var colors=["#3498DB", "#F76F6F", "#2ECC71", "#6F63C5"]
+	var specials=function(){
+		
+	}
+
+	var colors=["#3498DB", "#F76F6F", "#2ECC71", "#6F63C5"];
 
 	setInterval(function(){
 		var i=Math.floor(Math.random()*4);
 		$('.bgcolor').css('background-color', ''+colors[i]+'')
 		$('.text').css('color', ''+colors[i]+'')
+		$('.border').css('border-bottom', '2px dashed '+colors[i]+'')
 	}, 3500)
 
 	setInterval(function(){
@@ -152,56 +315,107 @@ $(function(){
 		var h=date.getHours();
 		if(h>=0 && h<12){
 			$('.time').text("Good Morning")
+			$('.box').css('left', '33.5%')
 		}
 		else if(h>=12 && h<17){
 			$('.time').text("Good Afternoon")
+			$('.box').css('left', '34.95%')
 		}
 		else if(h>=17 && h<19){
 			$('.time').text("Good Evening")
+			$('.box').css('left', '33.5%')
 		}
 		else if(h>=19 && h<=23){
 			$('.time').text("Night, Mate")
+			$('.box').css('left', '32%')
 		}
 	}, 100)
 
 	var move=0;
 
 	$('.right').click(function(){
+		$('.right').addClass('shrink')
+		setTimeout(function(){
+			$('.right').removeClass('shrink')
+		}, 150)
 		++move;
+		if(move>2){
+			move=2;
+		}
+		if(move==1){
+			$('.viewer').css('left', '-100%')
+		}
+		if(move==2){
+			$('.viewer').css('left', '-200%')
+		}
+	})
+
+	$('.left').click(function(){
+		$('.left').addClass('shrink')
+		setTimeout(function(){
+			$('.left').removeClass('shrink')
+		}, 150)
+		--move;
+		if(move<0){
+			move=0;
+		}
+		if(move==0){
+			$('.viewer').css('left', '0%')
+		}
 		if(move==1){
 			$('.viewer').css('left', '-100%')
 		}
 	})
-	$('.left').click(function(){
-		--move;
-		if(move==0){
-			$('.viewer').css('left', '0%')
+
+	$('.email').click(function(){
+		window.open('mailto:dewanshrawat15@gmail.com')
+	})
+
+	var link_counter=0;
+
+	$('.link').click(function(){
+		++link_counter;
+		if(link_counter==5){
+			specials();
 		}
+	})
+
+	$('.cross').click(function(){
+		$('.creds').removeClass('popup')
 	})
 })
 
-</script>
+
+	</script>
+</head>
 <body>
 <!-- Hamburger Here -->
-<div class="container-fluid">
-<div class="row">
 <div class="viewer">
-	<div class="col-md-12 home">
-	<div class="col-md-3 bgcolor box">
-		<span class="time"></span>
+	<div class="home">
+		<div class="bgcolor box">
+			<span class="time">Good Morning</span>
+		</div>
+		<div class="bgcolor directors left"><i class="fa fa-angle-left"></i></div>
+		<div class="bgcolor directors right"><i class="fa fa-angle-right"></i></div>
+		<div class="intro text">Hi! I'm <span class="link">Dewansh</span></div>
 	</div>
-	<div class="bgcolor directors left"><i class="fa fa-angle-left"></i></div>
-	<div class="bgcolor directors right"><i class="fa fa-angle-right"></i></div>
-	<div class="intro col-md-3 text">Hi! I'm Dewansh.</div>
+	<div class="creds">
+	<div class="cross">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
 	</div>
-	<div class="col-md-12 about">
-		<div class="col-md-offset-3 col-md-3 about-heading bgcolor">About</div><br>
-		<div class="col-md-offset-3 col-md-6 about-content text">I'm a web designer at Converge Clan. I've been practising my skills for almost an year. I first analyse then proceed on a problem. I've included some of my work below. I'm your best shot for any work that has to be done..
+		<input class="password" type="password" placeholder="Password">
+	</div>
+	<div class="about">
+		<div class="about-heading bgcolor">About Me</div>
+		<div class="about-content text">I'm a web designer at Converge Clan. I've been practising my skills for almost an year. I first analyse then proceed on a problem. I'm gonna upload some of my works soon. I'm your best shot for any work that has to be done..
 		</div>
 	</div>
+	<div class="contact">
+		<div class="contact-heading bgcolor">Contact Me</div>
+		<div class="contact-text text">You've got something for me? Let's get in touch! <br> Email Me At <span class="border email text">dewanshrawat15@gmail.com</span></div>
+	</div>
 </div>
-	<div class="bgcolor col-md-12 footer"><br>Made With ♡ By Dewansh Rawat!</div>
-</div>
-</div>
+	<div class="bgcolor footer"><br>Made With ♡ By Dewansh Rawat!</div>
 </body>
 </html>
