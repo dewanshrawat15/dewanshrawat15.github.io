@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
-<script src="jquery.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <script src="jquery.js"></script> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Dewansh Rawat | Designer and Developer |</title>
 	<style type="text/css">
 		
@@ -237,6 +235,15 @@
 		transform: translate(-50%, -50%) rotate(45deg);
 	}
 
+	.message{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Raleway';
+		font-size: 48px;
+	}
+
 	@media(max-width: 767px){
 
 		.directors{
@@ -297,10 +304,66 @@
 
 $(function(){
 
-	var specials=function(){
-		
-	}
+var specials=function(){
+		setInterval(function(){
+			var today=new Date();
+			var h_bday=new Date("May 19");
+			var eka_bday=new Date("September 12");
+			var sarthak_bday=new Date("September 04");
+			var achal_bday=new Date("September 21");
+			var jaitr_bday=new Date("September 21");
+			var apoorv_bday=new Date("May 18");
+			var anshuman_bday=new Date("November 23");
+			var trial=new Date("March 22");
 
+			var current_date=today.getDate();
+			var h_date=h_bday.getDate();
+			var eka_date=eka_bday.getDate();	
+			var sarthak_date=sarthak_bday.getDate();
+			var achal_date=achal_bday.getDate();
+			var jaitr_date=jaitr_bday.getDate();
+			var apoorv_date=apoorv_bday.getDate();
+			var anshuman_date=anshuman_bday.getDate();		
+
+			var current_month=(today.getMonth())+1;
+			var h_month=(h_bday.getMonth())+1;
+			var eka_month=(eka_bday.getMonth())+1;	
+			var sarthak_month=(sarthak_bday.getMonth())+1;
+			var achal_month=(achal_bday.getMonth())+1;
+			var jaitr_month=(jaitr_bday.getMonth())+1;
+			var apoorv_month=(apoorv_bday.getMonth())+1;
+			var anshuman_month=(anshuman_bday.getMonth())+1;	
+
+			if(current_date=h_date && current_month==h_month){
+				$('.message').text("Happy Birthday! Elegant 18 (* winks to himself *) ")
+			}
+
+			else if(current_date=eka_date && current_month==eka_month){
+				$('.message').text("Happy Birthday Bro. :) ")
+			}	
+
+			else if(current_date=sarthak_date && current_month==sarthak_month){
+				$('.message').text("Happy Birthday Sir :) ")
+			}	
+
+			else if(current_date=achal_date && current_month==achal_month){
+				$('.message').text("Happy Birthday Achal And Jaitr :) ")
+			}		
+
+			else if(current_date=apoorv_date && current_month==apoorv_month){
+				$('.message').text("Happy Birthday CVC ")
+			}	
+
+			else if(current_date=anshuman_date && current_month==anshuman_month){
+				$('.message').text("Happy Birthday Bhai! ")
+			}
+
+			
+		}, 1000)
+
+		$('.creds').addClass('popup')
+
+}
 	var colors=["#3498DB", "#F76F6F", "#2ECC71", "#6F63C5"];
 
 	setInterval(function(){
@@ -376,7 +439,7 @@ $(function(){
 	$('.link').click(function(){
 		++link_counter;
 		if(link_counter==5){
-			specials();
+			specials()
 		}
 	})
 
@@ -404,7 +467,7 @@ $(function(){
 		<div class="bar1"></div>
 		<div class="bar2"></div>
 	</div>
-		<input class="password" type="password" placeholder="Password">
+		<div class="message"></div>
 	</div>
 	<div class="about">
 		<div class="about-heading bgcolor">About Me</div>
