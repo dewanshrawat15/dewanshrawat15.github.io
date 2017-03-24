@@ -1,0 +1,294 @@
+		
+
+	::selection{
+		color: #13171c;
+		background: #e8e8e8;
+	}
+
+	div{
+		transition: 700ms ease-in-out;
+	}
+
+	body{
+		margin: 0;
+		overflow: hidden!important;
+	}
+
+	.home{
+		height: 100vh;
+		position: absolute;
+		width: 100vw;
+		left: 0%;
+		background: #fff;
+	}
+ /* Not Important Right Now :) */
+	.creds{
+		height: 100vh;
+		position: absolute;
+		width: 100vw;
+		z-index: -10;
+		transition: 700ms ease-in-out;
+		background: #13171c;
+	}
+
+	.password{
+		width: 20vw;
+		height: 5vh;
+		border: 0;
+		border-bottom: 2px solid #fff;
+		text-align: center;
+		color: #13171c;
+		outline: none;
+		font-size: 24px;
+		font-family: 'Raleway';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.password:focus{
+		outline: none;
+	}
+
+	.popup{
+		z-index: 100;
+		transition: 700ms ease-in-out;
+	}
+
+	/* End Importance */
+
+	.box{
+		padding: 25px;
+		position: absolute;
+		top: 30%;
+		left: 32.5%;
+		font-size: 48px;
+		text-align: center;
+		color: #fff;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+	}
+
+	.intro{
+		position: absolute;
+		top: 55%;
+		left: 30%;
+		transition: 700ms ease-in-out;
+		font-size: 32px;
+		color: #F76F6F;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+	}
+
+	.footer{
+		position: absolute;
+		top: 92%;
+		height: 8vh;
+		width: 100vw;
+		text-align: center;
+		color: #fff;
+		font-size: 18px;
+		font-family: 'Raleway';
+	}
+
+	.directors{
+		position: fixed;
+		transform: translate(-50%, -50%);
+		top: 45vh;
+		padding: 24px;
+		cursor: pointer;
+		transition: 300ms;
+		color: #fff;
+		z-index: 10;
+		font-size: 48px;
+		font-family: 'Raleway';
+	}
+
+	.bgcolor{
+		background: #e74c3c;
+		transition: 700ms ease-in-out;
+	}
+
+	.text{
+		transition: 700ms ease-in-out;
+	}
+
+	.left{
+		left: 7vw;
+	}
+
+	.right{
+		left: 93vw;
+	}
+
+	.left:hover{
+		transition: 300ms;
+		left: 4vw;
+	}
+
+	.right:hover{
+		transition: 300ms;
+		left: 96vw;
+	}
+
+	.viewer{
+		position: absolute;
+		left: 0%;
+		transition: 700ms ease-in-out;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.about{
+		position: absolute;
+		left: 100%;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.about-heading{
+		position: absolute;
+		top: 33%;
+		padding: 24px;
+		font-size: 48px;
+		color: #fff;
+		font-family: 'Raleway';
+		left: 26%;
+		transform: translate(-50%, -50%);
+	}
+
+	.about-content{
+		position: absolute;
+		top: 52%;
+		left: 45%;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		color: #e74c3c;
+	}
+
+	.shrink{
+		padding: 16px;
+		transition: 700ms ease-in-out;
+	}
+
+	.contact{
+		position: absolute;
+		left: 200%;
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.contact-heading{
+		position: absolute;
+		top: 25%;
+		padding: 24px;
+		font-size: 48px;
+		color: #fff;
+		font-family: 'Raleway';
+		left: 26%;
+		transform: translate(-50%, -50%);
+	}
+
+	.contact-text{
+		position: absolute;
+		top: 43.5%;
+		left: 33.5%;
+		font-family: 'Raleway';
+		transform: translate(-50%, -50%);
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		color: #e74c3c;
+	}
+
+	.email{
+		transition: 700ms ease-in-out;
+		font-size: 24px;
+		cursor: pointer;
+		border-bottom: 2px dashed #e74c3c;
+		color: #e74c3c;
+	}
+
+	.bar1{
+		width: 36px;
+		left: 2.5%;
+		position: absolute;
+		top: 5%;
+		height: 8px;
+		background: #fff;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
+	.bar2{
+		left: 2.5%;
+		top: 5%;
+		position: absolute;
+		width: 36px;
+		height: 8px;
+		background: #fff;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	.message{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-family: 'Raleway';
+		font-size: 48px;
+	}
+
+	@media(max-width: 767px){
+
+		.directors{
+			padding: 12px;
+    		cursor: pointer;
+    		transition: 300ms;
+    		font-size: 24px;
+		}
+
+		.box{
+			padding: 15px;
+			font-size: 24px;
+		}
+
+		.intro{
+			font-size: 24px;
+			left: 33%;
+		}
+
+		.about-heading{
+			top: 25%;
+    		left: 42%;
+    		font-size: 24px;
+		}
+
+		.about-content{
+			font-size: 18px;
+		}
+
+		.contact-heading{
+			font-size: 24px;
+    		color: #fff;
+    		left: 38%;
+		}
+
+		.contact-text{
+			transition: 700ms ease-in-out;
+    		font-size: 16px;
+    		left: 50%;
+			color: #e74c3c;
+		}
+
+		.email{
+			font-size: 16px;
+		}
+
+		.shrink{
+			padding: 6px;
+			transition: 700ms ease-in-out;
+		}
+
+	}
