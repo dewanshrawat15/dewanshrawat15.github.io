@@ -82,10 +82,12 @@
 	}
 
 	.footer{
-		position: absolute;
-		top: 92%;
+		position: fixed;
+		top: 92vh;
 		height: 8vh;
 		width: 100vw;
+		padding-top: 24px;
+		padding-bottom: 24px;
 		text-align: center;
 		color: #fff;
 		font-size: 18px;
@@ -240,7 +242,12 @@
 		font-size: 48px;
 	}
 
-	@media(max-width: 767px){
+	@media(max-width: 768px){
+
+		.footer{
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
 
 		.directors{
 			padding: 12px;
