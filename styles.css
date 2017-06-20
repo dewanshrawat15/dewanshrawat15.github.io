@@ -1,301 +1,225 @@
-		
+	
+::selection{
+	background: #6F63C5;
+	color: #fff;
+}
 
-	::selection{
-		color: #13171c;
-		background: #e8e8e8;
-	}
+body{
+	transition: 300ms;
+	font-family: 'Ubuntu';
+}
 
-	div{
-		transition: 700ms ease-in-out;
-	}
 
-	body{
-		margin: 0;
-		overflow: hidden!important;
-	}
+a{
+	text-decoration: none;
+	color: inherit;
+}
 
-	.home{
-		height: 100vh;
-		position: absolute;
-		width: 100vw;
-		left: 0%;
-		background: #fff;
-	}
- /* Not Important Right Now :) */
-	.creds{
-		height: 100vh;
-		position: absolute;
-		width: 100vw;
-		z-index: -10;
-		transition: 700ms ease-in-out;
-		background: #13171c;
-	}
+.nav--item:active,.nav--item:focus,.nav--item:hover{
+	text-decoration: none;
+	color: inherit;	
+}
 
-	.password{
-		width: 20vw;
-		height: 5vh;
-		border: 0;
-		border-bottom: 2px solid #fff;
+.nav--main {
+    top: 1em;
+    position: fixed;
+    width: 100%;
+    height: 4em;
+	transition: 300ms;
+    z-index: 99;
+    color: white;
+}
+
+.nav--active{
+	background: white;
+	color: black;
+	top: 0em;
+	transition: 300ms;
+}
+
+.nav--container{
+	height: 100%;
+	line-height: 4em;
+}
+
+.logo{
+	height: 100%;
+    background-image: url("../assets/logo-grey.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.nav--item{
+	font-weight: 300;
+	color: inherit;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.nav--item:hover,.nav--item--active{
+	outline: none;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.slash{
+	font-size: 1.4em;
+	text-align: center;
+	color: inherit;
+	font-weight: 700;
+}
+
+.home{
+	padding: 10px 0 220px 0;
+	color: #fff;
+	background: #6F63C5;
+}
+
+.title{
+	font-family: 'Playfair Display';
+	font-size: 50px;
+	margin-top: 220px;
+	text-align: center;
+}
+
+.home hr{
+	width: 400px;
+}
+
+.byline{
+	font-size: 20px;
+	text-align: right;
+}
+
+.about{
+	padding: 110px 0 110px 0;
+}
+
+.contact hr, .works hr, .about hr{
+	border: 1px #6F63C5 solid;
+	width: 400px;
+}
+
+.about-text{
+	font-size: 24px;
+}
+
+.works{
+	background: #efefef;
+	padding: 110px 0 110px 0;
+}
+
+.work-box{
+	transform: scale(0.9);
+	transition: 300ms;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.work-box h3{
+	padding: 16px;
+	transition: 300ms;
+}
+
+.work-box p{
+	font-size: 16px;
+}
+
+.bttns, .bttns:active, .bttns:focus{
+	text-align: center;
+	padding: 10px;
+	color: #222;
+	transition: 300ms;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.bttns:hover{
+	box-shadow: -15em 0 0 0 #6F63C5 inset;
+	text-decoration: none;
+	color: #fff;
+	transition: 300ms;
+}
+
+.tags-active{
+	box-shadow: -15em 0 0 0 #6F63C5 inset;
+	color: #fff;
+	transition: 300ms;
+}
+
+img{
+	transition: 300ms;
+}
+
+.photographer-img-active{
+	content: url('photographer-inf.png');
+	transition: 300ms;
+}
+
+.psyvision-img-active{
+	content: url('psyvision-inf.png');
+	transition: 300ms;
+}
+
+.contact{
+	padding: 110px 0 110px 0;
+}
+
+.contact-text{
+	font-size: 24px;
+}
+
+.footer{
+	padding: 40px 0 40px 0;
+	background: #13171c;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+}
+
+.blank{
+  animation: 1000ms beep infinite;
+}
+
+@keyframes beep{
+	0%{
+		opacity: 0;
+	}
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+
+@media(max-width: 1024px){
+	.title{
+		font-size: 36px;
+	}
+}
+
+@media(max-width: 940px){
+	.byline{
 		text-align: center;
-		color: #13171c;
-		outline: none;
-		font-size: 24px;
-		font-family: 'Raleway';
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+	}
+}
+
+@media(max-width: 425px){
+	
+	.home hr{
+		width: 275px;
+	}
+	
+	.contact hr, .works hr, .about hr{
+		width: 275px;
 	}
 
-	.password:focus{
-		outline: none;
-	}
+}
 
-	.popup{
-		z-index: 100;
-		transition: 700ms ease-in-out;
-	}
-
-	/* End Importance */
-
-	.box{
-		padding: 25px;
-		position: absolute;
-		top: 30%;
-		left: 32.5%;
-		font-size: 48px;
-		text-align: center;
-		color: #fff;
-		font-family: 'Raleway';
-		transform: translate(-50%, -50%);
-	}
-
-	.intro{
-		position: absolute;
-		top: 55%;
-		left: 30%;
-		transition: 700ms ease-in-out;
-		font-size: 32px;
-		color: #F76F6F;
-		font-family: 'Raleway';
-		transform: translate(-50%, -50%);
-	}
-
-	.footer{
-		position: fixed;
-		top: 92vh;
-		height: 8vh;
-		width: 100vw;
-		padding-top: 24px;
-		padding-bottom: 24px;
-		text-align: center;
-		color: #fff;
-		font-size: 18px;
-		font-family: 'Raleway';
-	}
-
-	.directors{
-		position: fixed;
-		transform: translate(-50%, -50%);
-		top: 45vh;
-		padding: 24px;
-		cursor: pointer;
-		transition: 300ms;
-		color: #fff;
-		z-index: 10;
-		font-size: 48px;
-		font-family: 'Raleway';
-	}
-
-	.bgcolor{
-		background: #e74c3c;
-		transition: 700ms ease-in-out;
-	}
-
-	.text{
-		transition: 700ms ease-in-out;
-	}
-
-	.left{
-		left: 7vw;
-	}
-
-	.right{
-		left: 93vw;
-	}
-
-	.left:hover{
-		transition: 300ms;
-		left: 4vw;
-	}
-
-	.right:hover{
-		transition: 300ms;
-		left: 96vw;
-	}
-
-	.viewer{
-		position: absolute;
-		left: 0%;
-		transition: 700ms ease-in-out;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	.about{
-		position: absolute;
-		left: 100%;
-		height: 100vh;
-		width: 100vw;
-	}
-
-	.about-heading{
-		position: absolute;
-		top: 33%;
-		padding: 24px;
-		font-size: 48px;
-		color: #fff;
-		font-family: 'Raleway';
-		left: 26%;
-		transform: translate(-50%, -50%);
-	}
-
-	.about-content{
-		position: absolute;
-		top: 52%;
-		left: 45%;
-		font-family: 'Raleway';
-		transform: translate(-50%, -50%);
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		color: #e74c3c;
-	}
-
-	.shrink{
-		padding: 16px;
-		transition: 700ms ease-in-out;
-	}
-
-	.contact{
-		position: absolute;
-		left: 200%;
-		height: 100vh;
-		width: 100vw;
-	}
-
-	.contact-heading{
-		position: absolute;
-		top: 25%;
-		padding: 24px;
-		font-size: 48px;
-		color: #fff;
-		font-family: 'Raleway';
-		left: 26%;
-		transform: translate(-50%, -50%);
-	}
-
-	.contact-text{
-		position: absolute;
-		top: 43.5%;
-		left: 33.5%;
-		font-family: 'Raleway';
-		transform: translate(-50%, -50%);
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		color: #e74c3c;
-	}
-
-	.email{
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		cursor: pointer;
-		border-bottom: 2px dashed #e74c3c;
-		color: #e74c3c;
-	}
-
-	.bar1{
-		width: 36px;
-		left: 2.5%;
-		position: absolute;
-		top: 5%;
-		height: 8px;
-		background: #fff;
-		transform: translate(-50%, -50%) rotate(-45deg);
-	}
-
-	.bar2{
-		left: 2.5%;
-		top: 5%;
-		position: absolute;
-		width: 36px;
-		height: 8px;
-		background: #fff;
-		transform: translate(-50%, -50%) rotate(45deg);
-	}
-
-	.message{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-family: 'Raleway';
-		font-size: 48px;
-	}
-
-	@media(max-width: 768px){
-
-		.footer{
-			padding-top: 16px;
-			padding-bottom: 16px;
-		}
-
-		.directors{
-			padding: 12px;
-    		cursor: pointer;
-    		transition: 300ms;
-    		font-size: 24px;
-		}
-
-		.box{
-			padding: 15px;
-			font-size: 24px;
-		}
-
-		.intro{
-			font-size: 24px;
-			left: 33%;
-		}
-
-		.about-heading{
-			top: 25%;
-    		left: 42%;
-    		font-size: 24px;
-		}
-
-		.about-content{
-			font-size: 18px;
-		}
-
-		.contact-heading{
-			font-size: 24px;
-    		color: #fff;
-    		left: 38%;
-		}
-
-		.contact-text{
-			transition: 700ms ease-in-out;
-    		font-size: 16px;
-    		left: 50%;
-			color: #e74c3c;
-		}
-
-		.email{
-			font-size: 16px;
-		}
-
-		.shrink{
-			padding: 6px;
-			transition: 700ms ease-in-out;
-		}
-
-	}
+@media only screen  and (max-width : 1240px) {
+	.nav--hide{
+		display: none;
+	}	
+}
