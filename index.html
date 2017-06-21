@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Be Ware Of That Guy!">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu" rel="stylesheet">
 <meta name="keywords" content="dewanshrawat15, Dewansh, The Programmer, The Designer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 <link rel="logo" href="vector.jpg">
@@ -78,7 +77,7 @@
 				<img src="psyvision.png" class="psyvision-img img-responsive">
 				<h3 class="ps text-center">PsyVision</h3>
 				<p class="text-center"la>The task was to create a website to present a smart eye lens. Made it in a desktop in 2 hours, in the presence of frequent power cuts!</p>
-				<a class="col-md-3 col-md-offset-4 bttns text-center" target="_blank" href="https://goo.gl/s9KLmd">View</a>
+				<a class="col-md-3 col-md-offset-4 bttns text-center" target="_blank" href="https://goo.gl/ofosXh">View</a>
 			</div>
 		</div>
 	</div>
@@ -108,49 +107,6 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="bootstrap.js"></script>
 <script type="text/javascript" src="type-func.js"></script>
-<script type="text/javascript">
-	
-	$(function(){
-
-		$('.photographer').hover(function(){
-			$('.ph').toggleClass('tags-active')
-		})
-
-		$('.photographer').click(function(){
-			$('.photographer-img').toggleClass('photographer-img-active')
-		})
-
-		$('.product').click(function(){
-			$('.psyvision-img').toggleClass('psyvision-img-active')
-		})
-
-		$('.simulate').hover(function(){
-			$('.en').toggleClass('tags-active')
-		})
-
-		$('.product').hover(function(){
-			$('.ps').toggleClass('tags-active')
-		})
-
-		$(window).scroll(function(){
-			var b=$('body').scrollTop();
-			if(b>=120){
-				$('.nav--main').addClass('nav--active')
-			}
-			else{
-				$('.nav--main').removeClass('nav--active')
-			}
-		})
-		$('.nav--item').click(function(){
-		var scroll = $(this).attr('href');
-		var i=1,j=0,scrollnew,n;
-		n=scroll.length;
-		scroll= scroll.split("#");
-		scrollnew=scroll[1];
-		$('body, html').animate({scrollTop:$('.'+scrollnew).offset().top},"slow");
-	});
-	})
-
-</script>
+<script type="text/javascript" src="func.js"></script>
 </body>
 </html>
