@@ -204,6 +204,12 @@ img{
 	.byline{
 		text-align: center;
 	}
+	.bttns{
+		display: none;
+	}
+	.about-text{
+		font-size: 16px;
+	}
 }
 
 @media(max-width: 425px){
