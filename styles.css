@@ -1,302 +1,136 @@
-		
+body::-webkit-scrollbar {
+    width: 0.48em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+	
+.home{
+	padding: 220px 0 120px 0;
+	transition: 300ms;
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: 42px;
+	background: url('bg.jpg') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
-	::selection{
-		color: #13171c;
-		background: #e8e8e8;
-	}
+.home-line{
+	width: 350px;
+}
 
-	div{
-		transition: 700ms ease-in-out;
-	}
+.arrow{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	width: 1.2em;
+	height: 1.2em;
+	cursor: pointer;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
 
-	body{
-		margin: 0;
-		overflow: hidden!important;
-	}
+.about{
+	text-align: right;
+	padding: 175px 0 175px 0;
+}
 
-	.home{
-		height: 100vh;
-		position: absolute;
-		width: 100vw;
-		left: 0%;
-		background: #fff;
-	}
- /* Not Important Right Now :) */
-	.creds{
-		height: 100vh;
-		position: absolute;
-		width: 100vw;
-		z-index: -10;
-		transition: 700ms ease-in-out;
-		background: #13171c;
-	}
+.about-title{
+	font-size: 48px;
+	font-family: 'Raleway';
+}
 
-	.password{
-		width: 20vw;
-		height: 5vh;
-		border: 0;
-		border-bottom: 2px solid #fff;
+.about-text{
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+.about-line{
+	width: 350px;
+	background-color: #13171c;
+}
+
+
+.blog-link{
+	border: 2px solid #13171c;
+	padding-top: 16px;
+	transition: 300ms ease-in-out;
+	cursor: pointer;
+	box-shadow: 0 0 0 0 #13171c inset;
+	padding-bottom: 16px;
+}
+
+.blog-link:hover{
+	transition: 300ms ease-in-out;
+	box-shadow: 0 5em 0 0 #13171c inset;
+	color: #fff;
+}
+
+.blog-link:hover > a{
+	color: #fff;
+	transition: 300ms;
+}
+
+a, a:hover, a:visited, a:hover{
+	color: #13171c;
+    font-size: 20px;
+	font-family: 'Raleway';
+    text-decoration: none;
+}
+
+.contact{
+	padding: 175px 0 150px 0;
+	background: #f8f8f8;
+}
+
+.contact-title{
+	font-size: 48px;
+	font-family: 'Raleway';
+}
+
+.contact-text{
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+.contact-line{
+	width: 350px;
+	background-color: #13171c;
+}
+
+ul{
+	margin-left: 15px; 
+}
+
+.fa{
+	font-size: 48px;
+}
+
+.box{
+	text-align: center;
+}
+
+@media(max-width: 767px){
+	.contact, .about{
 		text-align: center;
-		color: #13171c;
-		outline: none;
-		font-size: 24px;
-		font-family: 'Raleway', sans-serif;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 	}
 
-	.password:focus{
-		outline: none;
-	}
-
-	.popup{
-		z-index: 100;
-		transition: 700ms ease-in-out;
-	}
-
-	/* End Importance */
-
-	.box{
-		padding: 25px;
-		position: absolute;
-		top: 30%;
-		left: 32.5%;
-		font-size: 48px;
-		text-align: center;
-		color: #fff;
-		font-family: 'Raleway', sans-serif;
-		transform: translate(-50%, -50%);
-	}
-
-	.intro{
-		position: absolute;
-		top: 55%;
-		left: 30%;
-		transition: 700ms ease-in-out;
+	.about-title, .contact-title{
 		font-size: 32px;
-		color: #F76F6F;
-		font-family: 'Raleway', sans-serif;
-		transform: translate(-50%, -50%);
 	}
 
-	.footer{
-		position: fixed;
-		top: 92vh;
-		height: 8vh;
-		width: 100vw;
-		padding-top: 24px;
-		padding-bottom: 24px;
-		text-align: center;
-		color: #fff;
+	.about-text, .contact-text{
+		font-size: 14px;
+	}
+
+	.blog-link a{
 		font-size: 18px;
-		font-family: 'Raleway', sans-serif;
 	}
-
-	.directors{
-		position: fixed;
-		transform: translate(-50%, -50%);
-		top: 45vh;
-		padding: 24px;
-		cursor: pointer;
-		transition: 300ms;
-		color: #fff;
-		z-index: 10;
-		font-size: 48px;
-		font-family: 'Raleway', sans-serif;
-	}
-
-	.bgcolor{
-		background: #e74c3c;
-		transition: 700ms ease-in-out;
-	}
-
-	.text{
-		transition: 700ms ease-in-out;
-	}
-
-	.left{
-		left: 7vw;
-	}
-
-	.right{
-		left: 93vw;
-	}
-
-	.left:hover{
-		transition: 300ms;
-		left: 4vw;
-	}
-
-	.right:hover{
-		transition: 300ms;
-		left: 96vw;
-	}
-
-	.viewer{
-		position: absolute;
-		left: 0%;
-		transition: 700ms ease-in-out;
-		width: 100vw;
-		height: 100vh;
-	}
-
-	.about{
-		position: absolute;
-		left: 100%;
-		height: 100vh;
-		width: 100vw;
-	}
-
-	.about-heading{
-		position: absolute;
-		top: 33%;
-		padding: 24px;
-		font-size: 48px;
-		color: #fff;
-		font-family: 'Raleway', sans-serif;
-		left: 26%;
-		transform: translate(-50%, -50%);
-	}
-
-	.about-content{
-		position: absolute;
-		top: 52%;
-		left: 45%;
-		font-family: 'Raleway', sans-serif;
-		transform: translate(-50%, -50%);
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		color: #e74c3c;
-	}
-
-	.shrink{
-		padding: 16px;
-		transition: 700ms ease-in-out;
-	}
-
-	.contact{
-		position: absolute;
-		left: 200%;
-		height: 100vh;
-		width: 100vw;
-	}
-
-	.contact-heading{
-		position: absolute;
-		top: 25%;
-		padding: 24px;
-		font-size: 48px;
-		color: #fff;
-		font-family: 'Raleway', sans-serif;
-		left: 26%;
-		transform: translate(-50%, -50%);
-	}
-
-	.contact-text{
-		position: absolute;
-		top: 43.5%;
-		left: 33.5%;
-		font-family: 'Raleway', sans-serif;
-		transform: translate(-50%, -50%);
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		color: #e74c3c;
-	}
-
-	.email{
-		transition: 700ms ease-in-out;
-		font-size: 24px;
-		cursor: pointer;
-		border-bottom: 2px dashed #e74c3c;
-		color: #e74c3c;
-	}
-
-	.bar1{
-		width: 36px;
-		left: 2.5%;
-		position: absolute;
-		top: 5%;
-		height: 8px;
-		background: #fff;
-		transform: translate(-50%, -50%) rotate(-45deg);
-	}
-
-	.bar2{
-		left: 2.5%;
-		top: 5%;
-		position: absolute;
-		width: 36px;
-		height: 8px;
-		background: #fff;
-		transform: translate(-50%, -50%) rotate(45deg);
-	}
-
-	.message{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: #fff;
-		font-family: 'Raleway', sans-serif;
-		font-size: 48px;
-	}
-
-	@media(max-width: 768px){
-
-		.footer{
-			padding-top: 16px;
-			padding-bottom: 16px;
-		}
-
-		.directors{
-			padding: 12px;
-    		cursor: pointer;
-    		transition: 300ms;
-    		font-size: 24px;
-		}
-
-		.box{
-			padding: 15px;
-			font-size: 24px;
-		}
-
-		.intro{
-			font-size: 24px;
-			left: 33%;
-		}
-
-		.about-heading{
-			top: 25%;
-    		left: 42%;
-    		font-size: 24px;
-		}
-
-		.about-content{
-			font-size: 18px;
-		}
-
-		.contact-heading{
-			font-size: 24px;
-    		color: #fff;
-    		left: 38%;
-		}
-
-		.contact-text{
-			transition: 700ms ease-in-out;
-    		font-size: 16px;
-    		left: 50%;
-			color: #e74c3c;
-		}
-
-		.email{
-			font-size: 16px;
-		}
-
-		.shrink{
-			padding: 6px;
-			transition: 700ms ease-in-out;
-		}
-
-	}
+}
