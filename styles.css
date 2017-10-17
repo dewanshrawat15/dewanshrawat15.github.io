@@ -10,6 +10,10 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+
+body{
+	overflow-x: hidden;
+}
 	
 .home{
 	padding: 220px 0 120px 0;
@@ -26,6 +30,13 @@ body::-webkit-scrollbar-thumb {
 	width: 350px;
 }
 
+.tag-line{
+	text-align: right;
+	font-family: 'Raleway';
+	font-size: 16px;
+	color: #fff;
+}
+
 .arrow{
 	position: absolute;
 	left: 50%;
@@ -40,6 +51,7 @@ body::-webkit-scrollbar-thumb {
 .about{
 	text-align: right;
 	padding: 175px 0 175px 0;
+	background-color: #f8f8f8;
 }
 
 .about-title{
@@ -58,22 +70,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.blog-link{
+.blo{
 	border: 2px solid #13171c;
 	padding-top: 16px;
+	padding-left: 27px;
+	padding-right: 27px;
 	transition: 300ms ease-in-out;
 	cursor: pointer;
 	box-shadow: 0 0 0 0 #13171c inset;
 	padding-bottom: 16px;
 }
 
-.blog-link:hover{
+.blo:hover{
 	transition: 300ms ease-in-out;
 	box-shadow: 0 5em 0 0 #13171c inset;
 	color: #fff;
 }
 
-.blog-link:hover > a{
+.blo:hover > a{
 	color: #fff;
 	transition: 300ms;
 }
@@ -83,6 +97,48 @@ a, a:hover, a:visited, a:hover{
     font-size: 20px;
 	font-family: 'Raleway';
     text-decoration: none;
+}
+
+.works{
+	padding: 175px 0 150px 0;
+	background: #fff;
+}
+
+.works-title{
+	font-size: 48px;
+	font-family: 'Raleway';
+}
+
+.works-text{
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+.works-line{
+	width: 350px;
+	background-color: #13171c;
+}
+
+.works-link, .works-link:active, .works-link:visited, .works-link:focus{
+	text-decoration: none;
+	color: #13171c;
+}
+
+.works-link{
+	padding: 20px 30px 20px 30px;
+	box-shadow: 0 0 0 0 #13171c inset;
+	color: #13171c;
+	transition: 500ms;
+}
+
+.works-link:hover{
+	color: #fff;
+	box-shadow: 12em 0 0 0 #13171c inset;
+	transition: 500ms;
+}
+
+.screen-text h3, .screen-text p{
+	font-family: 'Raleway';
 }
 
 .contact{
@@ -117,20 +173,61 @@ ul{
 	text-align: center;
 }
 
-@media(max-width: 767px){
-	.contact, .about{
-		text-align: center;
+@media(max-width: 992px){
+
+
+	.home{
+		padding: 75px 0 75px 0;
 	}
 
-	.about-title, .contact-title{
+	.home-line{
+		width: 225px;
+	}
+
+	.about-line, .works-line, .contact-line{
+		width: 175px;
+	}
+
+	.home-title{
 		font-size: 32px;
 	}
 
-	.about-text, .contact-text{
+	.tag-line{
+		text-align: center;
+		font-family: 'Raleway';
+		font-size: 16px;
+		color: #fff;
+	}
+
+	.works, .contact, .about{
+		text-align: center;
+	}
+
+	.works-title, .about-title, .contact-title{
+		font-size: 32px;
+	}
+
+	.works-text, .about-text, .contact-text{
 		font-size: 14px;
 	}
 
-	.blog-link a{
+	.blo a{
 		font-size: 18px;
 	}
+}
+
+/* Animations */
+
+.slide-up{
+	transition: 300ms;
+	position: relative;
+	top: -5%;
+	opacity: 0;
+}
+
+.slide-down{
+	transition: 300ms;
+	position: relative;
+	top: 0%;
+	opacity: 1;
 }
