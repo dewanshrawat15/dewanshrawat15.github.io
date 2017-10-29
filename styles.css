@@ -165,12 +165,16 @@ ul{
 	margin-left: 15px; 
 }
 
-.fa{
+.s-bttns a i{
 	font-size: 48px;
 }
 
 .box{
 	text-align: center;
+}
+
+.fa{
+	transition: 300ms;
 }
 
 @media(max-width: 992px){
@@ -214,6 +218,10 @@ ul{
 	.blo a{
 		font-size: 18px;
 	}
+
+	.s-bttns a i{
+		font-size: 24px;
+	}
 }
 
 /* Animations */
@@ -230,4 +238,9 @@ ul{
 	position: relative;
 	top: 0%;
 	opacity: 1;
+}
+
+.fa-active{
+	color: #4758df;
+	transition: 300ms;
 }

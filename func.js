@@ -23,4 +23,9 @@ var sentences=["Love Designing As Thy Love Thyself", "The True Designer", "Witho
 	$('.arrow').click(function(){
 		$('html, body').animate({scrollTop: $('.about').offset().top}, 500)
 	})
+
+	$('.fa').hover(function(){
+		$(this).toggleClass('fa-active')
+	})
+
 })
