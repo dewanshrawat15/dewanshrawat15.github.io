@@ -14,9 +14,55 @@ body::-webkit-scrollbar-thumb {
 body{
 	overflow-x: hidden;
 }
+
 	
+.nav{
+	position: fixed;
+	z-index: 10;
+	visibility: visible;
+	transition: 300ms;
+	width: 100vw;
+	box-shadow: 0 -10vw 0 0 #fff inset, 0 0 0 0 #13171c inset;
+	padding: 10px 20px 10px 20px;
+}
+
+.nav-mob{
+	transition: 300ms;
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	box-shadow: 0 -10vw 0 0 #fff inset, 0 0 0 0 #13171c inset;
+	padding: 30px 20px 30px 20px;
+	visibility: hidden;
+}
+
+.nav-active{
+	box-shadow: 0 0 0 0 #fff inset, 0 -10vw 0 0 #13171c inset;
+	color: #fff;
+	transition: 300ms;
+}
+
+.logo{
+	transition: 300ms;
+	padding-left: 20px;
+}
+
+.nav-item{
+	font-size: 20px;
+	transition: 300ms;
+	padding: 18px 0 18px 0;
+	cursor: pointer;
+	font-family: 'Raleway';
+}
+
+.item-hover{
+	transition: 300ms;
+	background: #383838;
+	color: #fff;
+}
+
 .home{
-	padding: 220px 0 120px 0;
+	padding: 280px 0 200px 0;
 	transition: 300ms;
 	color: #fff;
 	font-family: 'Raleway';
@@ -173,15 +219,10 @@ ul{
 	text-align: center;
 }
 
-.fa{
-	transition: 300ms;
-}
-
-@media(max-width: 992px){
-
+@media(max-width: 991px){
 
 	.home{
-		padding: 75px 0 75px 0;
+		padding: 150px 0 75px 0;
 	}
 
 	.home-line{
@@ -224,6 +265,32 @@ ul{
 	}
 }
 
+
+@media(max-width: 1138px){
+	.nav .nav-item{
+		transition: 300ms;
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 991px){
+	.nav{
+		transition: 300ms;
+		visibility: hidden;
+	}
+
+	.nav-mob{
+		transition: 300ms;
+		visibility: visible;
+	}
+
+	.nav-mob .nav-item{
+		padding: 0px 0 0px 0;
+		font-size: 20px;
+	}
+}
+
+
 /* Animations */
 
 .slide-up{
@@ -238,9 +305,4 @@ ul{
 	position: relative;
 	top: 0%;
 	opacity: 1;
-}
-
-.fa-active{
-	color: #4758df;
-	transition: 300ms;
 }
