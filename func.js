@@ -27,10 +27,10 @@ var sentences=["Love Designing As Thy Love Thyself", "The True Designer", "Witho
 	$(window).scroll(function(){
 		var y=$('html, body').scrollTop();
 		if(y>120){
-			$('.nav, .nav-mob').addClass('nav-active')
+			$('.nav-bar, .nav-bar-mob').addClass('nav-bar-active')
 		}
 		else{
-			$('.nav, .nav-mob').removeClass('nav-active')
+			$('.nav-bar, .nav-bar-mob').removeClass('nav-bar-active')
 		}
 	})
 
@@ -60,5 +60,29 @@ var sentences=["Love Designing As Thy Love Thyself", "The True Designer", "Witho
 
 	$('.contact-link').hover(function(){
 		$(this).toggleClass('item-hover')
+	})
+
+	$(window).scroll(function(){
+		var y=$('html, body').scrollTop();
+		var h=$('.home').offset().top;
+		var a=$('.about').offset().top;
+		var w=$('.works').offset().top;
+		var c=$('.contact').offset().top;
+		c-=50;
+		if(y>=h && y<a){
+			$('.nav-item').removeClass('scroll-hover')
+		}
+		else if(y>=a && y<w){
+			$('.nav-item').removeClass('scroll-hover')
+			$('.about-link').addClass('scroll-hover')
+		}
+		else if(y>=w && y<c){
+			$('.nav-item').removeClass('scroll-hover')
+			$('.work-link').addClass('scroll-hover')
+		}
+		else if(y>=c){
+			$('.nav-item').removeClass('scroll-hover')
+			$('.contact-link').addClass('scroll-hover')
+		}
 	})
 })
