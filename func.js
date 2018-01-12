@@ -34,6 +34,10 @@ var sentences=["Love Designing As Thy Love Thyself", "The True Designer", "Witho
 		}
 	})
 
+	$('.imp').click(function(){
+		$('html, body').animate({scrollTop: $('.home').offset().top}, 1500)
+	})
+
 	$('.logo').click(function(){
 		$('html, body').animate({scrollTop: $('.home').offset().top}, 1500)
 	})

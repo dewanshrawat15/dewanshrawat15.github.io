@@ -188,12 +188,18 @@ a, a:hover, a:visited, a:hover{
 	transition: 500ms;
 }
 
+.screen-text{
+	background: #f8f8f8;
+	padding: 15px;
+	padding-bottom: 30px;
+}
+
 .screen-text h3, .screen-text p{
 	font-family: 'Raleway';
 }
 
 .contact{
-	padding: 175px 0 150px 0;
+	padding: 175px 0 175px 0;
 	background: #f8f8f8;
 }
 
@@ -210,6 +216,23 @@ a, a:hover, a:visited, a:hover{
 .contact-line{
 	width: 350px;
 	background-color: #13171c;
+}
+
+.footer{
+	background: #13171c;
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: 24px;
+	padding: 75px 0 75px 0;
+}
+
+.heart{
+	color: #ffc107;
+	font-family: 'Lobster';
+}
+
+.imp{
+	cursor: pointer;
 }
 
 ul{
@@ -268,6 +291,10 @@ ul{
 	.s-bttns a i{
 		font-size: 24px;
 	}
+
+	.footer-text{
+		font-size: 20px;
+	}
 }
 
 
@@ -302,6 +329,10 @@ ul{
 @media(max-width: 580px){
 	.nav-bar-mob{
 		visibility: hidden;
+	}
+
+	.footer-text{
+		font-size: 18px;
 	}
 }
 
