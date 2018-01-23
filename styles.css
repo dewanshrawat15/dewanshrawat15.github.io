@@ -144,7 +144,7 @@ body{
 }
 
 a, a:hover, a:visited, a:hover{
-	color: #13171c;
+	color: #13171c!important;
     font-size: 20px;
 	font-family: 'Raleway';
     text-decoration: none;
@@ -240,7 +240,28 @@ ul{
 }
 
 .s-bttns a i{
+	transition: 850ms;
 	font-size: 48px;
+}
+
+.w-icon:hover{
+	color: #34af23;
+	transition: 850ms;
+}
+
+.git-icon:hover{
+	color: #4f34de;
+	transition: 850ms;
+}
+
+.cpen-icon:hover{
+	color: #ffaa2c;
+	transition: 850ms;
+}
+
+.mail-icon:hover{
+	color: #e74c3c;
+	transition: 850ms;
 }
 
 .box{
