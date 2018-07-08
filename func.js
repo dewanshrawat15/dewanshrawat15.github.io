@@ -21,6 +21,18 @@
 		$('.mail-link').click(function(){
 			window.open("mailto:dewanshrawat15@gmail.com")
 		})
+		
+		$('.facebook-link').click(function(){
+			window.open("https://www.facebook.com/the.funky.designer")
+		})
+		
+		$('.instagram-link').click(function(){
+			window.open("https://www.instagr.am/the._.sociopath")
+		})
+		
+		$('.github-link').click(function(){
+			window.open("https://www.github.com/dewanshrawat15")
+		})
 
 		$('.slider-down, .slider-text').hover(function(){
 			var y=$('body, html').scrollTop();
