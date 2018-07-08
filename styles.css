@@ -1,3 +1,8 @@
+	@font-face {
+		font-family: "Lato Hairline";
+		src: url("css/fonts/Harabara.ttf");
+	}
+
 @media(min-width: 1440px){
 	
 	body{
