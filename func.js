@@ -17,6 +17,10 @@
 				$('.slider-down').removeClass('slider2')
 			}
 		})
+		
+		$('.mail-link').click(function(){
+			window.open("mailto:dewanshrawat15@gmail.com")
+		})
 
 		$('.slider-down, .slider-text').hover(function(){
 			var y=$('body, html').scrollTop();
