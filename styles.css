@@ -108,7 +108,7 @@
 @media(min-width: 1440px){
 
 	.laptop{
-		display: visible;
+		display: block;
 	}
 
 	.sm-dev{
