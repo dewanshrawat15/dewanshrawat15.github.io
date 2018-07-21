@@ -1,9 +1,120 @@
-	@font-face {
-		font-family: "Lato Hairline";
-		src: url("Lato Hairline.ttf");
-	}
+@font-face {
+	font-family: "Lato Hairline";
+	src: url("Lato Hairline.ttf");
+}
+
+.laptop{
+	display: none;
+}
+
+.sm-dev{
+	display: block;
+}
+	
+.sm-home{
+	padding: 265px 0 225px 0;
+	background: url('bg.png') center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.sm-home-title{
+	font-family: 'Raleway';
+	padding-bottom: 12px;
+	border-bottom: 2px #fff solid;
+	font-size: 42px;
+	color: #fff;
+}
+
+.sm-about{
+	padding: 150px 0 150px 0;
+	background: #f8f8f8;
+}
+
+.sm-about-title div{
+	font-family: 'Raleway';
+	padding: 18px;
+	background: #13171c;
+	font-size: 42px;
+	color: #fff;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+.sm-about-text p{
+	font-family: 'Raleway';
+	font-size: 18px;
+	color: #13171c;
+}
+
+.sm-portfolio{
+	padding: 150px 0 150px 0;
+	background: #fff;
+}
+
+.sm-portfolio-title div{
+	font-family: 'Raleway';
+	padding: 18px;
+	background: #13171c;
+	font-size: 42px;
+	color: #fff;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+.sm-portfolio-text p{
+	font-family: 'Raleway';
+	font-size: 18px;
+	color: #13171c;
+}
+
+.sm-portfolio-link span{
+	font-family: 'Raleway';
+	font-size: 18px;
+	border-radius: 16px;
+	cursor: pointer;
+	padding: 32px 28px 32px 28px;
+	color: #fff;
+	box-shadow: 0 0 0 5em #13171c inset;
+	transition: 500ms;
+}
+
+.sm-portfolio-link span:hover{
+	transition: 500ms;
+	padding: 24px 18px 24px 18px;
+}
+
+.sm-contact{
+	padding: 150px 0 150px 0;
+	background: #f8f8f8;
+}
+
+.sm-contact-title div{
+	font-family: 'Raleway';
+	padding: 18px;
+	background: #13171c;
+	font-size: 42px;
+	color: #fff;
+	border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;
+}
+
+.sm-contact-text p{
+	font-family: 'Raleway';
+	font-size: 18px;
+	color: #13171c;
+}
 
 @media(min-width: 1440px){
+
+	.laptop{
+		display: visible;
+	}
+
+	.sm-dev{
+		display: none;
+		opacity: 0;
+	}
 	
 	body{
 		margin: 0;

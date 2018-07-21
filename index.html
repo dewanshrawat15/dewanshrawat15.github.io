@@ -3,12 +3,55 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="jquery.js"></script>
 <script src="func.js"></script>
+<script src="bootstrap.js"></script>
 	<title>Dewansh Rawat</title>
 </head>
+<style type="text/css">
+
+.navbar{
+	position: fixed;
+	z-index: 10;
+	background: #f7f7f7;
+	width: 100vw;
+	border-radius: 0;
+	padding: 5px 8px 5px 8px;
+}
+
+.navbar-default .navbar-header .navbar-brand{
+	color: #13171c;
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+.navbar-default .navbar-header button:hover, .navbar-default .navbar-header button:active, .navbar-default .navbar-header button:focus{
+	background: #f7f7f7;
+}
+
+.navbar-default .navbar-collapse .navbar-nav li a{
+	color: #13171c;
+	font-family: 'Raleway';
+	font-size: 20px;
+}
+
+</style>
+<script type="text/javascript">
+	
+$(function(){
+	
+	 $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    })
+
+})
+
+</script>
 <body>
+<section class="laptop">
 <section class="home active">
 	<div class="section-counter">01/04</div>
 	<div class="name">Dewansh Rawat</div>
@@ -31,6 +74,78 @@
 		<div class="coninf-fb"><i class="fa fa-facebook facebook-link"></i></div>
 		<div class="coninf-insta"><i class="fa fa-instagram instagram-link"></i></div>
 		<div class="coninf-github"><i class="fa fa-github github-link"></i></div>
+	</div>
+</section>
+</section>
+<section class="sm-dev">
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span> 
+    			</button>
+    			<a class="navbar-brand" href="#">Dewansh Rawat</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class=""><a href="#">About Me</a></li>
+        			<li class=""><a href="#">Portfolio</a></li> 
+        			<li class=""><a href="#">Contact Me</a></li> 
+      			</ul>
+    		</div>
+  		</div>
+	</nav>
+	<div class="sm-home">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center sm-home-title">Dewansh Rawat</div>
+			</div>
+		</div>
+	</div>
+	<div class="sm-about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center sm-about-title"><div>About Me</div></div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center sm-about-text">
+					<p>I'm a web designer at Converge Clan, which is a prestigious group of highly talented people. I've been practising my skills for quite some time. I first analyse then proceed on a problem. I've included some of my work below. I'm your best shot for any work that has to be done...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sm-portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center sm-portfolio-title"><div>Portfolio</div></div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center sm-portfolio-text">
+					<p>I click photos, make things that run on your browser and basically try to make life much more simpler. Don't believe me..?? Check for yourself.</p>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center sm-portfolio-link"><span>Check My Portfolio</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="sm-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-4 text-center sm-contact-title"><div>Contact Me</div></div>
+			</div>
+			<br><br><br>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center sm-contact-text">
+					<p>Have any work that is to be done..?? Pick your favorite means of communication</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 </body>
