@@ -49,8 +49,7 @@ $(function(){
 	
     $('.nav-links').click(function(){
 	var y=$(this).attr('id')
-	var target=$('#'+y);
-	$('html, body').animate({scrollTop: target.offset().top}, 750)
+	$('html, body').animate({scrollTop: $(y+'').offset().top}, 750)
     })
 
 })
