@@ -47,10 +47,12 @@ $(function(){
         $('.navbar-toggle:visible').click();
     })
 	
-    $('.nav-links').click(function(){
-	var y=$(this).attr('id')
-	$('body').animate({scrollTop: $(y+'').offset().top}, 750)
-    })
+    $(document).on('click', 'a[href^="#"]', function (event) {
+     event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
 
 })
 
