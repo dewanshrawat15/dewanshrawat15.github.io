@@ -4,13 +4,76 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="bootstrap.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lobster+Two|Raleway" rel="stylesheet">
 	<title>Dewansh Rawat</title>
 </head>
+<style type="text/css">
+	
+	.home{
+		padding: 230px 0 175px 0;
+		background: url('bg.jpg') center center no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.home-title{
+		color: #fff;
+		font-family: 'Lobster Two', cursive;
+		font-size: 64px;
+	}
+
+	.arrow{
+		position: absolute;
+		left: 50%;
+		cursor: pointer;
+		width: 3.6em;
+		height: 3.6em;
+		border-left: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		transform: translate(-50%, 0) rotate(-45deg);
+	}
+
+	.portfolio{
+		padding: 200px 0 200px 0;
+		background: #fff;
+	}
+
+	.portfolio-box{
+		padding-top: 175px;
+		padding-bottom: 175px;
+		background: #f8f8f8;
+	}
+
+</style>
+<script type="text/javascript">
+	
+	$(function(){
+		$('.arrow').click(function(){
+			$('html, body').animate({scrollTop: $('.portfolio').offset().top}, 700)
+		})
+	})
+
+</script>
 <body>
 <div class="home">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 col-md-offset-4 text-center">Dewansh Rawat</div>
+			<div class="col-md-4 col-md-offset-4 text-center home-title">Portfolio</div>
+		</div>
+		<br><br><br><br><br><br>
+		<div class="arrow"></div>
+	</div>
+</div>
+<div class="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-1 portfolio-box"></div>
+			<div class="col-md-4 col-md-offset-2 portfolio-box"></div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-1 portfolio-box"></div>
+			<div class="col-md-4 col-md-offset-2 portfolio-box"></div>
 		</div>
 	</div>
 </div>
