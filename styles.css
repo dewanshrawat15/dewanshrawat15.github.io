@@ -125,7 +125,7 @@
 		width: 100vw;
 		height: 100vh;
 		transition: 350ms;
-		background: url('bg.png') center center no-repeat;
+		background: url('bg.jpg') center center no-repeat;
 		background-size: cover;
 	}
 
