@@ -3,10 +3,10 @@
 			setTimeout(function(){
 				$('body').removeClass('noflow')
 				$('.loader').addClass('remove-loader')
-			}, 6000)
+			}, 3000)
 			setTimeout(function(){
 				$('.loader').addClass('move-loader')
-			}, 7000)
+			}, 4000)
 		})
 
 		$(window).resize(function(){
@@ -21,5 +21,13 @@
     		$('.masthead').css('height', ''+htemp+'');
     		$('.masthead').css('padding-top', ''+pdd+'px');
 		}, 50)
+
+		$('.c-line').click(function(){
+			window.open("mailto:dewanshrawat15@gmail.com")
+		})
+
+		$('.foss').click(function(){
+			window.open("https://github.com/fossasia")
+		})
 
 	})
