@@ -145,11 +145,6 @@ body{
     color: #ffc838;
   }
 
-  .fa-twitter:hover{
-    transition: 750ms;
-    color: #0084FF;
-  }
-
   .fa-linkedin:hover{
     transition: 750ms;
     color: #0077B5;
