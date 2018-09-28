@@ -4,14 +4,18 @@
 				$('body').removeClass('noflow')
 				$('.loader').addClass('remove-loader')
 			}, 3000)
+		    var hwid=$(window).innerWidth();
 			setTimeout(function(){
 				$('.loader').addClass('move-loader')
 			}, 4000)
+    		$('body').css('width', ''+hwid+'');
 		})
 
 		$(window).resize(function(){
 		    var htemp=$(window).innerHeight();
+		    var hwid=$(window).innerWidth();
     		$('.masthead').css('height', ''+htemp+'');
+    		$('body').css('width', ''+hwid+'');
 		})
 
 		setInterval(function(){

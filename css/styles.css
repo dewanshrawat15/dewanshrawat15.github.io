@@ -2,6 +2,10 @@ div{
 	transition: 450ms;
 }
 
+body{
+  overflow-x: hidden!important;
+}
+
 .noflow{
 	transition: 450ms;
 	overflow: hidden;
@@ -217,7 +221,7 @@ div{
 
   .overview-title{
     font-family: 'Poppins', sans-serif;
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .overview-text{
@@ -235,6 +239,25 @@ div{
     text-decoration-style: dotted;
   }
 
+  @media(max-width: 992px){
+    .overview-title{
+      font-size: 26px;
+    }
+
+    .overview-text{
+      font-size: 18px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .overview-title{
+      font-size: 22px;
+    }
+
+    .overview-text{
+      font-size: 15px;
+    }
+  }
   /* The Timeline Section */
 
   .journey{
