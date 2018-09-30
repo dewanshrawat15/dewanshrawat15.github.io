@@ -468,6 +468,60 @@ div{
     }
   }
 
+
+  /* Analytics Section */
+
+  .analytics{
+    padding: 40px 0 40px 0;
+    background: #ff5007;
+  }
+
+  .counter{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Product Sans', sans-serif;    
+  }
+
+  .collab-text, .lang-text, .opensource-text, .projects-text{
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Product Sans', sans-serif;  
+  }
+
+  @media(max-width: 992px){
+
+    .slab{
+      padding: 20px 0 20px 0;
+    }
+
+    .collab-text, .lang-text, .opensource-text, .projects-text{
+      font-size: 20px;
+    }
+
+    .counter{
+      font-size: 28px;
+    }
+    
+  }
+
+  @media(max-width: 768px){
+
+    .slab{
+      padding: 20px 0 20px 0;
+    }
+
+    .collab-text, .lang-text, .opensource-text, .projects-text{
+      font-size: 16px;
+    }
+
+    .counter{
+      font-size: 20px;
+    }
+    
+  }
+
+  /* Contact Section */
+
   .contact{
     padding: 150px 0 150px 0;
     background: #fff;
@@ -491,6 +545,10 @@ div{
     color: #13171c;
   }
 
+  .heart{
+    color: #ff5007;
+  }
+
   @media(max-width: 992px){
   
     .contact-title{
@@ -502,7 +560,7 @@ div{
     }
 
     .contact-line-icon{
-      font-size: 28px!important;
+      font-size: 32px!important;
       padding-left: 8px;
       padding-right: 8px;
     }
@@ -524,7 +582,7 @@ div{
     }
 
     .contact-line-icon{
-      font-size: 18px!important;
+      font-size: 24px!important;
       padding-left: 3px;
       padding-right: 3px;
     }
