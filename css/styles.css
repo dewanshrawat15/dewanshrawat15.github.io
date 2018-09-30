@@ -145,6 +145,11 @@ body{
     color: #ffc838;
   }
 
+  .fa-twitter:hover{
+    transition: 750ms;
+    color: #1da1f2;
+  }
+
   .fa-linkedin:hover{
     transition: 750ms;
     color: #0077B5;
@@ -353,7 +358,7 @@ body{
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #999999;
+    background-color: #13171c;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -451,4 +456,51 @@ body{
     .timeline-body p{
       font-size: 10px;
     }
+  }
+
+  .contact{
+    padding: 150px 0 150px 0;
+    background: #fff;
+  }
+
+  .contact-title{
+    font-size: 42px;
+    font-family: 'Product Sans', sans-serif;
+  }
+
+  .contact-text{
+    font-size: 18px;
+    font-family: 'Product Sans', sans-serif;
+  }
+
+  .contact-line-icon{
+    font-size: 42px!important;
+    transition: 750ms;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #13171c;
+  }
+
+  @media(max-width: 992px){
+  
+    .contact-title{
+      font-size: 32px;
+    }
+
+    .contact-text{
+      font-size: 18px;
+    }
+    
+  }
+
+  @media(max-width: 768px){
+  
+    .contact-title{
+      font-size: 24px;
+    }  
+
+    .contact-text{
+      font-size: 15px;
+    }
+
   }
