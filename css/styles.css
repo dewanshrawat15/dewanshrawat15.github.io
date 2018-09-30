@@ -492,7 +492,9 @@ body{
     }
 
     .contact-line-icon{
-      font-size: 28px;
+      font-size: 28px!important;
+      padding-left: 8px;
+      padding-right: 8px;
     }
     
   }
@@ -508,7 +510,9 @@ body{
     }
 
     .contact-line-icon{
-      font-size: 18px;
+      font-size: 18px!important;
+      padding-left: 3px;
+      padding-right: 3px;
     }
 
   }
