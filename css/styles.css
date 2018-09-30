@@ -83,6 +83,7 @@ body{
 /* Masthead */
 
 .masthead{
+  height: 100vh;
   background: #13171c;
   background: url('../bg.jpg') center center no-repeat;
   background-size: cover;
@@ -231,9 +232,11 @@ body{
 
   .foss{
     cursor: pointer;
+    color: #ff5007;
   }
 
   .c-line{
+    color: #ff5007;
     cursor: pointer;    
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -358,7 +361,7 @@ body{
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #13171c;
+    background-color: #ff5007;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
