@@ -490,6 +490,10 @@ body{
     .contact-text{
       font-size: 18px;
     }
+
+    .contact-line-icon{
+      font-size: 28px;
+    }
     
   }
 
@@ -501,6 +505,10 @@ body{
 
     .contact-text{
       font-size: 15px;
+    }
+
+    .contact-line-icon{
+      font-size: 18px;
     }
 
   }

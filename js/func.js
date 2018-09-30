@@ -1,7 +1,7 @@
 	$(function(){
 		$(window).load(function(){
 			setTimeout(function(){
-				$('body').removeClass('noflow')
+				// $('body').removeClass('noflow')
 				$('.loader').addClass('remove-loader')
 			}, 3000)
 		    var hwid=$(window).innerWidth();
