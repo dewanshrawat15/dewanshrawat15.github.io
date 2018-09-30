@@ -401,14 +401,46 @@ body{
 
   .timeline-title {
     margin-top: 0;
+    font-size: 20px;
     color: inherit;
   }
 
   .timeline-body > p,
   .timeline-body > ul {
     margin-bottom: 0;
+    font-size: 16px;
   }
 
   .timeline-body > p + p {
     margin-top: 5px;
+  }
+
+  @media(max-width: 992px){
+
+    .journey-title{
+      font-size: 32px;
+    }
+
+    .timeline-title{
+      font-size: 18px;
+    }
+
+    .timeline-body p{
+      font-size: 14px;
+    }
+  }
+
+  @media(max-width: 768px){
+
+    .journey-title{
+      font-size: 24px;
+    }
+
+    .timeline-title{
+      font-size: 14px;
+    }
+
+    .timeline-body p{
+      font-size: 10px;
+    }
   }
