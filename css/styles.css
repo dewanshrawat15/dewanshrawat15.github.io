@@ -1,9 +1,9 @@
-div{
-	transition: 450ms;
+html, body{
+  overflow-x: hidden!important;
 }
 
-body{
-  overflow-x: hidden!important;
+div{
+  transition: 450ms;
 }
 
 .noflow{
@@ -506,6 +506,10 @@ body{
       padding-left: 8px;
       padding-right: 8px;
     }
+
+    .timeline-panel{
+     padding: 16px;
+    }
     
   }
 
@@ -523,6 +527,10 @@ body{
       font-size: 18px!important;
       padding-left: 3px;
       padding-right: 3px;
+    }
+
+    .timeline-panel{
+     padding: 12px;
     }
 
   }
