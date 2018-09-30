@@ -369,6 +369,13 @@ body{
     border-bottom-left-radius: 50%;
   }
 
+  .timeline > li > .timeline-badge > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
   }
