@@ -14,7 +14,7 @@
 		$(window).resize(function(){
 		    var htemp=$(window).innerHeight();
 		    var hwid=$(window).innerWidth();
-    		// $('.masthead').css('height', ''+htemp+'');
+    		$('.masthead').css('height', ''+htemp+'');
     		$('body').css('width', ''+hwid+'');
 		})
 
@@ -22,7 +22,7 @@
 		    var htemp=$(window).innerHeight();
 		    var pdd=htemp/2;
 		    pdd=pdd-175;
-    		// $('.masthead').css('height', ''+htemp+'');
+    		$('.masthead').css('height', ''+htemp+'');
     		$('.masthead').css('padding-top', ''+pdd+'px');
 		}, 10)
 
