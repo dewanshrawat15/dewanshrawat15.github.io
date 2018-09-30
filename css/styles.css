@@ -426,7 +426,7 @@ body{
   @media(max-width: 992px){
 
     .timeline-icon{
-      font-size: 18px;
+      font-size: 18px!important;
     }
 
     .journey-title{
@@ -445,7 +445,7 @@ body{
   @media(max-width: 768px){
 
     .timeline-icon{
-      font-size: 14px;
+      font-size: 14px!important;
     }
 
     .journey-title{
