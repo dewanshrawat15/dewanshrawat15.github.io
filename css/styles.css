@@ -417,6 +417,10 @@ body{
 
   @media(max-width: 992px){
 
+    .timeline-icon{
+      font-size: 18px;
+    }
+
     .journey-title{
       font-size: 32px;
     }
@@ -431,6 +435,10 @@ body{
   }
 
   @media(max-width: 768px){
+
+    .timeline-icon{
+      font-size: 14px;
+    }
 
     .journey-title{
       font-size: 24px;
