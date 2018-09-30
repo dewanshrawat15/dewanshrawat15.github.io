@@ -549,6 +549,12 @@ div{
     color: #ff5007;
   }
 
+  .credits{
+    color: #13171c;
+    font-family: 'Product Sans', sans-serif;
+    font-size: 24px;
+  }
+
   @media(max-width: 992px){
   
     .contact-title{
@@ -567,6 +573,10 @@ div{
 
     .timeline-panel{
      padding: 16px;
+    }
+
+    .credits{
+      font-family: 18px;
     }
     
   }
@@ -589,6 +599,10 @@ div{
 
     .timeline-panel{
      padding: 12px;
+    }
+
+    .credits{
+      font-family: 14px;
     }
 
   }
