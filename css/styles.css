@@ -6,6 +6,11 @@ div{
   transition: 450ms;
 }
 
+@font-face {
+    font-family: "Product Sans";
+    src: url("../fonts/Product Sans.ttf");
+}
+
 .noflow{
 	transition: 450ms;
 	overflow: hidden;
