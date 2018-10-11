@@ -611,3 +611,13 @@ div{
     }
 
   }
+
+  .projects{
+    padding: 150px 0 150px 0;
+    background: #f8f8f8;
+  }
+
+  .projects-title{
+    font-size: 42px;
+    font-family: 'Product Sans', sans-serif;
+  }
