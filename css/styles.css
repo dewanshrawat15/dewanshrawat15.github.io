@@ -237,11 +237,11 @@ div{
 
   .foss{
     cursor: pointer;
-    color: #ff5007;
+    color: #13171c;
   }
 
   .c-line{
-    color: #ff5007;
+    color: #13171c;
     cursor: pointer;    
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -366,7 +366,7 @@ div{
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #ff5007;
+    background-color: #13171c;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -478,7 +478,7 @@ div{
 
   .analytics{
     padding: 40px 0 40px 0;
-    background: #ff5007;
+    background: #13171c;
   }
 
   .counter{
@@ -551,7 +551,7 @@ div{
   }
 
   .heart{
-    color: #ff5007;
+    color: #13171c;
   }
 
   .credits{
