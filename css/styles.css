@@ -621,3 +621,18 @@ div{
     font-size: 42px;
     font-family: 'Product Sans', sans-serif;
   }
+
+  .project-text{
+    font-size: 18px;
+    font-family: 'Product Sans', sans-serif;
+  }
+
+  .project-description{
+    font-size: 16px;
+    font-family: 'Product Sans', sans-serif;
+  }
+
+  .project-type{
+    font-family: 'Product Sans', sans-serif;
+    font-size: 36px;
+  }
