@@ -1,0 +1,46 @@
+{
+    "name": "Dewansh Rawat",
+    "socials": [
+        {
+            "name": "Facebook",
+            "icon": "fab fa-facebook",
+            "link": "https://facebook.com/dewanshrawat15"
+        },
+        {
+            "name": "Instagram",
+            "icon": "fab fa-instagram",
+            "link": "https://instagram.com/dewanshrawat15"
+        },
+        {
+            "name": "Twitter",
+            "icon": "fab fa-twitter",
+            "link": "https://twitter.com/dewanshrawat15"
+        },
+        {
+            "name": "LinkedIn",
+            "icon": "fab fa-linkedin",
+            "link": "https://linkedin.com/in/dewanshrawat15"
+        },
+        {
+            "name": "Github",
+            "icon": "fab fa-github",
+            "link": "https://github.com/dewanshrawat15"
+        },
+        {
+            "name": "Medium",
+            "icon": "fab fa-medium",
+            "link": "https://medium.com/@dewanshrawat15"
+        },
+        {
+            "name": "Spotify",
+            "icon": "fab fa-spotify",
+            "link": "https://open.spotify.com/user/dewanshrawat15"
+        },
+        {
+            "name": "500px",
+            "icon": "fab fa-500px",
+            "link": "https://500px.com/dewanshrawat15"
+        }
+    ],
+    "tagline": "The fire in my heart it'll never die"
+}
