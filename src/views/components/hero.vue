@@ -51,10 +51,10 @@
             {{ profileJson.tagline }}
           </h1>
           <br><br>
-          <v-btn href="/about" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white" class="ma-0 elevation-1">
+          <v-btn to="/about" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white" class="ma-0 elevation-1">
             About Me
           </v-btn>
-          <v-btn href="/contact" rounded outlined color="#580aff" style="text-transform: capitalize; border-radius:5px; text-transform: capitalize; margin-left: 12px!important;" class="ml-0" dark>
+          <v-btn to="/contact" rounded outlined color="#580aff" style="text-transform: capitalize; border-radius:5px; text-transform: capitalize; margin-left: 12px!important;" class="ml-0" dark>
             Contact Me
           </v-btn>
         </v-flex>
