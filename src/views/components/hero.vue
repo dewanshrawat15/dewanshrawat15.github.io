@@ -1,5 +1,5 @@
 <template>
-  <v-app class="white home">
+  <v-app class="white hero">
     <v-container>
       <v-layout
         text-center
@@ -11,7 +11,7 @@
               style="border-radius: 100%;"
               :src="require('@/assets/images/prof.jpeg')"
               :lazy-src="require('@/assets/images/prof.jpeg')"
-              width="64%">
+              width="75%">
               <v-layout
                 slot="placeholder"
                 fill-height
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import profileDetailsJson from "../assets/data/profile.json";
+import profileDetailsJson from "../../assets/data/profile.json";
 export default{
   data(){
     return {

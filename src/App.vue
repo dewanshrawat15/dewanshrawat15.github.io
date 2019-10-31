@@ -5,38 +5,30 @@
         <span>{{ profileJson.name }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn v-for="(link, i) in toolbarDetails.navbarLinks" :key="i" :to="link.to" @click="onClick($event, link)" text>
+      <v-btn v-for="(link, i) in toolbarDetails.navbarLinks" :key="i" :to="link.link" text style="margin-left: 6px; margin-right: 6px;">
         {{ link.name }}
       </v-btn>
     </v-app-bar>
 
     <v-content>
-      <Home/>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Home from './components/Home';
+// import Home from './views/Home';
+// import About from './views/About';
 import toolbarDetailsJson from "./assets/data/toolbar.json";
 import profileDetailsJson from "./assets/data/profile.json";
 
 export default {
   name: 'App',
-  components: {
-    Home,
-  },
+  
   data(){
     return {
       toolbarDetails: toolbarDetailsJson,
       profileJson: profileDetailsJson
-    }
-  },
-  methods: {
-    onClick (e, item) {
-      e.stopPropagation()
-      if (item.to || !item.href) return
-      this.$vuetify.goTo(item.href)
     }
   }
 };

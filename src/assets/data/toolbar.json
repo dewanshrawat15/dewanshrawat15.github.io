@@ -1,19 +1,18 @@
 {
     "navbarLinks": [
         {
-            "name": "Home",
-            "link": "/home"
+            "name": "home",
+            "title": "Home",
+            "link": "/"
         },
         {
-            "name": "About",
+            "name": "about",
+            "title": "About",
             "link": "/about"
         },
         {
-            "name": "Portfolio",
-            "link": "/portfolio"
-        },
-        {
-            "name": "Contact",
+            "name": "contact",
+            "title": "Contact",
             "link": "/contact"
         }
     ]

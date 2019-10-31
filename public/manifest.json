@@ -1,0 +1,21 @@
+{
+    "short_name": "Dewansh's Portfolio",
+    "name": "Dewansh Rawat's Portfolio",
+    "icons": [
+      {
+        "src": "192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#580aff"
+  }

@@ -1,5 +1,5 @@
 <template>
-  <v-app class="home">
+  <v-app class="techStacks">
     <v-container>
       
       <v-layout
@@ -16,7 +16,7 @@
         </v-flex>
       </v-layout>
 
-      <v-flex xs12 style="margin-top: 80px; margin-bottom: 80px;">
+      <v-flex xs12 style="margin-top: 80px; margin-bottom: 120px;">
         <center>
           <v-img
             :src="require('@/assets/images/techstacks/poster.png')"
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import workDataJson from "../assets/data/work.json";
+import workDataJson from "../../assets/data/work.json";
 export default{
   methods: {
     loadImg(imgPath) {
