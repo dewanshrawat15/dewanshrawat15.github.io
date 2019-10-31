@@ -11,6 +11,7 @@
               style="border-radius: 100%;"
               :src="require('@/assets/images/prof.jpeg')"
               :lazy-src="require('@/assets/images/prof.jpeg')"
+              
               width="75%">
               <v-layout
                 slot="placeholder"
@@ -49,6 +50,13 @@
           <h1 class="font-weight-light mb-1" style="font-size: 24px;">
             {{ profileJson.tagline }}
           </h1>
+          <br><br>
+          <v-btn href="/about" color="#580aff" style="margin-right: 12px!important; text-transform: capitalize; border-radius:5px; color:white" class="ma-0 elevation-1">
+            About Me
+          </v-btn>
+          <v-btn href="/contact" rounded outlined color="#580aff" style="text-transform: capitalize; border-radius:5px; text-transform: capitalize; margin-left: 12px!important;" class="ml-0" dark>
+            Contact Me
+          </v-btn>
         </v-flex>
       </v-layout>
 
