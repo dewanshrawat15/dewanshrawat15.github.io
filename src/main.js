@@ -34,7 +34,13 @@ const router = new VueRouter({
       name: 'contact',
       component: Contact
     }
-  ]
+  ],
+  scrollBehavior() {
+    return {
+      x: 0,
+      y: 0
+    }
+  }
 })
 
 new Vue({

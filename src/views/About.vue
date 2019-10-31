@@ -3,6 +3,7 @@
     <AboutMe/>
     <TechStacks/>
     <Experience/>
+    <Footer/>
   </v-app>
 </template>
 
@@ -10,12 +11,14 @@
 import TechStacks from './components/techStacks';
 import Experience from './components/experience';
 import AboutMe from "./components/aboutMe";
+import Footer from "./components/footer";
 export default {
   name: 'App',
   components: {
     AboutMe,
     TechStacks,
-    Experience
+    Experience,
+    Footer
   },
 };
 </script>

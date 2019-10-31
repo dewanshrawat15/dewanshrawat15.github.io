@@ -11,7 +11,7 @@
               style="border-radius: 100%;"
               :src="require('@/assets/images/prof.jpeg')"
               :lazy-src="require('@/assets/images/prof.jpeg')"
-              width="75%">
+            >
               <v-layout
                 slot="placeholder"
                 fill-height
@@ -25,7 +25,7 @@
           </center>
         </v-flex>
 
-        <v-flex md-4 style="margin-top: 100px;">
+        <v-flex md-4 style="margin-top: 100px; margin-bottom: 80px;">
           <h1 class="display-2 font-weight-light mb-3">
             About <span style="color: #580aff;">Me</span>.
           </h1>
