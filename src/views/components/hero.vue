@@ -12,7 +12,7 @@
               :src="require('@/assets/images/prof.jpeg')"
               :lazy-src="require('@/assets/images/prof.jpeg')"
               
-              width="75%">
+              width="400px">
               <v-layout
                 slot="placeholder"
                 fill-height
@@ -26,7 +26,7 @@
           </center>
         </v-flex>
 
-        <v-flex xs-6 style="margin-top: 100px; padding-top: 70px; text-align: left;">
+        <v-flex xs-6 style="margin-top: 75px; padding-top: 70px; text-align: left;">
           <h1 class="display-1 font-weight-light mb-3">
             Hiya There!
           </h1>
