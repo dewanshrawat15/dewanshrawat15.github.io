@@ -4,12 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta name="description" content="Destroying Barriers, Imagining the Unimaginable and Venturing out where others failed">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Dewansh, Dewansh Rawat, Dewansh the developer, Dewansh Montfort, Dewansh Montfort School, Dewansh Converge Clan, Dewansh Rawat Montfort, Dewansh Rawat Montfort School, Dewansh Rawat Converge Clan, Dewansh Bharati, Dewansh Bharati Vidyapeeth Pune, Dewansh DSC, Dewansh DSCBVP, Dewansh DSCBVP Pune, Converge Clan, DSC BVP Pune, DSC BVP, Dewansh GDG, Dewansh Rawat GDG, Dewansh GDG Pune, Dewansh Rawat GDG Pune, GDG Pune">
+    <meta name="theme-color" content="#580aff">
     <title>Dewansh Rawat</title>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#580aff">
+    <link rel="icon" sizes="192x192" href="192.png">
+    <link rel="icon" sizes="512x512" href="512.png">
+    <link rel="apple-touch-icon" href="192.png">
+    <meta name="msapplication-square310x310logo" content="512.png">
+    <link rel="apple-touch-startup-image" href="192.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108865933-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108865933-1');
+    </script>
   </head>
   <body>
     <noscript>
@@ -28,10 +45,12 @@
             reg.onupdatefound = () => {
               const installingWorker = reg.installing;
               installingWorker.onstatechange = () => {
+                console.log("Service worker registered");
                 switch (installingWorker.state) {
                   case 'installed':
                     if (navigator.serviceWorker.controller) {
                       // new update available
+                      console.log("Service worker update available");
                       resolve(true);
                     } else {
                       // no update available
