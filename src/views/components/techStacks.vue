@@ -19,8 +19,8 @@
       <v-flex xs12 style="margin-top: 80px; margin-bottom: 120px;">
         <center>
           <v-img
-            :src="require('@/assets/images/techstacks/poster.png')"
-            :lazy-src="require('@/assets/images/techstacks/poster.png')"
+            :src="require('@/assets/images/techstacks/poster.webp')"
+            :lazy-src="require('@/assets/images/techstacks/poster.webp')"
             width="64%">
             <v-layout
               slot="placeholder"

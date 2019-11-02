@@ -18,7 +18,7 @@
 
         <v-flex v-for="(item, i) in workJson.positions" :key="i" xs-6 style="padding-top: 40px; padding-bottom: 20px; text-align: left;">
           <h3 class="display-1 font-weight-light">
-            {{ i+1 }}. {{ item.title }} @ <a style="text-decoration:none!important;" target="_blank" :href="item.instituteURL"><span style="color: #580aff;">{{ item.institute }}</span></a>.
+            {{ i+1 }}. {{ item.title }} @ <a style="text-decoration:none!important;" :name="item.name" target="_blank" :href="item.instituteURL"><span style="color: #580aff;">{{ item.institute }}</span></a>.
           </h3>
           <h1 class="font-weight-light mb-3" style="font-size: 22px;">
             {{ item.period }}

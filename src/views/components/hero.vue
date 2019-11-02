@@ -9,8 +9,8 @@
           <center>
             <v-img
               style="border-radius: 100%;"
-              :src="require('@/assets/images/prof.jpeg')"
-              :lazy-src="require('@/assets/images/prof.jpeg')"
+              :src="require('@/assets/images/prof.webp')"
+              :lazy-src="require('@/assets/images/prof.webp')"
               
               width="400px">
               <v-layout

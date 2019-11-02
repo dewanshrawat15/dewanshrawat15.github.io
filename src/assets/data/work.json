@@ -6,6 +6,7 @@
             "institute": "Converge Clan",
             "instituteURL": "http://www.converge-clan.com/",
             "title": "Web Designer",
+            "name": "Web Designer at Converge Clan",
             "period": "April 2016 - April 2018",
             "aboutPosition": "Converge Clan is the computer club of Montfort School, Ashok Vihar. It is a group of talented and curious technology enthusiasts who are specialised in different fields of technology, namely quizzing, programming, web development, digital imaging, 3D Modeling, video editting and group discussion. My primary role involved designing and maintaining it's websites."
         },
@@ -13,6 +14,7 @@
             "institute": "Entrepreneurship Development Cell, Bharati Vidyapeeth Pune",
             "instituteURL": "http://www.edcbvucoep.com/",
             "title": "Web Designer",
+            "name": "Web Designer at Entrepreneurship Development Cell, Bharati Vidyapeeth Pune",
             "period": "July 2018 - October 2018",
             "aboutPosition": "Entrepreneurship Development Cell, is basically for the students and by the students. I was one of 6 students selected over 250 students for the role of a website designer. My primary role was to design website for upcoming events. I also worked on automating processes like sending personalised emails over SMTP."
         },
@@ -20,6 +22,7 @@
             "institute": "Google Developers Group, Pune",
             "instituteURL": "http://gdgpune.org/",
             "title": "Volunteer",
+            "name": "Volunteer at Google Developers Group, Pune",
             "period": "July 2018 - March 2019",
             "aboutPosition": "Google Developers Group Pune is an initiative to concentrate the efforts of many developers in and around Pune to learn, share and get productive using the various Google products. I volunteered at several events like Devfest Pune 2018."
         },
@@ -27,6 +30,7 @@
             "institute": "Developer Student Clubs, Bharati Vidyapeeth Pune",
             "instituteURL": "http://github.com/dsc-bvp-pune/",
             "title": "Core Team Member",
+            "name": "Core Team Member at Developer Student Clubs, Bharati Vidyapeeth Pune",
             "period": "February 2019 - Currently",
             "aboutPosition": "We at Developer Student Clubs aim to learn and teach. Developers, designers and managers come together under one roof to create a community which inspires thousands. My primary role includes taking workshops and organising events. I have successfully conducted workshops on Getting Started with Flutter, Automation with Python and Open Source 101."
         },
@@ -34,6 +38,7 @@
             "institute": "School of Information Technology, Indian Institute of Technology Delhi",
             "instituteURL": "http://sit.iitd.ac.in/",
             "title": "Intern",
+            "name": "Intern at School of Information Technology, Indian Institute of Technology Delhi",
             "period": "10th June 2019 - 27th July 2019",
             "aboutPosition": "I was an intern under Prof. Smruti Ranjan Sarangi for a period of two months. I worked on a project to create a system to track files in real time using barcodes and barcode scanners. We made a central web app based on Java and Struts. It was deployed on a VM instance on IIT Delhi’s ingenious cloud platform making it accessible locally, within the IIT network. Also, IIT Delhi’s OAuth system was added to increase the security of the app and make it accessible to everyone within the IIT network."
         },
@@ -41,6 +46,7 @@
             "institute": "Google Developers Group, Pune",
             "instituteURL": "http://gdgpune.org/",
             "title": "Web Designer",
+            "name": "Web Designer at Google Developers Group, Pune",
             "period": "July 2019 - Currently",
             "aboutPosition": "Google Developers Group Pune is an initiative to concentrate the efforts of many developers in and around Pune to learn, share and get productive using the various Google products. As a web designer, my primary role inludes maintaining and updating the website from time to time. The website I made attracted more than 4,000 views in a period of about a week."
         }
