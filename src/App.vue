@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app v-if="!isMobile()">
       <v-toolbar-title class="headline font-weight-light">
         <span>{{ profileJson.name }}</span>
       </v-toolbar-title>
@@ -9,10 +9,15 @@
         {{ link.name }}
       </v-btn>
     </v-app-bar>
+    <v-app-bar app v-if="isMobile()">
+      <v-toolbar-title class="headline font-weight-light">
+        <span>{{ profileJson.name }}</span>
+      </v-toolbar-title>
+    </v-app-bar>
+    
+    <CommonView />
 
-    <v-content>
-      <router-view></router-view>
-    </v-content>
+    <bottomNav/>
   </v-app>
 </template>
 
@@ -21,14 +26,28 @@
 // import About from './views/About';
 import toolbarDetailsJson from "./assets/data/toolbar.json";
 import profileDetailsJson from "./assets/data/profile.json";
+import bottomNav from "./views/components/bottomNav";
+import CommonView from "./views/components/view";
 
 export default {
   name: 'App',
-  
+  components: {
+    CommonView,
+    bottomNav
+  },
   data(){
     return {
       toolbarDetails: toolbarDetailsJson,
       profileJson: profileDetailsJson
+    }
+  },
+  methods: {
+    isMobile: function() {
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return true
+      } else {
+        return false
+      }
     }
   }
 };

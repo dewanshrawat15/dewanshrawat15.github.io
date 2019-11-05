@@ -21,7 +21,7 @@
           <v-img
             :src="require('@/assets/images/techstacks/poster.webp')"
             :lazy-src="require('@/assets/images/techstacks/poster.webp')"
-            width="64%">
+          >
             <v-layout
               slot="placeholder"
               align-center
