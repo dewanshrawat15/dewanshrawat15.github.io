@@ -5,8 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "yarn lint && yarn build && firebase deploy",
-    "lint": "vue-cli-service lint"
+    "deploy": "yarn clean && yarn lint && yarn build && firebase deploy",
+    "lint": "vue-cli-service lint",
+    "clean": "rm -rf dist/"
   },
   "dependencies": {
     "core-js": "^3.3.2",

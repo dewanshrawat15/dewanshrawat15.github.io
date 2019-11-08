@@ -20,9 +20,11 @@
         wrap
         style="margin-bottom: 80px;"
       >
-        <v-flex xs4 v-for="(item, i) in workJson.portfolioItems" :key="i" xs-6 style="text-align: left;" :id="item.id">
+        <v-flex xs-4 v-for="(item, i) in workJson.portfolioItems" :key="i" xs-6 style="text-align: left;" :id="item.id">
           <div style="background: #f8f8f8; padding-top: 40px; padding-bottom: 20px; margin-top: 10px; margin-bottom: 10px; margin-left: 12px; margin-right: 12px; padding-left: 14px; padding-right: 14px;">
             <center><h2>{{ item.title }}</h2></center>
+            <!-- <br>
+            <v-img :src="item.imageURL" :lazy-src="item.imageURL" height="175"></v-img> -->
             <br>
             <p>{{ item.shortDescription }}</p>
             <br>

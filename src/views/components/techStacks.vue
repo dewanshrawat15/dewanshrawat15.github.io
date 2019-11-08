@@ -16,7 +16,7 @@
         </v-flex>
       </v-layout>
 
-      <v-flex xs12 style="margin-top: 80px; margin-bottom: 120px;">
+      <v-flex xs-12 style="margin-top: 80px; margin-bottom: 120px;">
         <center>
           <v-img
             :src="require('@/assets/images/techstacks/poster.webp')"

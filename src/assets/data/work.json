@@ -58,6 +58,7 @@
             "id": "1",
             "title": "NPTEL Downloader",
             "shortDescription": "A command line tool to help download NPTEL courses.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/7.png",
             "links": [
                 {
                     "name": "Github",
@@ -70,6 +71,7 @@
             "id": "2",
             "title": "Mailing Script",
             "shortDescription": "A command line tool to help trigger the emails automatically reading data from a .csv file.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/6.png",
             "links": [
                 {
                     "name": "Github",
@@ -82,6 +84,7 @@
             "id": "3",
             "title": "MIT OCW Video Downloader",
             "shortDescription": "A command line tool to help download MIT OCW courses.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/7.png",
             "links": [
                 {
                     "name": "Github",
@@ -94,6 +97,7 @@
             "id": "4",
             "title": "Erbos",
             "shortDescription": "Erbos is a frontend design of a fictional music app service.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -106,6 +110,7 @@
             "id": "5",
             "title": "Tabs",
             "shortDescription": "Tabs is a material app to keep tabs of money being spent.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -118,6 +123,7 @@
             "id": "6",
             "title": "Lucy",
             "shortDescription": "A small utility app to scan QR Codes and barcodes.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -130,6 +136,7 @@
             "id": "7",
             "title": "Mobiblog",
             "shortDescription": "Mobiblog is a wall. Any user can simply add his feelings and it is shared on the wall.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -147,6 +154,7 @@
             "id": "8",
             "title": "Taption",
             "shortDescription": "Taption is a photo caption generator. Upload a photo, caption is generated.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/4.png",
             "links": [
                 {
                     "name": "Live Demo",
@@ -159,6 +167,7 @@
             "id": "9",
             "title": "Stane",
             "shortDescription": "Stane is a bot which retweets posts containing specifc username and specifc hashtags.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -175,7 +184,8 @@
         {
             "id": "10",
             "title": "Historia",
-            "shortDescription": "Historia is a chrome which enables users to search through images and text",
+            "shortDescription": "Historia is a chrome extension which enables users to search through images and text",
+            "imageURL": "https://devfolio.sgp1.digitaloceanspaces.com/hackathons/9b2b733797d94d13b5f8e182f4667103/projects/04c92c39ff0743319ab163738ed18380/pic1.png",
             "links": [
                 {
                     "name": "Github",
@@ -193,6 +203,7 @@
             "id": "11",
             "title": "Cyquest",
             "shortDescription": "Cyquest is an online treasure hunt. Just set the questions and start the hunt",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -210,6 +221,7 @@
             "id": "12",
             "title": "Folio",
             "shortDescription": "The idea is to create a simple reusable cross platform mobile app template for everyone.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -222,6 +234,7 @@
             "id": "13",
             "title": "Last Of Us",
             "shortDescription": "A design concept at redesigning the product launch page for the game Last Of Us - II.",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "links": [
                 {
                     "name": "Github",
@@ -238,6 +251,7 @@
         {
             "id": "14",
             "title": "Portfolio",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/1.png",
             "shortDescription": "A design concept of a portfolio website. The focus was on the design and simplicity.",
             "links": [
                 {
@@ -250,6 +264,7 @@
         {
             "id": "15",
             "title": "Photographer",
+            "imageURL": "https://dewanshrawat15.github.io/portfolio-redesign/8.png",
             "shortDescription": "A design concept for the portfolio website of a photographer.",
             "links": [
                 {
