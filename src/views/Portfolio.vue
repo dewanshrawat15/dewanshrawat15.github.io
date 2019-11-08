@@ -1,26 +1,20 @@
 <template>
   <v-app>
-    <AboutMe/>
     <TechStacks/>
-    <Experience/>
-    <Portfolio/>
+    <Project/>
     <Footer/>
   </v-app>
 </template>
 
 <script>
 import TechStacks from './components/techStacks';
-import Experience from './components/experience';
-import AboutMe from "./components/aboutMe";
-import Portfolio from "./components/projects";
 import Footer from "./components/footer";
+import Project from "./components/projects";
 export default {
   name: 'App',
   components: {
-    AboutMe,
     TechStacks,
-    Experience,
-    Portfolio,
+    Project,
     Footer
   },
 };

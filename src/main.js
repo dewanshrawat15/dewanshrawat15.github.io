@@ -6,6 +6,7 @@ import VueRouter from 'vue-router'
 import Home from "./views/Home";
 import About from "./views/About";
 import Contact from "./views/Contact";
+import Portfolio from "./views/Portfolio";
 
 Vue.config.productionTip = false
 
@@ -28,6 +29,11 @@ const router = new VueRouter({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/portfolio',
+      name: 'portfolio',
+      component: Portfolio
     },
     {
       path: '/contact',

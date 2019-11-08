@@ -11,6 +11,11 @@
             "link": "/about"
         },
         {
+            "name": "portfolio",
+            "title": "Portfolio",
+            "link": "/portfolio"
+        },
+        {
             "name": "contact",
             "title": "Contact",
             "link": "/contact"

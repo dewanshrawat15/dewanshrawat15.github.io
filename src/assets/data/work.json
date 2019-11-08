@@ -1,6 +1,7 @@
 {
     "techStacksContent": "From designing websites to developing webapps, from writing programs in C++ to writing scripts in Python, I do everything. More specifically, I work on writing robust backend structures and creating beautiful UI's. I also have some knowledge about the Linux kernel, working on Cloud and Machine Learning.",
     "responsibilityContent": "I am a great team player. From a Website designer writing code in HTML, to being a mobile app developer designing Flutter apps, to writing robust backend structure's in Django, I have been responsible for handling work in a lot of different teams.",
+    "projectsContent": "I have worked with a variety of tools, frameworks and platforms ranging from Cloud, Mobile App Development, Web App Development and a bit of Machine Learning. Here is a small insight of what I've built using these tools, frameworks, platforms.",
     "positions": [
         {
             "institute": "Converge Clan",
@@ -49,6 +50,218 @@
             "name": "Web Designer at Google Developers Group, Pune",
             "period": "July 2019 - Currently",
             "aboutPosition": "Google Developers Group Pune is an initiative to concentrate the efforts of many developers in and around Pune to learn, share and get productive using the various Google products. As a web designer, my primary role inludes maintaining and updating the website from time to time. The website I made attracted more than 4,000 views in a period of about a week."
+        }
+    ],
+    "portfolioItems": [
+        {
+            "id": "1",
+            "title": "NPTEL Downloader",
+            "shortDescription": "A command line tool to help download NPTEL courses.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/nptel-downloader"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Mailing Script",
+            "shortDescription": "A command line tool to help trigger the emails automatically reading data from a .csv file.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Mailing-Script"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "MIT OCW Video Downloader",
+            "shortDescription": "A command line tool to help download MIT OCW courses.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/mit-video-downloader"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Erbos",
+            "shortDescription": "Erbos is a frontend design of a fictional music app service.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Erbos"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Tabs",
+            "shortDescription": "Tabs is a material app to keep tabs of money being spent.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Tabs"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Lucy",
+            "shortDescription": "A small utility app to scan QR Codes and barcodes.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/lucy"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Mobiblog",
+            "shortDescription": "Mobiblog is a wall. Any user can simply add his feelings and it is shared on the wall.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Blog-App"
+                },
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "https://mobiblog.herokuapp.com"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Taption",
+            "shortDescription": "Taption is a photo caption generator. Upload a photo, caption is generated.",
+            "links": [
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "http://taption.herokuapp.com"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "title": "Stane",
+            "shortDescription": "Stane is a bot which retweets posts containing specifc username and specifc hashtags.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Stane"
+                },
+                {
+                    "name": "NPM Registry",
+                    "icon": "fab fa-npm",
+                    "link": "https://github.com/dewanshrawat15/Stane/packages/"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Historia",
+            "shortDescription": "Historia is a chrome which enables users to search through images and text",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Stane"
+                },
+                {
+                    "name": "NPM Registry",
+                    "icon": "fab fa-npm",
+                    "link": "https://github.com/dewanshrawat15/Stane/packages/"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Cyquest",
+            "shortDescription": "Cyquest is an online treasure hunt. Just set the questions and start the hunt",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/cyquest"
+                },
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "http://cyquest.herokuapp.com/"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Folio",
+            "shortDescription": "The idea is to create a simple reusable cross platform mobile app template for everyone.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Folio"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "title": "Last Of Us",
+            "shortDescription": "A design concept at redesigning the product launch page for the game Last Of Us - II.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/Folio"
+                },
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "https://dewanshrawat15.github.io/lastofus/"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "title": "Portfolio",
+            "shortDescription": "A design concept of a portfolio website. The focus was on the design and simplicity.",
+            "links": [
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "http://dewanshrawat15.github.io/portfolio-redesign"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "title": "Photographer",
+            "shortDescription": "A design concept for the portfolio website of a photographer.",
+            "links": [
+                {
+                    "name": "Github",
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/dewanshrawat15/photographer"
+                },
+                {
+                    "name": "Live Demo",
+                    "icon": "fab fa-chrome",
+                    "link": "http://dewanshrawat15.github.io/photographer"
+                }
+            ]
         }
     ],
     "contactContent": "I love collaborating with people. Feel like we can create something schwag worthy? Just hit me up on any of your favorite communications platform.",

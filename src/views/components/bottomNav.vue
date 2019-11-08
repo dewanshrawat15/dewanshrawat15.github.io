@@ -32,6 +32,17 @@
       <v-btn
         color="#580aff"
         text
+        value="Portfolio"
+        router
+        to="/portfolio"
+      >
+        <span>Portfolio</span>
+        <v-icon>fa fa-keyboard</v-icon>
+      </v-btn>
+      <v-spacer />
+      <v-btn
+        color="#580aff"
+        text
         value="contact"
         router
         to="/contact"
