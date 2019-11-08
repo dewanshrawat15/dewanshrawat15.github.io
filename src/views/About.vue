@@ -3,6 +3,7 @@
     <AboutMe/>
     <TechStacks/>
     <Experience/>
+    <Talks/>
     <Portfolio/>
     <Footer/>
   </v-app>
@@ -12,6 +13,7 @@
 import TechStacks from './components/techStacks';
 import Experience from './components/experience';
 import AboutMe from "./components/aboutMe";
+import Talks from "./components/workshops";
 import Portfolio from "./components/projects";
 import Footer from "./components/footer";
 export default {
@@ -20,6 +22,7 @@ export default {
     AboutMe,
     TechStacks,
     Experience,
+    Talks,
     Portfolio,
     Footer
   },

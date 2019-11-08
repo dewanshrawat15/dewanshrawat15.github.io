@@ -2,6 +2,7 @@
     "techStacksContent": "From designing websites to developing webapps, from writing programs in C++ to writing scripts in Python, I do everything. More specifically, I work on writing robust backend structures and creating beautiful UI's. I also have some knowledge about the Linux kernel, working on Cloud and Machine Learning.",
     "responsibilityContent": "I am a great team player. From a Website designer writing code in HTML, to being a mobile app developer designing Flutter apps, to writing robust backend structure's in Django, I have been responsible for handling work in a lot of different teams.",
     "projectsContent": "I have worked with a variety of tools, frameworks and platforms ranging from Cloud, Mobile App Development, Web App Development and a bit of Machine Learning. Here is a small insight of what I've built using these tools, frameworks, platforms.",
+    "workshopContent": "I love to speak on the topics I work on. I have taken several workshops and seminars on topics like Web Scraping, Cross Platform Application Development, Open Source Development. Here's a small list of what I've spoken on.",
     "positions": [
         {
             "institute": "Converge Clan",
@@ -262,6 +263,20 @@
                     "link": "http://dewanshrawat15.github.io/photographer"
                 }
             ]
+        }
+    ],
+    "events": [
+        {
+            "name": "Hacktoberfest in Bharati Vidyapeeth Pune",
+            "date": "7th October 2019"
+        },
+        {
+            "name": "Hands on with Flutter",
+            "date": "24th August 2019"
+        },
+        {
+            "name": "Automation with Python",
+            "date": "18th February 2019"
         }
     ],
     "contactContent": "I love collaborating with people. Feel like we can create something schwag worthy? Just hit me up on any of your favorite communications platform.",
