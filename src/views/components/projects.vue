@@ -24,8 +24,8 @@
           <div style="background: #f8f8f8; padding-top: 40px; padding-bottom: 20px; margin-top: 10px; margin-bottom: 10px; margin-left: 12px; margin-right: 12px; padding-left: 14px; padding-right: 14px;">
             <center><h2>{{ item.title }}</h2></center>
             <br>
-            <v-img :src="item.imageURL" :lazy-src="item.imageURL"></v-img>
-            <br>
+            <!-- <v-img :src="item.imageURL" :lazy-src="item.imageURL"></v-img>
+            <br> -->
             <p>{{ item.shortDescription }}</p>
             <br>
             <center>
