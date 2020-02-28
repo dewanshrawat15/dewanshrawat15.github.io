@@ -282,6 +282,18 @@
     ],
     "events": [
         {
+            "name": "Frontend 101 (HTML, CSS, Flutter)",
+            "date": "10th - 14th February 2019"
+        },
+        {
+            "name": "Backend 101 (Django)",
+            "date": "10th - 14th February 2019"
+        },
+        {
+            "name": "Flutter Interact Viewing Party, DSC BVP Pune",
+            "date": "13th December 2019"
+        },
+        {
             "name": "Hacktoberfest in Bharati Vidyapeeth Pune",
             "date": "7th October 2019"
         },

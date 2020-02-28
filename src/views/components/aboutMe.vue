@@ -33,7 +33,7 @@
             About <span style="color: #580aff;">Me</span>.
           </h1>
           <br><br>
-          <p class="font-weight-light headline">
+          <p class="font-weight-light" style="font-size: 20px;">
             {{ profileJson.aboutText }}
           </p>
           <br><br>
