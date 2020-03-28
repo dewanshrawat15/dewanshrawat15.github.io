@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app v-if="!isMobile()">
       <v-toolbar-title class="headline font-weight-light">
-        <span>{{ profileJson.name }}</span>
+        <span>{{ details.name }}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn v-for="(link, i) in toolbarDetails.navbarLinks" :key="i" :to="link.link" text style="margin-left: 6px; margin-right: 6px;">
@@ -11,7 +11,7 @@
     </v-app-bar>
     <v-app-bar app v-if="isMobile()">
       <v-toolbar-title class="headline font-weight-light">
-        <span>{{ profileJson.name }}</span>
+        <span>{{ details.name }}</span>
       </v-toolbar-title>
     </v-app-bar>
     
@@ -22,10 +22,8 @@
 </template>
 
 <script>
-// import Home from './views/Home';
-// import About from './views/About';
 import toolbarDetailsJson from "./assets/data/toolbar.json";
-import profileDetailsJson from "./assets/data/profile.json";
+import { db } from './firebase'
 import bottomNav from "./views/components/bottomNav";
 import CommonView from "./views/components/view";
 
@@ -38,7 +36,12 @@ export default {
   data(){
     return {
       toolbarDetails: toolbarDetailsJson,
-      profileJson: profileDetailsJson
+      details: ''
+    }
+  },
+  firestore(){
+    return {
+      details: db.collection("details").doc("details")
     }
   },
   methods: {

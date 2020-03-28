@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <Hero/>
-    <TechStacks/>
     <Experience/>
+    <HallOfFame/>
     <ContactDetails/>
     <Footer/>
   </v-app>
@@ -10,16 +10,16 @@
 
 <script>
 import Hero from './components/hero';
-import TechStacks from './components/techStacks';
 import Experience from './components/experience';
 import ContactDetails from "./components/contactDetails";
 import Footer from "./components/footer";
+import HallOfFame from "./components/hallOfFame";
 export default {
   name: 'App',
   components: {
     Hero,
-    TechStacks,
     Experience,
+    HallOfFame,
     ContactDetails,
     Footer
   },

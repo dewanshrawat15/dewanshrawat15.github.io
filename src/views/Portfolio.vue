@@ -1,23 +1,23 @@
 <template>
   <v-app>
-    <TechStacks/>
     <Project/>
     <Talks/>
+    <HallOfFame/>
     <Footer/>
   </v-app>
 </template>
 
 <script>
-import TechStacks from './components/techStacks';
 import Footer from "./components/footer";
 import Project from "./components/projects";
 import Talks from "./components/workshops";
+import HallOfFame from "./components/hallOfFame";
 export default {
   name: 'App',
   components: {
-    TechStacks,
     Project,
     Talks,
+    HallOfFame,
     Footer
   },
 };

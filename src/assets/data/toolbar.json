@@ -15,6 +15,12 @@
             "title": "Portfolio",
             "link": "/portfolio"
         },
+
+        {
+            "name": "blog",
+            "title": "Blog",
+            "link": "/blog"
+        },
         {
             "name": "contact",
             "title": "Contact",

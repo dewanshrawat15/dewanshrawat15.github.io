@@ -7,6 +7,8 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Contact from "./views/Contact";
 import Portfolio from "./views/Portfolio";
+import Blog from "./views/Blog";
+import BlogList from "./views/BlogList";
 
 Vue.config.productionTip = false
 
@@ -34,6 +36,16 @@ const router = new VueRouter({
       path: '/portfolio',
       name: 'portfolio',
       component: Portfolio
+    },
+    {
+      path: '/blog/:key',
+      name: 'post',
+      component: Blog
+    },
+    {
+      path: '/blog/',
+      name: 'blog',
+      component: BlogList
     },
     {
       path: '/contact',
