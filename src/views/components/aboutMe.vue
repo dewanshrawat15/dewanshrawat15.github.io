@@ -41,7 +41,7 @@
             My Resume
           </v-btn>
           &nbsp;
-          <v-btn target="_blank" v-if="details.githubLink.length > 0" :href="details.githubLink" rounded outlined color="#580aff" style="margin-left: 12px!important; text-transform: capitalize; border-radius:5px; text-transform: capitalize;" dark>
+          <v-btn target="_blank" v-if="details.github.length > 0" :href="details.github" rounded outlined color="#580aff" style="margin-left: 12px!important; text-transform: capitalize; border-radius:5px; text-transform: capitalize;" dark>
             My Github
           </v-btn>
         </v-flex>
