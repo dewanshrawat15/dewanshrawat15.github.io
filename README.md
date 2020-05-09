@@ -1,8 +1,8 @@
-# Folio Website
+# Personal Website
 ![Built with VueJS](https://img.shields.io/badge/vue-2.2.4-green.svg)
-![Latest Commit](https://img.shields.io/github/last-commit/dscbvppune/folio-web?style=plastic)
+![Latest Commit](https://img.shields.io/github/last-commit/dewanshrawat15/dewanshrawat15.github.io?style=plastic)
 
-This project aims at making websites easier to manage. We at DSC BVP Pune noticed that many students or professionals either don't have a website or face difficulty maintaining one. We came up with a solution to make it accesssible for everyone to be able to manage and build a website with the help of a mobile app. The template used has been referrenced by [@dewanshrawat15's](https://github.com/dewanshrawat15) [dewanshrawat15.github.io](https://github.com/dewanshrawat15/dewanshrawat15.github.io)
+I made this template keeping in mind about a simple minimalistic yet robust design. It was one of my first attempts at making a VueJS web app. Later, I integrated it with Firebase so as to make it's structure even more robust and dynamic.
 
 ## Features
 - The Website is built completely using Vue.js, and the data is fetched from Firestore.
@@ -19,11 +19,11 @@ This project aims at making websites easier to manage. We at DSC BVP Pune notice
 - [Workbox](https://developers.google.com/web/tools/workbox)
 
 ## Getting Started
-- Fork [the repository](https://github.com/dscbvppune/folio-web/) and clone it locally.
+- Fork [the repository](https://github.com/dewanshrawat15/dewanshrawat15.github.io/) and clone it locally.
 - Install extra dependencies: ```npm install``` or ```yarn```
-- Add the firebase configurations of your project [here](https://github.com/dscbvppune/folio-web/blob/master/src/firebase.js)
-- Open [manifest.json](https://github.com/dscbvppune/folio-web/blob/master/public/manifest.json) file and update personal details accordingly.
-- Open [index.html](https://github.com/dscbvppune/folio-web/blob/master/public/index.html) file and update:
+- Add the firebase configurations of your project [here](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/src/firebase.js)
+- Open [manifest.json](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/public/manifest.json) file and update personal details accordingly.
+- Open [index.html](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/public/index.html) file and update:
   - meta description tag for search engines to display the given content
   - meta keywords tag for search engines to be able to rank the given page correctly
   - Script tag for Google Analytics to be able to see correct analysis.
@@ -124,8 +124,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 - Include relevant test updates/additions
 
 ## Support
-- If you have any issues, feel free to hit us up at [dscbvppune@gmail.com](mailto:dscbvppune@gmail.com)
-- You can also put up queries on GitHub issues [here](https://github.com/dscbvppune/dsc/issues)
+- If you have any issues, feel free to hit us up at [dewanshrawat15@gmail.com](mailto:dewanshrawat15@gmail.com)
+- You can also put up queries on GitHub issues [here](https://github.com/dewanshrawat15/dewanshrawat15.github.io/issues)
 
 ## License
-The template [dewanshrawat15.github.io](https://github.com/dewanshrawat15/dewanshrawat15.github.io) used has been built by [Dewansh Rawat](https://dewanshrawat.tech).
+> MIT License
