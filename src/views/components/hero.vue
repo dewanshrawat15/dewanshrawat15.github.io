@@ -157,7 +157,7 @@ export default{
   },
   methods: {
     convertToMail(email){
-      return "mailto:" + email
+      return (window.innerHeight > 768 ? "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=" + email : "mailto" + email );
     }
   },
   firestore(){
