@@ -19,7 +19,7 @@ class Socials extends React.Component{
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/the.funky.designer" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.facebook.com/dewanshrawat15" target="_blank" rel="noopener noreferrer">
                                     <i className="fab faw fa-facebook"></i>
                                 </a>
                             </li>
