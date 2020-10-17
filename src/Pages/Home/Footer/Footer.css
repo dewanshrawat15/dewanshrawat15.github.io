@@ -1,0 +1,33 @@
+.footer{
+    padding: 54px 42px;
+    background-color: #000;
+}
+
+.footer-text{
+    font-family: "Google Sans";
+    font-size: 20px;
+    color: #fff;
+}
+
+.heart-icon{
+    color: #e91e63;
+}
+
+
+@media(max-width: 991px){
+
+    .footer-text{
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media(max-width: 767px){
+
+    .footer-text{
+        font-size: 14px;
+    }
+
+}
