@@ -1,0 +1,61 @@
+
+.faw{
+    transition: 500ms;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #13171c;
+    font-size: 32px!important;
+}
+
+.fa-github:hover{
+    transition: 500ms;
+    color: #6e5494;
+    transform: scale(1.2);
+}
+
+.fa-facebook:hover{
+    transition: 500ms;
+    color: #3B5998;
+    transform: scale(1.2);
+}
+
+.fa-instagram:hover{
+    transition: 500ms;
+    color: #e1306c;
+    transform: scale(1.2);
+}
+
+.fa-twitter:hover{
+    transition: 500ms;
+    color: #1da1f2;
+    transform: scale(1.2);
+}
+
+.fa-linkedin:hover{
+    transition: 500ms;
+    color: #0077B5;
+    transform: scale(1.2);
+}
+
+.fa-envelope:hover{
+    transition: 500ms;
+    color: #e74c3c;
+    transform: scale(1.2);
+}
+
+
+@media(max-width: 991px){
+    .faw{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 28px!important;
+    }
+}
+
+@media(max-width: 767px){
+    .faw{
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 24px!important;
+    }
+}

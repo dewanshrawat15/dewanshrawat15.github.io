@@ -1,0 +1,21 @@
+.contact{
+    padding: 120px 0 150px;
+}
+
+.contact-title{
+    font-family: "Google Sans";
+    font-size: 48px;
+}
+
+.contact-laptop{
+    display: inline-block;
+}
+
+.contact-mobile{
+    display: none;
+}
+
+.contact-text{
+    font-family: "Google Sans";
+    font-size: 24px;
+}

@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Destroying Barriers, Imagining the Unimaginable and Venturing out where others failed">
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="Dewansh, Dewansh Rawat, Dewansh the developer, Dewansh Montfort, Dewansh Montfort School, Dewansh Converge Clan, Dewansh Rawat Montfort, Dewansh Rawat Montfort School, Dewansh Rawat Converge Clan, Dewansh Bharati, Dewansh Bharati Vidyapeeth Pune, Dewansh DSC, Dewansh DSCBVP, Dewansh DSCBVP Pune, Converge Clan, DSC BVP Pune, DSC BVP, Dewansh GDG, Dewansh Rawat GDG, Dewansh GDG Pune, Dewansh Rawat GDG Pune, GDG Pune">
-    <meta name="theme-color" content="#580aff">
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Dewansh Rawat. Designer, Developer, Hustler."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
     <title>Dewansh Rawat</title>
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" sizes="192x192" href="192.png">
-    <link rel="icon" sizes="512x512" href="512.png">
-    <link rel="apple-touch-icon" href="192.png">
-    <meta name="msapplication-square310x310logo" content="512.png">
-    <link rel="apple-touch-startup-image" href="192.png">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108865933-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-108865933-1');
-    </script>
-
   </head>
   <body>
-    <noscript>
-      <strong>Awww, Shucks. Javascript is disabled on this browser. Please enable it to continue forward.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <noscript>Please enable JavaScript to be able to access this website.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
-  <script type="text/javascript" src="service-worker.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }).catch(function(err) {
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  }
-  </script>
 </html>

@@ -1,112 +1,71 @@
-# Personal Website
-![Built with VueJS](https://img.shields.io/badge/vue-2.2.4-green.svg)
-![Latest Commit](https://img.shields.io/github/last-commit/dewanshrawat15/dewanshrawat15.github.io?style=plastic)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-I made this template keeping in mind about a simple minimalistic yet robust design. It was one of my first attempts at making a VueJS web app. Later, I integrated it with Firebase so as to make it's structure even more robust and dynamic.
+## Available Scripts
 
-## Features
-- The Website is built completely using Vue.js, and the data is fetched from Firestore.
-- Firestore is a real-time cloud-based database with updates data dynamically.
-- This Website can be used as a template by any student or professional.
-- Easy to maintain. Does not require any sort of technical experience.
-- Firestore provides solutions for storage issues.
+In the project directory, you can run:
 
-## Technology Stacks
-- [VueJS](https://vuejs.org/)
-- [Vuetify](https://vuetifyjs.com/en/)
-- [Firebase](https://firebase.google.com/)
-- [Service Worker & PWA](https://www.npmjs.com/package/vue-pwa)
-- [Workbox](https://developers.google.com/web/tools/workbox)
+### `yarn start`
 
-## Getting Started
-- Fork [the repository](https://github.com/dewanshrawat15/dewanshrawat15.github.io/) and clone it locally.
-- Install extra dependencies: ```npm install``` or ```yarn```
-- Add the firebase configurations of your project [here](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/src/firebase.js)
-- Open [manifest.json](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/public/manifest.json) file and update personal details accordingly.
-- Open [index.html](https://github.com/dewanshrawat15/dewanshrawat15.github.io/blob/master/public/index.html) file and update:
-  - meta description tag for search engines to display the given content
-  - meta keywords tag for search engines to be able to rank the given page correctly
-  - Script tag for Google Analytics to be able to see correct analysis.
-- For running website locally: ```npm run serve``` or ```yarn serve```
-- For the production: ```npm run build``` or ```yarn build``` and then a directory called ```dist``` will be created having the build files
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Setting up on Firebase
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### Setting security rules on Firestore
-Create a Firestore Database, and add the following security rules to the database, to add authentication for only specific people to be able to update details on Firestore:
-```
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /{document=**} {
-      allow read;
-      allow create, write, update, delete: if request.auth.token.email.matches("personalemailaddress[@]gmail[.]com");
-    }
-  }
-}
-```
+### `yarn test`
 
-### Setting security rules on Firebase Storage
-Enable the Firebase Storage, and add the following security rules to the database, to add authentication for only specific people to be able to add / update media to the storage bucket:
-```
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    match /{allPaths=**} {
-      allow read;
-      allow write, create, delete, update: if request.auth.token.email.matches("personalemailaddress[@]gmail[.]com");
-    }
-  }
-}
-```
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Deploying on Firebase
-- Install Firebase CLI: ```npm i -g firebase-tools```
-- Create Firebase account and login into Firebase CLI: ```firebase login```
-- Open Terminal/Powershell in your directory.
-- Now type firebase login command in your Terminal/Powershell.
-- Type ```firebase init```
-- Select the project by using the arrow keys.
-- Then Select the Firebase Hosting by using the Spacebar and arrow key.
-- Type ```dist```
-- A ```firebase.json``` will be created.
-- Run on localhost: ```firebase serve``` or ```npm run serve```
-- Update ```firebase.json``` file
-```
-   {
-  "hosting": {
-    "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [ {
-      "source": "**",
-      "destination": "/index.html"
-    } ],
-     "headers": [ 
-      {
-        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-        "headers": [ 
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          } 
-        ]
-      }, 
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png)",
-        "headers": [ {
-          "key": "Cache-Control",
-          "value": "max-age=31557600"
-        } ]
-      }
-    ]
-  }
-}
-```
-- Build and deploy by running: ```firebase deploy``` or ```npm run deploy``` or ```yarn deploy```
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## Contributing
 Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
