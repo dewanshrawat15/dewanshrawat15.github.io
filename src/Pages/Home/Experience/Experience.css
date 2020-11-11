@@ -26,3 +26,28 @@
     border-radius: 32px;
     background: #4b76e5;
 }
+
+@media(max-width: 991px){
+
+    .experience-title{
+        font-size: 42px!important;
+    }
+
+    .experience-content{
+        font-size: 18px;
+    }
+
+}
+
+
+@media(max-width: 767px){
+
+    .experience-title{
+        font-size: 36px!important;
+    }
+
+    .experience-content{
+        font-size: 15px;
+    }
+
+}

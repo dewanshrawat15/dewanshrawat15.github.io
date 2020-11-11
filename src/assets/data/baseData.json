@@ -47,7 +47,7 @@
             {
                 "title": "Summer Research Intern",
                 "content": "I was an intern for a duration of two months where I worked on getting state of the art results for classifying Autism on the ABIDE dataset. My worked revolved around Dimensionality Reduction using which I was able to get 80% classification accuracy, as compared to other state of the art results.",
-                "org": "Indian Institute of Information Technology",
+                "org": "Indian Institute of Information Technology Allahabad",
                 "org-web": "https://www.iiita.ac.in/",
                 "date-range": "10th June 2020 - 18th August 2020",
                 "order": 5

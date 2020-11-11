@@ -1,24 +1,16 @@
 import React from 'react';
 import './About.css';
+
 import programmingVector from '../../../assets/images/aboutMeVector.png';
+import cv from "../../../assets/data/cv.pdf"
 
 class About extends React.Component{
-
-    resumeDownload(){
-        window.open("https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/resume.pdf?alt=media&token=486f7cdf-34cd-48b9-99dd-5a693a95a202")
-    }
 
     render(){
         return (
             <div className="about">
                 <div className="about-laptop">
                     <div className="container">
-                        {/* <div className="row">
-                            <div className="col-md-6 about-title">
-                                About Me
-                            </div>
-                        </div>
-                        <br /><br /> */}
                         <div className="row">
                             <div className="col-md-7">
                                 <div className="row">
@@ -39,11 +31,13 @@ class About extends React.Component{
                                 <br /><br />
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <div className="about-bttn" onClick={this.resumeDownload}>
-                                            <center>
-                                                <i className="fa fa-download about-bttn-fa"></i> My CV
-                                            </center>
-                                        </div>
+                                        <a href={cv} rel="noopener noreferrer" target="_blank">
+                                            <div className="about-bttn">
+                                                <center>
+                                                    <i className="fa fa-download about-bttn-fa"></i> My CV
+                                                </center>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -82,9 +76,13 @@ class About extends React.Component{
                         <div className="row">
                             <div className="col-md-4">
                                 <center>
-                                    <div className="mob-about-bttn" onClick={this.resumeDownload}>
-                                        <i className="fa fa-download about-bttn-fa"></i> My CV
-                                    </div>
+                                    <a href={cv} rel="noopener noreferrer" target="_blank">
+                                            <div className="mob-about-bttn">
+                                                <center>
+                                                    <i className="fa fa-download about-bttn-fa"></i> My CV
+                                                </center>
+                                            </div>
+                                        </a>
                                 </center>
                             </div>
                         </div>
