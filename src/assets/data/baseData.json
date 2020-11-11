@@ -1,0 +1,73 @@
+{
+    "name": "Dewansh Rawat",
+    "experience": {
+        "title": "Experience",
+        "content": "I am a great team player. From a Website designer writing code in HTML, to being a mobile app developer designing Flutter apps, to writing robust backend structure's in Django, I have been responsible for handling work in a lot of different teams. From being a team player to bring a team leader, I have worked on a lot.",
+        "experiences": [
+            {
+                "title": "Web Designer",
+                "content": "Converge Clan is the computer club of Montfort School, Ashok Vihar. It is a group of talented and curious technology enthusiasts who are specialised in different fields of technology, namely quizzing, programming, web development, digital imaging, 3D Modeling, video editting and group discussion. My primary role involved designing and maintaining it's websites.",
+                "org": "Converge Clan",
+                "org-web": "http://www.converge-clan.com/",
+                "date-range": "April 2016 - April 2018",
+                "order": 0
+            },
+            {
+                "title": "Developer",
+                "content": "Entrepreneurship Development Cell, is basically for the students and by the students. I was one of 6 students selected over 250 students for the role of a website designer. My primary role was to design website for upcoming events. I also worked on automating processes like sending personalised emails over SMTP.",
+                "org": "Entrepreneurship Development Cell, Bharati Vidyapeeth Pune",
+                "org-web": "",
+                "date-range": "August 2018 - October 2018",
+                "order": 1
+            },
+            {
+                "title": "Core Team Member",
+                "content": "Developer Student Clubs Bharati Vidyapeeth Deemed University College of Engineering Pune is a Google Developers program for university students to learn skills in the domains of mobile development, web development, machine learning, and cloud (primarily). We also help encourage different other domains like competetive programming, ethical hacking, AR/VR, etc. The club is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. The club is intended as a space for students to try out new ideas and collaborate to solve mobile and web development problems.",
+                "org": "Developer Student Clubs Bharati Vidyapeeth Deemed University College of Engineering Pune",
+                "org-web": "https://dscbvppune.github.io/",
+                "date-range": "February 2019 - July 2020",
+                "order": 2
+            },
+            {
+                "title": "Summer Intern",
+                "content": "I was an intern for a period of two months. I worked on a project to create a system to track files in real time using barcodes and barcode scanners. We made a central web app based on Java and Struts. It was deployed on a VM instance on IIT Delhi’s ingenious cloud platform making it accessible locally, within the IIT network. Also, IIT Delhi’s OAuth system was added to increase the security of the app and make it accessible to everyone within the IIT network.",
+                "org": "Indian Institute of Technology, Delhi",
+                "org-web": "https://home.iitd.ac.in/",
+                "date-range": "11th June 2019 - 28th July 2020",
+                "order": 3
+            },
+            {
+                "title": "Volunteer : Web Developer",
+                "content": "Google Developers Group Pune is an initiative to concentrate the efforts of many developers in and around Pune to learn, share and get productive using the various Google products. I was incharge of maintaining the website and attracting views via ticketing.",
+                "org": "Google Developers Group Pune",
+                "org-web": "https://gdg.community.dev/gdg-pune/",
+                "date-range": "24th July 2019 - Currently",
+                "order": 4
+            },
+            {
+                "title": "Summer Research Intern",
+                "content": "I was an intern for a duration of two months where I worked on getting state of the art results for classifying Autism on the ABIDE dataset. My worked revolved around Dimensionality Reduction using which I was able to get 80% classification accuracy, as compared to other state of the art results.",
+                "org": "Indian Institute of Information Technology",
+                "org-web": "https://www.iiita.ac.in/",
+                "date-range": "10th June 2020 - 18th August 2020",
+                "order": 5
+            },
+            {
+                "title": "Lead",
+                "content": "I lead a community of more than 300+ students. We conduct events on the topics: Web Development, Mobile App Development, Machine Learning and Google Cloud primarily. We also build solutions for modern daily life problems.",
+                "org": "Developer Student Clubs Bharati Vidyapeeth Deemed University College of Engineering Pune",
+                "org-web": "http://dscbvppune.github.io/",
+                "date-range": "12th August 2020 - Currently",
+                "order": 6
+            },
+            {
+                "title": "Full Stack Intern",
+                "content": "My work involves developing the mobile wallet app for the blockchain currency Tez.",
+                "org": "Tezos",
+                "org-web": "https://tezos.com/",
+                "date-range": "5th October 2020 - Currently",
+                "order": 7
+            }
+        ]
+    }
+}

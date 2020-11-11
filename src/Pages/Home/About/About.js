@@ -3,6 +3,11 @@ import './About.css';
 import programmingVector from '../../../assets/images/aboutMeVector.png';
 
 class About extends React.Component{
+
+    resumeDownload(){
+        window.open("https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/resume.pdf?alt=media&token=486f7cdf-34cd-48b9-99dd-5a693a95a202")
+    }
+
     render(){
         return (
             <div className="about">
@@ -34,7 +39,7 @@ class About extends React.Component{
                                 <br /><br />
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <div className="about-bttn">
+                                        <div className="about-bttn" onClick={this.resumeDownload}>
                                             <center>
                                                 <i className="fa fa-download about-bttn-fa"></i> My CV
                                             </center>
@@ -77,7 +82,7 @@ class About extends React.Component{
                         <div className="row">
                             <div className="col-md-4">
                                 <center>
-                                    <div className="mob-about-bttn">
+                                    <div className="mob-about-bttn" onClick={this.resumeDownload}>
                                         <i className="fa fa-download about-bttn-fa"></i> My CV
                                     </div>
                                 </center>
