@@ -8,24 +8,22 @@ class Contact extends React.Component{
         return(
             <div className="contact">
                 <div className="contact-laptop">
-                    <div className="container-fluid">
+                    <div className="container">
                         <div className="row">
                             <div className="col-md-7">
                                 <div className="row">
-                                    <div className="col-md-5 col-md-offset-1 contact-title">
+                                    <div className="col-md-5 contact-title">
                                         Contact Me
                                     </div>
                                 </div>
                                 <br /><br /><br />
                                 <div className="row">
-                                    <div className="col-md-10 col-md-offset-1 contact-text">
+                                    <div className="col-md-10 contact-text">
                                         Feel free to reach out to me using any of your favorite platforms.
                                     </div>
                                 </div>
                                 <br /><br />
-                                <div className="col-md-offset-1">
-                                    <Socials />
-                                </div>
+                                <Socials />
                             </div>
                             <div className="col-md-5">
                                 <center>

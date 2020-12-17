@@ -11,7 +11,7 @@ class Experience extends React.Component{
         let expCardList = [];
         let expDataList = data["experience"]["experiences"];
         expDataList.sort(function (a, b) {
-            return a.order - b.order
+            return b.order - a.order
         }).map(item => {
             let cardElem = <Card data={item} key={item.title} />
             expCardList.push(cardElem);

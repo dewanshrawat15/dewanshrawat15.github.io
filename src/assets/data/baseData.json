@@ -69,5 +69,35 @@
                 "order": 7
             }
         ]
+    },
+    "projects": {
+        "title": "Projects",
+        "content": "Welcome to the tinker lab. I keep on building stuff, trying to solve any modern day life problem I feel can be solved using code. These are a few featured projects, while the others have been notably mentioned!",
+        "projects": {
+            "featured": [
+                {
+                    "title": "Thoughts",
+                    "content": "Thoughts aim to provide you a platform to write down about your day. Write down your thoughts and write about your experiences. Make as many entries as you want, keep detailed tabs on your life",
+                    "order": 0
+                },
+                {
+                    "title": "Cuisinier",
+                    "content": "Reshaping the way modern India cooks!",
+                    "order": 1
+                }
+            ],
+            "others": [
+                {
+                    "title": "NPTEL Downloader",
+                    "content": "Download NPTEL course page videos using the NPTEL Downloader Script",
+                    "order": 2
+                },
+                {
+                    "title": "Jack",
+                    "content": "A mobile app using which you can control basic MacOS functions.",
+                    "order": 3
+                }
+            ]
+        }
     }
 }
