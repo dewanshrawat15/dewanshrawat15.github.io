@@ -20,7 +20,7 @@ class Hero extends React.Component{
                                     </div>
                                     <div className="row">
                                         <div className="col-md-8 hero-title">
-                                            I am Dewansh.
+                                            I am <span className="name">Dewansh</span>.
                                         </div>
                                     </div>
                                     <br />

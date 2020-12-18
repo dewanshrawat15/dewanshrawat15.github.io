@@ -77,13 +77,17 @@
             "featured": [
                 {
                     "title": "Thoughts",
-                    "content": "Thoughts aim to provide you a platform to write down about your day. Write down your thoughts and write about your experiences. Make as many entries as you want, keep detailed tabs on your life",
-                    "order": 0
+                    "content": "Miss that familiar feeling of writing Dear Diary entries? Feel like writing down something somewhere, but don't know where? Thoughts aim to provide you a platform to write down about your day. Write down your thoughts and write about your experiences. Make as many entries as you want, keep detailed tabs on your life. There are no limits.",
+                    "order": 0,
+                    "tagline": "Pen down your daily thoughts in a more accessible way!",
+                    "imgUrl": "https://th-oughts.web.app/logo512.png"
                 },
                 {
                     "title": "Cuisinier",
-                    "content": "Reshaping the way modern India cooks!",
-                    "order": 1
+                    "content": "Cuisinier is a smart platform where the app suggests the most optimum usage of the ingredients being used to prepare a particular dish. It generates a time table which maximises the number of dishes being cooked in the given amount of ingredients. It has a database consisting of more than 100+ recipes (in Beta). We also integrated Deliciora, a system that converts a dish image to its recipe. Deliciora recognises the ingredients in a dish's image and suggests the steps you can take to cook that dish. We also integrated Spotify playlists into our app, so that you can cook a dish while listening to great music!",
+                    "order": 1,
+                    "tagline": "Reshaping the way modern India cooks!",
+                    "imgUrl": "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/bfedfa89e30645b68a7145c312d3da12/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picod3g0urtl.png"
                 }
             ],
             "others": [

@@ -6,6 +6,11 @@
 
 .projects-container-title{
     font-size: 48px;
+    color: #4b76e5;
+}
+
+.projects-container-subtitle{
+    font-size: 32px;
 }
 
 .projects-container-text{
@@ -28,11 +33,32 @@
 }
 
 .project-card-wrapper{
-    box-shadow: 5px 5px 8px 0 #222;
-    border-top-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    box-shadow: 2px 2px 4px 0 #222;
+    border-radius: 8px;
     padding-top: 25px;
     padding-bottom: 8px;
     padding-left: 15px;
     background-color: #fff;
+    margin-bottom: 18px;
+}
+
+.featured-project-card{
+    margin-bottom: 24px;
+    background: #ffffff;
+}
+
+.featured-project-card-title{
+    font-size: 27px;
+}
+
+.featured-project-card-wrapper{
+    padding-top: 25px;
+}
+
+.featured-project-card-tagline{
+    font-size: 20px;
+}
+
+.featured-project-card-description{
+    font-size: 15px;
 }
