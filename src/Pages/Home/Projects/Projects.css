@@ -43,8 +43,9 @@
 }
 
 .featured-project-card{
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     background: #ffffff;
+    padding-right: 12px;
 }
 
 .featured-project-card-title{
@@ -53,6 +54,8 @@
 
 .featured-project-card-wrapper{
     padding-top: 25px;
+    padding-left: 20px;
+    /* padding-bottom: 24px; */
 }
 
 .featured-project-card-tagline{
@@ -61,4 +64,12 @@
 
 .featured-project-card-description{
     font-size: 15px;
+}
+
+.projectUrlBttn{
+    padding: 8px 24px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 42px;
+    background-color: #4b76e5;
 }

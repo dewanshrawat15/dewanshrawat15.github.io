@@ -23,8 +23,8 @@ class ProjectCard extends React.Component{
                             <div className="col-md-10">
                                 <ul className="list-inline">
                                     <li>
-                                        <a href="mailto:dewanshrawat15@gmail.com" target="_blank" rel="noopener noreferrer">
-                                            <i className="fab fap fa-github"></i>
+                                        <a href={this.props.data["website"]} target="_blank" rel="noopener noreferrer">
+                                            <i className="fa fap fa-external-link-alt"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -39,6 +39,16 @@ class ProjectCard extends React.Component{
 
 
 class FeatureProjectCard extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.openUrl = this.openUrl.bind(this);
+    }
+
+    openUrl(){
+        let url = this.props.data["website"];
+        window.open(url);
+    }
 
     render(){
         return (
@@ -65,6 +75,15 @@ class FeatureProjectCard extends React.Component{
                                     {this.props.data["content"]}
                                 </div>
                             </div>
+                            <br />
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <span className="projectUrlBttn" onClick={this.openUrl}>
+                                        Open <i className="fa fa-external-link-alt"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <br />
                         </div>
                     </div>
                 </div>
