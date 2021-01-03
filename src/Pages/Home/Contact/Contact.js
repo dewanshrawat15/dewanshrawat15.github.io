@@ -1,7 +1,7 @@
 import React from "react";
 import Socials from "../Socials/Socials";
 import "./Contact.css";
-import contactMeVector from '../../../assets/images/contactMe.png';
+import contactMeVector from '../../../assets/images/contactMe.jpg';
 
 class Contact extends React.Component{
     render(){

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import Socials from "../Socials/Socials";
-import profImage from '../../../assets/images/me.webp';
+import profImage from '../../../assets/images/me.jpg';
 
 class Hero extends React.Component{
 
