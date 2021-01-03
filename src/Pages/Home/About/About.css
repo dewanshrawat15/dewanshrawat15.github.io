@@ -1,43 +1,29 @@
 .about{
-    padding: 120px 0 180px;
-    background: #f8f8f8;
+    padding: 120px 0 130px;
+    background: #4b76e5;
+    color: #fff;
     font-family: "Google Sans";
 }
 
 .about-title{
-    font-size: 48px;
-    color: #4b76e5;
+    font-size: 42px;
 }
 
-.about-content{
-    font-size: 20px;
+.about-text{
+    font-size: 18px;    
 }
 
-.about-bttn-fa{
-    font-size: 20px;
-    padding: 0 8px;
-    color: #fff;
-}
-
-.about-bttn{
-    font-size: 20px;
-    color: #fff;
-    padding: 12px 20px;
-    cursor: pointer;
+.cv-bttn{
+    padding: 12px 42px;
     border-radius: 32px;
-    background: #4b76e5;
+    cursor: pointer;
+    background: #fff;
+    color: #15171c;
+    font-size: 18px;
 }
 
 a:hover, a:visited, a:focus{
     text-decoration: none!important;
-}
-
-.about-mobile{
-    display: none;
-}
-
-.about-laptop{
-    display: inline;
 }
 
 @media(max-width: 991px){
@@ -54,8 +40,8 @@ a:hover, a:visited, a:focus{
         font-size: 42px;
     }
 
-    .about-content{
-        font-size: 18px;
+    .about-text{
+        font-size: 16px;
     }
 
     .mob-about-bttn{
