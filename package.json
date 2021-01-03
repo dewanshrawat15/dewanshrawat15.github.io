@@ -15,8 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "clean": "rm -rf build/ && rm -rf node_modules",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn clean && yarn && yarn build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
