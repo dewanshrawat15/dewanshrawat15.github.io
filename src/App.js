@@ -1,21 +1,55 @@
-import React from 'react';
-import Switch from "react-router-dom/Switch";
-import BrowserRouter from "react-router-dom/BrowserRouter";
-import Route from "react-router-dom/Route";
-import Home from './Pages/Home/Home';
-import FourOFourPage from "./Pages/FourZeroFour/404";
+import Hero from "./Home/Hero/Hero";
+import About from "./Home/About/About";
+import Projects from "./Home/Projects/Projects";
+import Experience from "./Home/Experience/Experience";
+import VoluntaryExperience from "./Home/Experience/VoluntaryExperience";
+import Support from "./Home/Support/Support";
+import Contact from "./Home/Contact/Contact";
+import Footer from "./Home/Footer/Footer";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <FourOFourPage />
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  );
+import * as firebaseServices from "./services/firestore";
+import { useEffect, useState } from "react";
+
+function App() {
+
+  const [details, setDetails] = useState();
+
+  useEffect(() => {
+    if(details === null){
+      firebaseServices.getDetails().then(details => {
+        setDetails(details);
+      })
+    }
+  })
+
+  if(details == null){
+    return (
+      <div>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <VoluntaryExperience />
+        <Support />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
+  else{
+    return (
+      <div>
+        <Hero details={details} />
+        <About />
+        <Projects />
+        <Experience />
+        <VoluntaryExperience />
+        <Support />
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
 }
+
+export default App;

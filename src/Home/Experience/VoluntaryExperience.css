@@ -1,0 +1,50 @@
+.voluntary-experience{
+    padding: 120px 0;
+}
+
+.voluntary-experience-title-dark{
+    font-size: 54px;
+    font-family: "Lobster Two", cursive;
+}
+
+.voluntary-experience-text-dark{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.voluntary-experience-position-title-dark, .voluntary-experience-position-date-dark, .voluntary-experience-position-details-dark{
+    color: #000;
+}
+
+@media(max-width: 991px){
+
+    .voluntary-experience{
+        padding: 90px 0;
+    }
+
+    .voluntary-experience-title, .voluntary-experience-title-dark{
+        font-size: 42px;
+    }
+
+    .voluntary-experience-text, .voluntary-experience-text-dark{
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width: 767px){
+
+    .voluntary-experience{
+        padding: 75px 0;
+    }
+
+    .voluntary-experience-title, .voluntary-experience-title-dark{
+        font-size: 36px;
+    }
+
+    .voluntary-experience-text, .voluntary-experience-text-dark{
+        font-size: 13px;
+    }
+
+}

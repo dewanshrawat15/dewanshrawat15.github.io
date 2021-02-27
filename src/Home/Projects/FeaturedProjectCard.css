@@ -1,0 +1,39 @@
+.featured-project-title{
+    font-family: "Lobster Two", cursive;
+    font-size: 24px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.featured-project-tagline{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+.featured-project-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.laptop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+@media(max-width: 991px){
+    .laptop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+}

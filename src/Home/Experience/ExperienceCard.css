@@ -1,0 +1,128 @@
+
+.orgUrl-dark{
+    color: #000!important;
+}
+
+.orgUrl-light{
+    color: #fff!important;
+}
+
+.orgUrls, .orgUrls:link, .orgUrls:visited, .orgUrls:hover, .orgUrls:active{
+    color: #fff!important;
+    text-decoration: none;
+}
+
+.experience-position-title{
+    font-size: 36px;
+    font-family: "Lobster Two", cursive;
+    color: #fff;
+}
+
+.experience-position-date{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+.experience-position-details{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.experience-position-title-dark{
+    font-size: 36px;
+    font-family: "Lobster Two", cursive;
+}
+
+.experience-position-date-dark{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.experience-position-details-dark{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+@media(max-width: 991px){
+    .experience-position-title{
+        font-size: 32px;
+        font-family: "Lobster Two", cursive;
+        color: #fff;
+    }
+    
+    .experience-position-date{
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .experience-position-details{
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    .experience-position-title-dark{
+        font-size: 32px;
+        font-family: "Lobster Two", cursive;
+    }
+    
+    .experience-position-date-dark{
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+    
+    .experience-position-details-dark{
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+}
+
+@media(max-width: 768px){
+    .experience-position-title{
+        font-size: 27px;
+        font-family: "Lobster Two", cursive;
+        color: #fff;
+    }
+    
+    .experience-position-date{
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    .experience-position-details{
+        font-size: 12.8px;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    .experience-position-title-dark{
+        font-size: 27px;
+        font-family: "Lobster Two", cursive;
+    }
+    
+    .experience-position-date-dark{
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+    
+    .experience-position-details-dark{
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+}

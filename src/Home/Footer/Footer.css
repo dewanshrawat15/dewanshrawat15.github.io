@@ -1,0 +1,9 @@
+.footer{
+    padding: 32px 0 22px;
+}
+
+.footer-text{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
