@@ -1,4 +1,3 @@
-// import profImg from "../../Data/dewanshrawat15.jpg";
 import "./Hero.css";
 import Socials from "../../Data/Socials";
 
@@ -42,14 +41,16 @@ function Hero (props) {
         let name = details.name;
         let position = details.position;
         let institute = details.institute;
+        let socials = details.socials;
+        let profileImageUrl = details.profileImageUrl;
         return (
             <div className="hero">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 col-md-offset-4">
                             <center>
-                                <img width="400" className="img-responsive img-circle img-laptop" src="https://dewanshrawat.in/static/media/me.cd4b172b.jpg" alt="Dewansh Rawat" />
-                                <img width="300" className="img-responsive img-circle img-mobile" src="https://dewanshrawat.in/static/media/me.cd4b172b.jpg" alt="Dewansh Rawat" />
+                                <img width="400" className="img-responsive img-circle img-laptop" src={profileImageUrl} alt="Dewansh Rawat" />
+                                <img width="300" className="img-responsive img-circle img-mobile" src={profileImageUrl} alt="Dewansh Rawat" />
                             </center>
                         </div>
                     </div>
@@ -70,7 +71,7 @@ function Hero (props) {
                         </div>
                     </div>
                     <br />
-                    <Socials />
+                    <Socials socials={socials} />
                 </div>
             </div>
         );

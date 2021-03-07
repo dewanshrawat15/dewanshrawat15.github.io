@@ -15,7 +15,7 @@ function App() {
   const [details, setDetails] = useState();
 
   useEffect(() => {
-    if(details === null){
+    if(details === undefined){
       firebaseServices.getDetails().then(details => {
         setDetails(details);
       })
@@ -40,12 +40,12 @@ function App() {
     return (
       <div>
         <Hero details={details} />
-        <About />
+        <About details={details} />
         <Projects />
         <Experience />
         <VoluntaryExperience />
         <Support />
-        <Contact />
+        <Contact details={details} />
         <Footer />
       </div>
     );

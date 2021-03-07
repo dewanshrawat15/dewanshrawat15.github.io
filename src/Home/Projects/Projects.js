@@ -2,7 +2,7 @@ import "./Projects.css";
 import FeaturedProjectCard from "./FeaturedProjectCard";
 import ProjectCard from "./ProjectCard";
 
-function FeaturedProjectRow(props){
+function ProjectRow(props){
     let {projects} = props;
     return (
         <>
@@ -24,8 +24,7 @@ function Projects() {
             projectThumbnail: "https://th-oughts.web.app/logo512.png"
         },
         {
-            projectTitle: "Cuisinier",
-            projectTagline: "Pen down your daily thoughts in a more accessible way!",
+            projectTitle: "Cuisinier",            projectTagline: "Pen down your daily thoughts in a more accessible way!",
             projectDetails: "Cuisinier is a smart platform where the app suggests the most optimum usage of the ingredients being used to prepare a particular dish.",
             projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/bfedfa89e30645b68a7145c312d3da12/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picod3g0urtl.png"
         }
@@ -38,13 +37,13 @@ function Projects() {
         let featuredProjectCard = <FeaturedProjectCard key={projectDetails.projectTitle} {...projectDetails} />;
         projectRow.push(featuredProjectCard);
         if (index % 2 === 1){
-            let newProjectRow = <FeaturedProjectRow key={(index / 2) - 1} projects={projectRow} />;
+            let newProjectRow = <ProjectRow key={(index / 2) - 1} projects={projectRow} />;
             projectRow = [];
             projectRowsList.push(newProjectRow);
         }
     }
     if(projectRow.length !== 0){
-        let newProjectRow = <FeaturedProjectRow key={featuredProjects.length - 1} projects={projectRow} />;
+        let newProjectRow = <ProjectRow key={featuredProjects.length - 1} projects={projectRow} />;
         projectRow = [];
         projectRowsList.push(newProjectRow);
     }
@@ -54,6 +53,18 @@ function Projects() {
             projectTagline: "A ReactJS based chrome extension to keep track of Visual Browser History.",
             github: "https://github.com/historia-inout",
             website: ""
+        },
+        {
+            projectTitle: "NPTEL Downloader",
+            projectTagline: "Download NPTEL course page videos using the NPTEL Downloader Script",
+            github: "https://github.com/dewanshrawat15/NPTEL-downloader",
+            website: ""
+        },
+        {
+            projectTitle: "Thoughts",
+            projectTagline: "Pen down your daily thoughts in a more accessible, easy and friendly way!",
+            github: "https://github.com/dewanshrawat15/thoughts",
+            website: "https://th-oughts.web.app/"
         },
         {
             projectTitle: "NPTEL Downloader",

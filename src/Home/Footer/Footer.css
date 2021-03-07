@@ -7,3 +7,23 @@
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
 }
+
+@media(max-width: 991px){
+    .footer{
+        padding: 28px 0 18px;
+    }
+
+    .footer-text{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 768px){
+    .footer{
+        padding: 25px 0 15px;
+    }
+
+    .footer-text{
+        font-size: 14px;
+    }
+}
