@@ -13,16 +13,23 @@ import { useEffect, useState } from "react";
 function App() {
 
   const [details, setDetails] = useState();
+  const [projects, getProjects] = useState();
+  // const [experience, fetchExperience] = useState();
+  // const [voluntaryExperience, fetchVoluntaryExperience] = useState();
 
   useEffect(() => {
     if(details === undefined){
       firebaseServices.getDetails().then(details => {
         setDetails(details);
-      })
+      });
     }
+    firebaseServices.getProjects().then(projects => {
+      getProjects(projects);
+    });
   })
 
-  if(details == null){
+  // if(details == null || projects == null || experience == null){
+  if(details == null || projects == null){
     return (
       <div>
         <Hero />
@@ -41,7 +48,7 @@ function App() {
       <div>
         <Hero details={details} />
         <About details={details} />
-        <Projects />
+        <Projects projectData={projects} />
         <Experience />
         <VoluntaryExperience />
         <Support />

@@ -1,8 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 
-// shift firebaseconfig to react env
-
 const firebaseConfig = {
     apiKey: "AIzaSyAYRqfJ-hEWLU8q6e3mxn5ot9jQo2rqwp0",
     authDomain: "portfolio-0011.firebaseapp.com",
@@ -37,4 +35,32 @@ export const getDetails = async () => {
         detailsMap[key] = contentData[key];
     }
     return detailsMap;
+}
+
+export const getProjects = async () => {
+    const projectCollection = db.collection("projects");
+    const featuredProjectCollection = db.collection("featured-projects");
+    const projectCollectionRef = await projectCollection.get();
+    const featuredProjectCollectionRef = await featuredProjectCollection.get();
+    const projectDocs = projectCollectionRef.docs;
+    const featuredProjectsDocs = featuredProjectCollectionRef.docs;
+    let projectDetails = [], featuredProjectDetails = [];
+    for (let index = 0; index < projectDocs.length; index++) {
+        let projectData = projectDocs[index].data();
+        projectDetails.push(projectData);
+    }
+    projectDetails.sort((a, b) => {
+        return a["id"] - b["id"];
+    });
+    for (let index = 0; index < featuredProjectsDocs.length; index++) {
+        let projectData = featuredProjectsDocs[index].data();
+        featuredProjectDetails.push(projectData);
+    }
+    featuredProjectDetails.sort((a, b) => {
+        return a["id"] - b["id"];
+    });
+    let projectMap = new Map();
+    projectMap["featured-projects"] = featuredProjectDetails;
+    projectMap["projects"] = projectDetails;
+    return projectMap;
 }
