@@ -18,14 +18,14 @@ function App() {
   // const [voluntaryExperience, fetchVoluntaryExperience] = useState();
 
   useEffect(() => {
-    if(details === undefined){
+    if(details === undefined || projects === undefined){
       firebaseServices.getDetails().then(details => {
         setDetails(details);
       });
+      firebaseServices.getProjects().then(projects => {
+        getProjects(projects);
+      });
     }
-    firebaseServices.getProjects().then(projects => {
-      getProjects(projects);
-    });
   })
 
   // if(details == null || projects == null || experience == null){

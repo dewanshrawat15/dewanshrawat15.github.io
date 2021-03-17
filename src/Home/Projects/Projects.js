@@ -22,25 +22,29 @@ function Projects(props) {
                 projectTitle: "Thoughts",
                 projectTagline: "Pen down your daily thoughts in a more accessible way!",
                 projectDetails: "Thoughts aim to provide you a platform to write down about your day. Write down your thoughts and write about your experiences.",
-                projectThumbnail: "https://th-oughts.web.app/logo512.png"
+                projectThumbnail: "https://th-oughts.web.app/logo512.png",
+                website: "https://th-oughts.web.app/"
             },
             {
                 projectTitle: "Cuisinier",
                 projectTagline: "Reshaping the way modern India cooks!",
                 projectDetails: "Cuisinier is a smart platform where the app suggests the most optimum usage of the ingredients being used to prepare a particular dish.",
-                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/bfedfa89e30645b68a7145c312d3da12/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picod3g0urtl.png"
+                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/bfedfa89e30645b68a7145c312d3da12/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picod3g0urtl.png",
+                website: "https://the-cuisinier.co/"
             },
             {
                 projectTitle: "Rock Paper Scissors",
                 projectTagline: "A mobile app to play rock paper scissors online!",
                 projectDetails: "The idea was to build a Mobile game purely based on stream data events, state management techniques and database operations.",
-                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/ab46fa925df8493085dec953a6a5585e/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picoen8xehwz.jpeg"
+                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/ab46fa925df8493085dec953a6a5585e/projects/bbe11fb2ea0b4a11ba4411e598c5a73f/picoen8xehwz.jpeg",
+                website: "https://devfolio.co/submissions/rock-paper-scissors-4"
             },
             {
                 projectTitle: "Chirp",
                 projectTagline: "Don't text. Chirp away.",
                 projectDetails: "Chirp is a new way to chat. Chirp allows you to bring forward that chirpy nature of yours. It's a messenger system where you can add friends, and send voice messages.",
-                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/projects/5cabe13c58574ccf903f10dc89188bc1/pici9bp608zp.jpeg"
+                projectThumbnail: "https://devfolio-prod.s3.ap-south-1.amazonaws.com/projects/5cabe13c58574ccf903f10dc89188bc1/pici9bp608zp.jpeg",
+                website: "https://chirp-aud.web.app/"
             }
         ];
         let projectRowsList = [];

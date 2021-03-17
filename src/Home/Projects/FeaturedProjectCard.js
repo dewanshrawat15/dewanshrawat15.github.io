@@ -1,7 +1,12 @@
 import "./FeaturedProjectCard.css";
 
 function FeaturedProjectCard(props){
-    let {projectTitle, projectTagline, projectDetails, projectThumbnail} = props;
+    
+    function openProjectPage(website){
+        window.open(website);
+    }
+
+    let {projectTitle, projectTagline, projectDetails, projectThumbnail, website} = props;
     let imgAltText = projectTitle + " thumbnail";
     return (
         <div className="featured-project-card-holder">
@@ -28,6 +33,12 @@ function FeaturedProjectCard(props){
                                         <p className="featured-project-text">{projectDetails}</p>
                                     </div>
                                 </div>
+                                <br />
+                                <div className="row">
+                                    <div className="col-md-8">
+                                        <span onClick={() => openProjectPage(website)} className="featured-project-bttn">Know more</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -50,6 +61,10 @@ function FeaturedProjectCard(props){
                     <br />
                     <div className="col-md-12">
                         <p className="featured-project-text">{projectDetails}</p>
+                    </div>
+                    <br />
+                    <div className="col-md-4">
+                        <span onClick={() => openProjectPage(website)} className="featured-project-bttn">Know more</span>
                     </div>
                 </div>
                 <br /><br />

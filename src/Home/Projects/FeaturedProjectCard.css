@@ -20,6 +20,20 @@
     margin-bottom: 0px;
 }
 
+.featured-project-bttn{
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    color: #15171c;
+    border-bottom: 2px solid #4b76e5;
+    box-shadow: 0 0 0 0 inset #467aff;
+    transition: 300ms;
+}
+
+.featured-project-bttn:hover{
+    box-shadow: 0 -2px 0 0 inset #467aff;
+    transition: 300ms;
+}
+
 .laptop{
     display: block;
 }
