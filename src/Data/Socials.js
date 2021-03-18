@@ -38,7 +38,7 @@ function Socials(props) {
         else{
             switch (platform) {
                 case "mail":
-                    window.open(socials.mail)
+                    window.open("mailto:" + socials.mail)
                     break;
                 case "github":
                     window.open(socials.github)

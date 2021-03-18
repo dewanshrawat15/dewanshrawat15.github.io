@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
+import { getDate } from "./utils";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAYRqfJ-hEWLU8q6e3mxn5ot9jQo2rqwp0",
@@ -63,4 +64,66 @@ export const getProjects = async () => {
     projectMap["featured-projects"] = featuredProjectDetails;
     projectMap["projects"] = projectDetails;
     return projectMap;
+}
+
+export const getExperience = async () => {
+    const experienceCollection = db.collection("experience");
+    const experienceCollectionRef = await experienceCollection.get();
+
+    const experienceDocs = experienceCollectionRef.docs;
+    let experienceDetails = [];
+    for (let index = 0; index < experienceDocs.length; index++) {
+        let experienceData = experienceDocs[index].data();
+        let startDate = experienceData["startDate"];
+        experienceData["startDate"] = getDate(startDate);
+        let startDateChars = startDate.split("/");
+        experienceData["start-date"] = new Date(startDateChars[2], startDateChars[1], startDateChars[0]);
+
+        let endDate = experienceData["endDate"];
+        experienceData["endDate"] = getDate(endDate);
+        if(endDate.search("/") !== -1){
+            let endDateChars = endDate.split("/");
+            experienceData["end-date"] = new Date(endDateChars[2], endDateChars[1], endDateChars[0]);
+        }
+        else{
+            experienceData["end-date"] = new Date();
+        }
+        experienceDetails.push(experienceData);
+    }
+    experienceDetails.sort((a, b) => {
+        return b["end-date"] - a["end-date"];
+    });
+
+    return experienceDetails;
+}
+
+export const getVoluntaryExperience = async () => {
+    const experienceCollection = db.collection("voluntary-experience");
+    const experienceCollectionRef = await experienceCollection.get();
+
+    const experienceDocs = experienceCollectionRef.docs;
+    let experienceDetails = [];
+    for (let index = 0; index < experienceDocs.length; index++) {
+        let experienceData = experienceDocs[index].data();
+        let startDate = experienceData["startDate"];
+        experienceData["startDate"] = getDate(startDate);
+        let startDateChars = startDate.split("/");
+        experienceData["start-date"] = new Date(startDateChars[2], startDateChars[1], startDateChars[0]);
+
+        let endDate = experienceData["endDate"];
+        experienceData["endDate"] = getDate(endDate);
+        if(endDate.search("/") !== -1){
+            let endDateChars = endDate.split("/");
+            experienceData["end-date"] = new Date(endDateChars[2], endDateChars[1], endDateChars[0]);
+        }
+        else{
+            experienceData["end-date"] = new Date();
+        }
+        experienceDetails.push(experienceData);
+    }
+    experienceDetails.sort((a, b) => {
+        return b["end-date"] - a["end-date"];
+    });
+
+    return experienceDetails;
 }
