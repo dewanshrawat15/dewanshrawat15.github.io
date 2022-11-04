@@ -7,6 +7,10 @@ export default function Hero(props){
 
     const { dimensions, data } = props;
 
+    const handleOpenResume = () => {
+        window.open("https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/CV%20-%20Post%20Pharma%20Bolt.pdf?alt=media");
+    }
+
     if(dimensions.width < 992){
         return (
             <div className="hero">
@@ -32,7 +36,7 @@ export default function Hero(props){
                             <div className="row">
                                 <div className="col-md-12">
                                     <center>
-                                        <span className="resume-bttn">
+                                        <span onClick={handleOpenResume} className="resume-bttn">
                                             <FontAwesomeIcon icon={faFile} /> &nbsp; View Resume
                                         </span>
                                     </center>
@@ -77,7 +81,7 @@ export default function Hero(props){
                             <br />
                             <div className="row">
                                 <div className="col-md-12">
-                                    <span className="resume-bttn">
+                                    <span onClick={handleOpenResume} className="resume-bttn">
                                         <FontAwesomeIcon icon={faFile} /> &nbsp; View Resume
                                     </span>
                                 </div>
