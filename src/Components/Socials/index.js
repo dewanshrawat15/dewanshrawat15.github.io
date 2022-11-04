@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faInstagram, faFacebook, faTwitter, faSpotify, faMedium } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+
+import "./index.css";
 
 function Socials(props) {
     let socials = props.socials;
@@ -9,6 +12,9 @@ function Socials(props) {
             switch (platform) {
                 case "mail":
                     window.open("mailto:dewanshrawat15@gmail.com")
+                    break;
+                case "tel":
+                    window.open("tel:+91-9968858476")
                     break;
                 case "github":
                     window.open("https://github.com/dewanshrawat15")
@@ -40,6 +46,9 @@ function Socials(props) {
                 case "mail":
                     window.open("mailto:" + socials.mail)
                     break;
+                case "tel":
+                    window.open("tel:" + socials.mobileNum)
+                    break;
                 case "github":
                     window.open(socials.github)
                     break;
@@ -68,38 +77,35 @@ function Socials(props) {
     }
 
     return (
-        <div className="row">
-            <div className="col-md-6 col-md-offset-3">
-                <center>
-                    <ul className="list-inline">
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('mail')} className="socials-icon-dark" icon={faEnvelope} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('github')} className="socials-icon-dark" icon={faGithub} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('linkedin')} className="socials-icon-dark" icon={faLinkedin} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('facebook')} className="socials-icon-dark" icon={faFacebook} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('instagram')} className="socials-icon-dark" icon={faInstagram} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('twitter')} className="socials-icon-dark" icon={faTwitter} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('spotify')} className="socials-icon-dark" icon={faSpotify} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon onClick={() => triggerSocialLink('medium')} className="socials-icon-dark" icon={faMedium} />
-                        </li>
-                    </ul>
-                </center>
-            </div>
-        </div>
+        <ul className="list-inline">
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('mail')} className="socials-icon-dark" icon={faEnvelope} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('tel')} className="socials-icon-dark" icon={faPhoneAlt} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('github')} className="socials-icon-dark" icon={faGithub} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('linkedin')} className="socials-icon-dark" icon={faLinkedin} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('facebook')} className="socials-icon-dark" icon={faFacebook} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('instagram')} className="socials-icon-dark" icon={faInstagram} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('twitter')} className="socials-icon-dark" icon={faTwitter} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('spotify')} className="socials-icon-dark" icon={faSpotify} />
+            </li>
+            <li>
+                <FontAwesomeIcon onClick={() => triggerSocialLink('medium')} className="socials-icon-dark" icon={faMedium} />
+            </li>
+        </ul>
     );
 }
 
