@@ -1,0 +1,13 @@
+.about {
+    padding: 64px 0;
+    background-color: #f8f8f8;
+}
+
+.about-me-title-hr {
+    border: none;
+    outline: none;
+    width: 200px;
+    margin: 0;
+    height: 2px;
+    background-color: #fa505b;
+}
