@@ -7,6 +7,8 @@ import LoadingScreen from "../LoadingScreen";
 
 import { getWebsiteData } from "../../utils/firebase";
 import { delay } from "../../utils/utils";
+import ContactUs from "../../Components/Contact";
+import Footer from "../../Components/Footer";
 
 export default function Home(){
     const [dimensions, setDimensions] = useState({
@@ -44,6 +46,8 @@ export default function Home(){
         <>
             <Hero {...childrenProps} />
             <About {...childrenProps} />
+            <ContactUs {...childrenProps} />
+            <Footer />
         </>
     );
 }
