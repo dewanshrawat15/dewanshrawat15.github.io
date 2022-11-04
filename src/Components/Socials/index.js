@@ -6,7 +6,7 @@ import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 
 function Socials(props) {
-    let socials = props.socials;
+    const { socials } = props;
     function triggerSocialLink(platform){
         if(socials === undefined){
             switch (platform) {

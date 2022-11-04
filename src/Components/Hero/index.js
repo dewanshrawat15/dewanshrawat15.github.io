@@ -42,7 +42,7 @@ export default function Hero(props){
                             <div className="row">
                                 <div className="col-md-12">
                                     <center>
-                                        <Socials />
+                                        <Socials socials={data.hero[1].socials} />
                                     </center>
                                 </div>
                             </div>
