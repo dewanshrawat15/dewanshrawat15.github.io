@@ -2,6 +2,12 @@
     padding: 80px 0;
 }
 
+.hero-title {
+    color: #fa505b;
+    font-weight: 300;
+    cursor: pointer;
+}
+
 .resume-bttn {
     padding: 8px 24px;
     font-family: 'Poppins', sans-serif;

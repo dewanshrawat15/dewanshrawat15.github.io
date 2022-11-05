@@ -11,6 +11,10 @@ export default function Hero(props){
         window.open("https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/CV%20-%20Post%20Pharma%20Bolt.pdf?alt=media");
     }
 
+    const handleInstituteWebsiteOpen = () => {
+        window.open(data.hero[1].instituteWebsite);
+    }
+
     if(dimensions.width < 992){
         return (
             <div className="hero">
@@ -29,7 +33,7 @@ export default function Hero(props){
                             </div>
                             <div className="row">
                                 <div className="col-md-12 text-center">
-                                    <p>{data.hero[1].position ? "Intern" : data.hero[1].position} at {data.hero[1].institute ? data.hero[1].institute : "Udaan"}</p>
+                                    <p onClick={handleInstituteWebsiteOpen} className="hero-title">{data.hero[1].position ? data.hero[1].position : "Engineer"} at {data.hero[1].institute ? data.hero[1].institute : "Udaan"}</p>
                                 </div>
                             </div>
                             <br />
@@ -75,7 +79,7 @@ export default function Hero(props){
                             </div>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <p>{data.hero[1].position ? data.hero[1].position : "Engineer"} at {data.hero[1].institute ? data.hero[1].institute : "Udaan"}</p>
+                                    <p onClick={handleInstituteWebsiteOpen} className="hero-title">{data.hero[1].position ? data.hero[1].position : "Engineer"} at {data.hero[1].institute ? data.hero[1].institute : "Udaan"}</p>
                                 </div>
                             </div>
                             <br />
@@ -89,7 +93,7 @@ export default function Hero(props){
                             <br /><br />
                             <div className="row">
                                 <div className="col-md-12">
-                                    <Socials />
+                                    <Socials socials={data.hero[1].socials} />
                                 </div>
                             </div>
                         </div>

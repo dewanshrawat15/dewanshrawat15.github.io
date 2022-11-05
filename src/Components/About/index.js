@@ -41,7 +41,11 @@ export default function About(props){
                     <div className="row">
                         <div className="col-md-10 text-center">
                             <p>
-                                I am a third year undergrad student pursuing Computer Engineering. I am an SDE Intern at Sony Research India. I am also an active contributor at Google Developers Group, Pune and the former Lead at Google Developers Student Clubs, Bharati Vidyapeeth Deemed University College of Engineering, Pune. I love to innovate, ideate and build technical solutions to solve common daily life problems. Also, I speak on various topics like Open Source, Flutter, TensorFlow, Django and ReactJS. Wanna know more about me? Check out my CV.
+                                I am a fresh 2022 graduate, working as an Engineer in the Core Buying Experience team at Udaan.com
+                                <br /><br />
+                                I love to keep building and shaping unconventional ideas into products for scale. I have a keen eye on UX, and on building systems that scale, are resilient and handle concurrency at peak.
+                                <br /><br />
+                                At Udaan, I have been working on building a new revamped experience for Pharma users based out of Bangalore. I worked on creating a new refurbished experience for Pharma users to maximise Add to Cart conversions. I was solely responsible for building the experience from grounds up, resulting in decrease in time to build cart, increase in weekly GMV and orders placed and other key metric factors within 30 buyers from Bangalore. Scaling it up to 200 buyers in 3 different cities in the coming days.
                             </p>
                         </div>
                     </div>
