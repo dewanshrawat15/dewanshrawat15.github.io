@@ -1,19 +1,22 @@
 .hero {
-    padding: 80px 0;
+    padding: 80px 50px;
 }
 
-.hero-title {
-    color: #fa505b;
-    font-weight: 300;
-    cursor: pointer;
+.hero-img {
+    border-radius: 12px;
 }
 
 .resume-bttn {
-    padding: 8px 24px;
-    font-family: 'Poppins', sans-serif;
-    background: #fa505b;
-    font-weight: 300;
-    color: #fff;
-    border-radius: 24px;
+    padding: 12px 25px;
+    background-color: #15171c;
+    width: max-content;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+
+    .hero {
+        padding: 40px 0;
+    }
 }
