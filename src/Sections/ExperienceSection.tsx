@@ -1,7 +1,8 @@
 import { ExperienceItem } from "../Components/ExperienceItem";
+import { experienceSectionConsts } from "../utils/constants";
 import "./experience.css";
 
-export const ExperienceSection = () => {
+export default function ExperienceSection(){
 
     return <div className="experience-section">
         <div className="container">
@@ -12,6 +13,13 @@ export const ExperienceSection = () => {
                             <h3 className="experience-title">
                                 Experience
                             </h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-11 col-md-offset-1">
+                            {experienceSectionConsts.map((item, index) => {
+                                return <ExperienceItem {...item} key={index} />
+                            })}
                         </div>
                     </div>
                 </div>

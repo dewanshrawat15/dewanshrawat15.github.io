@@ -1,8 +1,6 @@
 import "./about.css";
 
-const imgUrl = "https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/profileImage?alt=media&token=98a323ce-c59d-4686-9ca3-a82053ff31b6";
-
-export const AboutSection = () => {
+export default function AboutSection(){
 
     return <div className="about" id="about">
         <div className="container">
