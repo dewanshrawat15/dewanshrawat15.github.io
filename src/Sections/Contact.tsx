@@ -2,7 +2,7 @@ import { Icon } from "../Components/Icons";
 import { IconType } from "../utils/icons";
 import "./contact.css";
 
-export const ContactSection = () => {
+export default function ContactSection() {
 
     const socialLinks: IconType[] = ['github', 'linkedin', 'email'];
 
