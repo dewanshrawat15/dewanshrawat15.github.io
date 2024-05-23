@@ -17,7 +17,7 @@ export const AboutSection = () => {
             <div className="row">
                 <div className="col-md-4 col-md-offset-4">
                     <center>
-                        <img src={imgUrl} className="img-responsive img-circle" height={320} width={320} />
+                        <img src={'./image.jpeg'} className="img-responsive img-circle" height={320} width={320} />
                     </center>
                 </div>
             </div>
