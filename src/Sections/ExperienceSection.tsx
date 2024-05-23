@@ -1,8 +1,12 @@
 import { ExperienceItem } from "../Components/ExperienceItem";
-import { experienceSectionConsts } from "../utils/constants";
+import { experienceSection } from "../utils/constants";
 import "./experience.css";
 
 export default function ExperienceSection(){
+
+    const sections = experienceSection.sections.sort((itemA, itemB) => {
+        return itemB.startDate - itemA.startDate;
+    });
 
     return <div className="experience-section">
         <div className="container">
@@ -11,13 +15,13 @@ export default function ExperienceSection(){
                     <div className="row">
                         <div className="col-md-8 col-md-offset-1">
                             <h3 className="experience-title">
-                                Experience
+                                {experienceSection.title}
                             </h3>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-md-11 col-md-offset-1">
-                            {experienceSectionConsts.map((item, index) => {
+                            {sections.map((item, index) => {
                                 return <ExperienceItem {...item} key={index} />
                             })}
                         </div>
