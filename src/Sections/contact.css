@@ -1,5 +1,5 @@
 .contact-section {
-    padding: 42px 0;
+    padding: 75px 0;
 }
 
 .contact-title {
@@ -11,4 +11,8 @@
 .contact-content {
     font-size: 15px;
     font-weight: 300;
+}
+
+.contact-wrapper {
+    padding: 24px 0;
 }
