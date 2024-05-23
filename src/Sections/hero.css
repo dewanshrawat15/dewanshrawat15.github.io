@@ -1,16 +1,16 @@
 .hero {
     padding: 120px 0;
-    background-color: #15171c;
+    background-color: #f8f8f8;
 }
 
 .hero-title {
-    color: #fff;
-    font-size: 64px;
+    color: #15171c;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .hero-subtitle {
-    color: #fff;
+    color: #15171c;
     font-size: 20px;
     font-weight: 200;
 }
@@ -19,5 +19,9 @@
     border: 0;
     width: 120px;
     height: 2px;
-    background-color: #fff;
+    background-color: #15171c;
+}
+
+.hero-content {
+    padding-top: 54px;
 }

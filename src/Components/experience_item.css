@@ -1,0 +1,22 @@
+.experience-item {
+    padding: 12px 0;
+}
+
+.experience-item-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.experience-item-pos {
+    color: #652BDA;
+}
+
+.experience-item-content {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.experience-item-timeline {
+    font-size: 16px;
+    font-weight: 300;
+}
