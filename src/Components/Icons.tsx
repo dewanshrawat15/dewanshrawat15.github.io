@@ -1,13 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconType, IconsHelper } from "../utils/icons";
-
-export interface IconProps {
-    name: IconType;
-}
+import { IconsHelper } from "../utils/icons";
+import { IconProps } from "../utils/constants";
 
 export const Icon = (props: IconProps) => {
 
-    const { name } = props;
+    const { name, url } = props;
 
     const icon = new IconsHelper().getIcon(name);
     if (icon){
@@ -15,6 +12,8 @@ export const Icon = (props: IconProps) => {
             paddingLeft: 5,
             paddingRight: 5,
             cursor: 'pointer'
+        }} onClick={() => {
+            window.open(url);
         }} fontSize={28} icon={icon} />;
     } else {
         return null;

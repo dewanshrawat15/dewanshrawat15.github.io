@@ -1,10 +1,8 @@
 import { Icon } from "../Components/Icons";
-import { IconType } from "../utils/icons";
+import { contactDetails } from "../utils/constants";
 import "./contact.css";
 
 export default function ContactSection() {
-
-    const socialLinks: IconType[] = ['github', 'linkedin', 'email'];
 
     return <div className="contact-section">
         <div className="container">
@@ -14,7 +12,7 @@ export default function ContactSection() {
                         <div className="row">
                             <div className="col-md-8 col-md-offset-1">
                                 <h3 className="contact-title">
-                                    Contact Me
+                                    {contactDetails.title}
                                 </h3>
                             </div>
                         </div>
@@ -22,7 +20,7 @@ export default function ContactSection() {
                         <div className="row">
                             <div className="col-md-10 col-md-offset-1">
                                 <p className="contact-content">
-                                    Let's chat! I'm always interested in connecting with fellow developers and tackling new challenges. Feel free to reach out via any of your preferred mode of communication
+                                    {contactDetails.subtitle}
                                 </p>
                             </div>
                         </div>
@@ -30,9 +28,9 @@ export default function ContactSection() {
                         <div className="row">
                             <div className="col-md-8 col-md-offset-1">
                                 <ul className="list-inline">
-                                    {socialLinks.map((el) => {
+                                    {contactDetails.socials.map((el) => {
                                         return <li>
-                                            <Icon name={el} />
+                                            <Icon name={el.name} url={el.url} />
                                         </li>
                                     })}
                                 </ul>
