@@ -1,0 +1,23 @@
+.hero {
+    padding: 120px 0;
+    background-color: #15171c;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.hero-line {
+    border: 0;
+    width: 120px;
+    height: 2px;
+    background-color: #fff;
+}
