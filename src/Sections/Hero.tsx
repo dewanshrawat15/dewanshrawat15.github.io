@@ -38,7 +38,7 @@ export default function Hero(){
             <div className="container">
                 <div className="col-md-4">
                     <center>
-                        <img className="img-responsive" height={320} width={320} src={'./hero.png'} />
+                        <img className="img-responsive" height={320} width={320} src={'./hero.png'} alt="mobile hero section vector" />
                     </center>
                 </div>
                 <div className="row">
@@ -119,7 +119,7 @@ export default function Hero(){
                     </div>
                     <div className="col-md-4">
                         <center>
-                            <img className="img-responsive" height={320} width={320} src={'./hero.png'} />
+                            <img className="img-responsive" height={320} width={320} src={'./hero.png'} alt="desktop hero section vector" />
                         </center>
                     </div>
                 </div>

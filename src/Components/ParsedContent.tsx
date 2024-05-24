@@ -6,11 +6,11 @@ export const ParsedContent = (props: {content: string}) => {
 
     const trimmedContent = content.split("\n").map((item) => item.trim()).filter((el) => el.length !== 0);
 
-    return <p>
-        {trimmedContent.map((line) => {
-            return <>
-                {line} <br /><br />
-            </>
+    return <>
+        {trimmedContent.map((line, idx) => {
+            return <p key={idx}>
+                {line}
+            </p>
         })}
-    </p>
+    </>
 }

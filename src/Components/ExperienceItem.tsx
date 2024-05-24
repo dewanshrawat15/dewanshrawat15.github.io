@@ -34,9 +34,9 @@ export const ExperienceItem = (props: ExperienceItemProps) => {
         </div>
         <div className="row">
             <div className="col-md-12">
-                <p className="experience-item-content">
+                <div className="experience-item-content">
                     <ParsedContent content={content} />
-                </p>
+                </div>
             </div>
         </div>
     </div>
