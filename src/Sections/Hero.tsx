@@ -23,6 +23,8 @@ export default function Hero(){
 
         window.addEventListener('resize', listenToWindowSizeChangeEvents);
 
+        listenToWindowSizeChangeEvents();
+
         return () => window.removeEventListener('resize', listenToWindowSizeChangeEvents);
 
     }, []);
