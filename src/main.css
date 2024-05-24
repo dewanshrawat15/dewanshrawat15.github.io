@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6, div, span, body {
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+html, body {
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
