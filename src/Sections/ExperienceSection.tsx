@@ -22,6 +22,8 @@ export default function ExperienceSection(){
             });
         }
 
+        listenToWindowSizeChangeEvents();
+
         window.addEventListener('resize', listenToWindowSizeChangeEvents);
 
         return () => window.removeEventListener('resize', listenToWindowSizeChangeEvents);

@@ -22,6 +22,8 @@ export default function ContactSection() {
             });
         }
 
+        listenToWindowSizeChangeEvents();
+
         window.addEventListener('resize', listenToWindowSizeChangeEvents);
 
         return () => window.removeEventListener('resize', listenToWindowSizeChangeEvents);
