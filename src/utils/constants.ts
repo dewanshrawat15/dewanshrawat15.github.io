@@ -104,4 +104,4 @@ export const contactDetails = {
     socials: socialIcons
 }
 
-export const downloadResumeUrl = "https://firebasestorage.googleapis.com/v0/b/portfolio-0011.appspot.com/o/CV%20-%20Post%20Pharma%20Bolt.pdf?alt=media";
+export const downloadResumeUrl = "https://drive.google.com/file/d/1rCLlEEjZ2rWaxSvDVhT_aNbcTWhWSTv1/view?usp=sharing";
