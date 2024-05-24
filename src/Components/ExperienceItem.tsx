@@ -1,4 +1,5 @@
 import { TimeHelperUtils } from "../utils/date";
+import { ParsedContent } from "./ParsedContent";
 import "./experience_item.css";
 
 export interface ExperienceItemProps {
@@ -16,7 +17,7 @@ export const ExperienceItem = (props: ExperienceItemProps) => {
 
     const buildStartAndEndDates = (): string => {
         const startDateStr = new TimeHelperUtils().buildDateForExperienceSection(startDate);
-        if (endDate === null) {
+        if (endDate) {
             const endDateStr = new TimeHelperUtils().buildDateForExperienceSection(endDate);
             return `${startDateStr} - ${endDateStr}`;
         }
@@ -34,7 +35,7 @@ export const ExperienceItem = (props: ExperienceItemProps) => {
         <div className="row">
             <div className="col-md-12">
                 <p className="experience-item-content">
-                    {content}
+                    <ParsedContent content={content} />
                 </p>
             </div>
         </div>
