@@ -44,7 +44,7 @@ export default function ContactSection() {
                 <div className="row">
                     <div className="col-md-4">
                         <center>
-                            <img className="img-responsive" src={'./contact.png'} width={250} />
+                            <img className="img-responsive" src={'./contact.png'} width={250} alt="mobile contact section vector" />
                         </center>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ export default function ContactSection() {
                     </div>
                     <div className="col-md-4">
                         <center>
-                            <img className="img-responsive" src={'./contact.png'} width={250} />
+                            <img className="img-responsive" src={'./contact.png'} width={250} alt="desktop contact section vector" />
                         </center>
                     </div>
                 </div>

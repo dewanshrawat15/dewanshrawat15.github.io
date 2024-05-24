@@ -48,7 +48,7 @@ export default function ExperienceSection(){
                 <div className="row">
                     <div className="col-md-4">
                         <center>
-                            <img className="img-responsive" src={'./working.png'} width={280} />
+                            <img className="img-responsive" src={'./working.png'} width={280} alt="mobile experience section vector" />
                         </center>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default function ExperienceSection(){
                     </div>
                     <div className="col-md-4">
                         <center>
-                            <img className="img-responsive" src={'./working.png'} width={280} />
+                            <img className="img-responsive" src={'./working.png'} width={280} alt="desktop experience section vector" />
                         </center>
                     </div>
                 </div>

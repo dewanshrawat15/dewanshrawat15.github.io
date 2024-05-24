@@ -17,16 +17,16 @@ export default function AboutSection(){
             <div className="row">
                 <div className="col-md-4 col-md-offset-4">
                     <center>
-                        <img src={'./image.jpeg'} className="img-responsive img-circle" height={320} width={320} />
+                        <img src={'./image.jpeg'} className="img-responsive img-circle" height={320} width={320} alt="about section vector" />
                     </center>
                 </div>
             </div>
             <br /><br />
             <div className="row">
                 <div className="col-md-10 col-md-offset-1">
-                    <p className="about-text text-center">
+                    <div className="about-text text-center">
                         <ParsedContent content={aboutDetails.content} />
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
