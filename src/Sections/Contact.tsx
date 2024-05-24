@@ -51,7 +51,7 @@ export default function ContactSection() {
                 <br /><br />
                 <div className="row">
                     <div className="col-md-8">
-                        <p className="contact-content">
+                        <p className="contact-content text-center">
                             {contactDetails.subtitle}
                         </p>
                     </div>
@@ -59,13 +59,15 @@ export default function ContactSection() {
                 <br />
                 <div className="row">
                     <div className="col-md-8 col-md-offset-1">
-                        <ul className="list-inline">
-                            {contactDetails.socials.map((el, idx) => {
-                                return <li  key={idx}>
-                                    <Icon name={el.name} url={el.url} />
-                                </li>
-                            })}
-                        </ul>
+                        <center>
+                            <ul className="list-inline">
+                                {contactDetails.socials.map((el, idx) => {
+                                    return <li  key={idx}>
+                                        <Icon name={el.name} url={el.url} />
+                                    </li>
+                                })}
+                            </ul>
+                        </center>
                     </div>
                 </div>
             </div>
