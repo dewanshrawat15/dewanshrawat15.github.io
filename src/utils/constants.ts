@@ -26,11 +26,11 @@ export const aboutDetails = {
 
 const experienceSectionConsts: ExperienceItemProps[] = [
     {
-        position: "Software Engineer 1",
+        position: "Software Development Engineer 1",
         company: "Udaan.com",
         startDate: 1659670200000,
         index: 1,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam lorem eget finibus congue. Aenean sed lectus sit amet lacus consequat pretium. Pellentesque aliquet sem ac maximus convallis. Fusce ultricies turpis tempus facilisis auctor. Nullam eu orci mollis, feugiat magna eu, dapibus libero. Nulla facilisi. Integer ultrices condimentum quam, non sollicitudin lacus vestibulum at. Curabitur id nisi sit amet turpis pellentesque molestie. Aliquam ullamcorper sodales turpis, eget vehicula est."
+        content: `Built dynamic pricing systems (FMCG/Staples) and revamped Pharma category UX (25k+ buyers) for a B2B marketplace, improving user experience and driving sales. Developed a high-volume order processing service (90% accuracy, 15 min completion) and championed critical compliance projects, streamlining operations and ensuring business continuity. Led the migration of a legacy promotion system for scalability and tackled complex projects with minimal prior knowledge, demonstrating initiative and problem-solving skills.`
     },
     {
         position: "Full Stack Intern",
@@ -38,7 +38,23 @@ const experienceSectionConsts: ExperienceItemProps[] = [
         startDate: 1622518200000,
         endDate: 1659583800000,
         index: 2,
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam lorem eget finibus congue. Aenean sed lectus sit amet lacus consequat pretium. Pellentesque aliquet sem ac maximus convallis. Fusce ultricies turpis tempus facilisis auctor. Nullam eu orci mollis, feugiat magna eu, dapibus libero. Nulla facilisi. Integer ultrices condimentum quam, non sollicitudin lacus vestibulum at. Curabitur id nisi sit amet turpis pellentesque molestie. Aliquam ullamcorper sodales turpis, eget vehicula est."
+        content: "Full Stack Engineer with a passion for media & analytics. Led revamp of media metadata extraction system (Flask, Django, React) using AWS, boosting efficiency for character, emotion & object data from movies/TV shows. Built a TRP analysis platform (Django, React, AWS) for Sony Pictures Network India, transforming viewership data into actionable insights. Architected an end-to-end ML Engine platform (Django, React, Celery, AWS) for video data processing, including a custom queue for seamless data flow across microservices."
+    },
+    {
+        position: "Full Stack Intern",
+        company: "Tezsure India Pvt Ltd",
+        startDate: 1601888400000,
+        endDate: 1612515600000,
+        index: 3,
+        content: "My work involved developing the mobile wallet app on React Native for the blockchain currency Tez and building a Flutter based package to be able to interact with the Tezos Ecosystem."
+    },
+    {
+        position: "Research Intern",
+        company: "IIIT Allahabad",
+        startDate: 1591952400000,
+        endDate: 1597914000000,
+        index: 4,
+        content: "I worked on getting state of the art results for classifying autism from fMRI data on the ABIDE dataset. My worked revolved around Dimensionality Reduction using which I was able to get 80 percent classification accuracy, as compared to other state of the art results."
     }
 ];
 

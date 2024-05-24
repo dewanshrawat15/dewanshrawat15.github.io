@@ -1,3 +1,4 @@
+import { ParsedContent } from "../Components/ParsedContent";
 import { aboutDetails } from "../utils/constants";
 import "./about.css";
 
@@ -24,7 +25,7 @@ export default function AboutSection(){
             <div className="row">
                 <div className="col-md-10 col-md-offset-1">
                     <p className="about-text text-center">
-                        {aboutDetails.content}
+                        <ParsedContent content={aboutDetails.content} />
                     </p>
                 </div>
             </div>
