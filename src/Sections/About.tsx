@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { ParsedContent } from "../Components/ParsedContent";
-import { aboutDetails } from "../utils/constants";
-import { DimensionProps } from "../utils/models";
+import { DimensionProps } from "../api/models";
 import "./about.css";
+import { PortfolioContext } from "../api/context";
 
 export default function AboutSection(){
+
+    const { aboutSection } = useContext(PortfolioContext);
 
     const [dimensions, updateDimensions] = useState<DimensionProps>({
         width: 0,
@@ -37,7 +39,7 @@ export default function AboutSection(){
             <div className="row">
                 <div className="col-md-4 col-md-offset-4">
                     <h3 className="about-title text-center">
-                        {aboutDetails.title}
+                        {aboutSection.title}
                     </h3>
                 </div>
             </div>
@@ -53,7 +55,7 @@ export default function AboutSection(){
             <div className="row">
                 <div className="col-md-10 col-md-offset-1">
                     <div className="about-text text-center">
-                        <ParsedContent content={aboutDetails.content} />
+                        <ParsedContent content={aboutSection.content} />
                     </div>
                 </div>
             </div>

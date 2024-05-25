@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { ExperienceItem } from "../Components/ExperienceItem";
-import { experienceSection } from "../utils/constants";
 import "./experience.css";
-import { DimensionProps } from "../utils/models";
+import { DimensionProps } from "../api/models";
+import { PortfolioContext } from "../api/context";
 
 export default function ExperienceSection(){
+
+    const { experienceSection } = useContext(PortfolioContext);
 
     const [dimensions, updateDimensions] = useState<DimensionProps>({
         width: 0,
@@ -30,7 +32,7 @@ export default function ExperienceSection(){
 
     }, []);
 
-    const sections = experienceSection.sections.sort((itemA, itemB) => {
+    const sections = experienceSection.experience.sort((itemA, itemB) => {
         return itemB.startDate - itemA.startDate;
     });
 

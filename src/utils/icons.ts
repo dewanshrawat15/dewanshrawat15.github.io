@@ -1,7 +1,6 @@
 import { IconDefinition, faFacebookF, faGithub, faInstagram, faLinkedinIn, faMedium, faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
-export type IconType = 'github' | 'linkedin' | 'email' | 'spotify' | 'telephone' | 'facebook' | 'instagram' | 'medium';
+import { IconType } from "../api/models";
 
 export class IconsHelper {
 

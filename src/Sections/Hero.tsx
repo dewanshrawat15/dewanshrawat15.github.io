@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { downloadResumeUrl, heroDetails } from "../utils/constants";
+import { useContext, useEffect, useState } from "react";
 import "./hero.css";
-import { DimensionProps } from "../utils/models";
+import { DimensionProps } from "../api/models";
+import { PortfolioContext } from "../api/context";
 
 export default function Hero(){
 
@@ -9,6 +9,7 @@ export default function Hero(){
         width: 0,
         height: 0
     });
+    const { heroSection } = useContext(PortfolioContext);
 
     useEffect(() => {
 
@@ -30,7 +31,7 @@ export default function Hero(){
     }, []);
 
     const downloadResume = () => {
-        window.open(downloadResumeUrl);
+        window.open(heroSection.resumeUrl);
     }
 
     if (dimensions.width <= 991) {
@@ -44,13 +45,13 @@ export default function Hero(){
                 <div className="row">
                     <div className="col-md-8">
                         <h1 className="hero-title text-center">
-                            {heroDetails.name}
+                            {heroSection.name}
                         </h1>
                     </div>
                     <div className="row">
                         <div className="col-md-10">
                             <h4 className="hero-subtitle text-center">
-                                {heroDetails.subtitle}
+                                {heroSection.subtitle}
                             </h4>
                         </div>
                     </div>
@@ -86,14 +87,14 @@ export default function Hero(){
                             <div className="row">
                                 <div className="col-md-10 col-md-offset-1">
                                     <h1 className="hero-title">
-                                        {heroDetails.name}
+                                        {heroSection.name}
                                     </h1>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-10 col-md-offset-1">
                                     <h4 className="hero-subtitle">
-                                        {heroDetails.subtitle}
+                                        {heroSection.subtitle}
                                     </h4>
                                 </div>
                             </div>

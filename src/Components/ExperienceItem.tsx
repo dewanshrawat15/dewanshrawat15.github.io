@@ -1,15 +1,7 @@
 import { TimeHelperUtils } from "../utils/date";
 import { ParsedContent } from "./ParsedContent";
+import { ExperienceItem as ExperienceItemProps  } from "../api/models";
 import "./experience_item.css";
-
-export interface ExperienceItemProps {
-    position: string;
-    company: string;
-    index: number;
-    content: string;
-    startDate: number;
-    endDate?: number;
-}
 
 export const ExperienceItem = (props: ExperienceItemProps) => {
 

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconsHelper } from "../utils/icons";
 import { IconProps } from "../utils/constants";
 import { useState, useEffect } from "react";
-import { DimensionProps } from "../utils/models";
+import { DimensionProps } from "../api/models";
 
 export const Icon = (props: IconProps) => {
 
