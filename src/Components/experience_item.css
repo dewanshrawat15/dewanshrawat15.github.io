@@ -16,3 +16,17 @@
     font-size: 16px;
     font-weight: 300;
 }
+
+@media (max-width: 768px) {
+    .experience-item-title {
+        font-size: 18px;
+    }
+    
+    .experience-item-content {
+        font-size: 14px;
+    }
+    
+    .experience-item-timeline {
+        font-size: 12px;
+    }
+}

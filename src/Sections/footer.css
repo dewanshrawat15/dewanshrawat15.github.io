@@ -7,3 +7,9 @@
     font-size: 15px;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .footer-text {
+        font-size: 12px;
+    }
+}
