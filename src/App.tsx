@@ -1,5 +1,7 @@
 import { Suspense, lazy } from "react"
 import { Loader } from "./Components/Loader";
+import { PortfolioContext } from "./api/context";
+import { defaultValue } from "./utils/constants";
 
 const Hero = lazy(() => import("./Sections/Hero"));
 const AboutSection = lazy(() => import("./Sections/About"));
@@ -10,10 +12,12 @@ const Footer = lazy(() => import("./Sections/Footer"));
 export const App = () => {
 
     return <Suspense fallback={<Loader />}>
-        <Hero />
-        <AboutSection />
-        <ExperienceSection />
-        <ContactSection />
-        <Footer />
+        <PortfolioContext.Provider value={defaultValue}>
+            <Hero />
+            <AboutSection />
+            <ExperienceSection />
+            <ContactSection />
+            <Footer />
+        </PortfolioContext.Provider>
     </Suspense>
 }

@@ -1,28 +1,5 @@
-import { ExperienceItemProps } from "../Components/ExperienceItem";
-import { IconType } from "./icons";
-
-export const heroDetails = {
-    name: "Dewansh Rawat",
-    subtitle: "Full Stack Engineer | Architect | Dreamer"
-}
-
-export interface IconProps {
-    name: IconType;
-    url: string;
-}
-
-export const aboutDetails = {
-    title: "About Me",
-    content: `I'm a passionate full-stack engineer with a proven ability to design, develop, and implement innovative web and mobile applications. I thrive in fast-paced environments and find immense satisfaction in tackling complex challenges that demand expertise in both front-end and back-end development.
-    \n\n
-    My skillset encompasses a wide range of technologies, allowing me to excel in both front-end (React Native, ReactJS, HTML, CSS, Javascript) and back-end development (Typescript, Kotlin, Python, Django, Flask). Beyond technical proficiency, I possess strong architectural and design skills, enabling me to conceptualize and implement intricate systems. Integration between various components is a key area of focus for me, ensuring a smooth and seamless user experience.
-    \n\n
-    Problem-solving and efficiency optimization are my strengths. I have a knack for identifying areas where improvements can be made, proposing effective solutions, and streamlining workflows. This translates to a demonstrably enhanced user experience and a more operationally efficient environment. I'm a strong believer in teamwork and communication, and I have a proven track record of successfully leading and mentoring teams in collaborative settings.
-    \n\n
-    My experience is diverse, encompassing various domains. In e-commerce, I built and revamped user experiences for different categories within a leading B2B platform. The result? Significant improvements in search latency and operational efficiency. In the media and entertainment sector, I developed a platform for extracting metadata from media content and analyzing viewership data, which ultimately provided valuable insights for a major media company. My experience even extends to the realm of blockchain, where I built a mobile wallet app for a blockchain currency and a Flutter package for interaction within the ecosystem.
-    \n\n
-    Beyond just technical prowess, I'm driven by a constant thirst for knowledge. I actively seek opportunities to stay abreast of the latest advancements in the tech world, continuously expanding my skillset. This dedication fuels my passion for building meaningful applications that make a positive impact.`
-}
+import { ExperienceItem as ExperienceItemProps } from "../api/models";
+import { IconProps, PortfolioWebsiteModel } from "../api/models";
 
 const experienceSectionConsts: ExperienceItemProps[] = [
     {
@@ -57,11 +34,6 @@ const experienceSectionConsts: ExperienceItemProps[] = [
         content: "I worked on getting state of the art results for classifying autism from fMRI data on the ABIDE dataset. My worked revolved around Dimensionality Reduction using which I was able to get 80 percent classification accuracy, as compared to other state of the art results."
     }
 ];
-
-export const experienceSection = {
-    title: "Experience",
-    sections: experienceSectionConsts
-}
 
 const socialIcons: IconProps[] = [
     {
@@ -98,10 +70,33 @@ const socialIcons: IconProps[] = [
     }
 ];
 
-export const contactDetails = {
-    title: "Contact Me",
-    subtitle: "Let's chat! I'm always interested in connecting with fellow developers and tackling new challenges. Feel free to reach out via any of your preferred mode of communication",
-    socials: socialIcons
-}
+const aboutContent = `I'm a passionate full-stack engineer with a proven ability to design, develop, and implement innovative web and mobile applications. I thrive in fast-paced environments and find immense satisfaction in tackling complex challenges that demand expertise in both front-end and back-end development.
+\n\n
+My skillset encompasses a wide range of technologies, allowing me to excel in both front-end (React Native, ReactJS, HTML, CSS, Javascript) and back-end development (Typescript, Kotlin, Python, Django, Flask). Beyond technical proficiency, I possess strong architectural and design skills, enabling me to conceptualize and implement intricate systems. Integration between various components is a key area of focus for me, ensuring a smooth and seamless user experience.
+\n\n
+Problem-solving and efficiency optimization are my strengths. I have a knack for identifying areas where improvements can be made, proposing effective solutions, and streamlining workflows. This translates to a demonstrably enhanced user experience and a more operationally efficient environment. I'm a strong believer in teamwork and communication, and I have a proven track record of successfully leading and mentoring teams in collaborative settings.
+\n\n
+My experience is diverse, encompassing various domains. In e-commerce, I built and revamped user experiences for different categories within a leading B2B platform. The result? Significant improvements in search latency and operational efficiency. In the media and entertainment sector, I developed a platform for extracting metadata from media content and analyzing viewership data, which ultimately provided valuable insights for a major media company. My experience even extends to the realm of blockchain, where I built a mobile wallet app for a blockchain currency and a Flutter package for interaction within the ecosystem.
+\n\n
+Beyond just technical prowess, I'm driven by a constant thirst for knowledge. I actively seek opportunities to stay abreast of the latest advancements in the tech world, continuously expanding my skillset. This dedication fuels my passion for building meaningful applications that make a positive impact.`
 
-export const downloadResumeUrl = "https://drive.google.com/file/d/1rCLlEEjZ2rWaxSvDVhT_aNbcTWhWSTv1/view?usp=sharing";
+export const defaultValue: PortfolioWebsiteModel = {
+    heroSection: {
+        name: "Dewansh Rawat",
+        subtitle: "Full Stack Engineer | Architect | Dreamer",
+        resumeUrl: "https://drive.google.com/file/d/1rCLlEEjZ2rWaxSvDVhT_aNbcTWhWSTv1/view?usp=sharing"
+    },
+    aboutSection: {
+        title: "About Me",
+        content: aboutContent
+    },
+    experienceSection: {
+        title: "Experience",
+        experience: experienceSectionConsts
+    },
+    contactSection: {
+        title: "Contact Me",
+        subtitle: "Let's chat! I'm always interested in connecting with fellow developers and tackling new challenges. Feel free to reach out via any of your preferred mode of communication",
+        socialIcons: socialIcons
+    }
+};

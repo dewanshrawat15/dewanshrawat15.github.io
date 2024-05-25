@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Icon } from "../Components/Icons";
-import { contactDetails } from "../utils/constants";
-import { DimensionProps } from "../utils/models";
+import { DimensionProps } from "../api/models";
 import "./contact.css";
+import { PortfolioContext } from "../api/context";
 
 export default function ContactSection() {
+
+    const { contactSection } = useContext(PortfolioContext);
 
     const [dimensions, updateDimensions] = useState<DimensionProps>({
         width: 0,
@@ -36,7 +38,7 @@ export default function ContactSection() {
                 <div className="row">
                     <div className="col-md-8">
                         <h3 className="contact-title text-center">
-                            {contactDetails.title}
+                            {contactSection.title}
                         </h3>
                     </div>
                 </div>
@@ -52,7 +54,7 @@ export default function ContactSection() {
                 <div className="row">
                     <div className="col-md-8">
                         <p className="contact-content text-center">
-                            {contactDetails.subtitle}
+                            {contactSection.subtitle}
                         </p>
                     </div>
                 </div>
@@ -61,8 +63,8 @@ export default function ContactSection() {
                     <div className="col-md-8 col-md-offset-1">
                         <center>
                             <ul className="list-inline">
-                                {contactDetails.socials.map((el, idx) => {
-                                    return <li  key={idx}>
+                                {contactSection.socialIcons.map((el, idx) => {
+                                    return <li key={idx}>
                                         <Icon name={el.name} url={el.url} />
                                     </li>
                                 })}
@@ -81,7 +83,7 @@ export default function ContactSection() {
                             <div className="row">
                                 <div className="col-md-8 col-md-offset-1">
                                     <h3 className="contact-title">
-                                        {contactDetails.title}
+                                        {contactSection.title}
                                     </h3>
                                 </div>
                             </div>
@@ -89,7 +91,7 @@ export default function ContactSection() {
                             <div className="row">
                                 <div className="col-md-10 col-md-offset-1">
                                     <p className="contact-content">
-                                        {contactDetails.subtitle}
+                                        {contactSection.subtitle}
                                     </p>
                                 </div>
                             </div>
@@ -97,8 +99,8 @@ export default function ContactSection() {
                             <div className="row">
                                 <div className="col-md-8 col-md-offset-1">
                                     <ul className="list-inline">
-                                        {contactDetails.socials.map((el) => {
-                                            return <li>
+                                        {contactSection.socialIcons.map((el, idx) => {
+                                            return <li key={idx}>
                                                 <Icon name={el.name} url={el.url} />
                                             </li>
                                         })}
