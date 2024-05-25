@@ -30,7 +30,7 @@ export default function ContactSection() {
 
     }, []);
 
-    if (dimensions.width <= 992) {
+    if (dimensions.width <= 991) {
         return <div className="contact-section">
             <div className="container">
                 <div className="row">

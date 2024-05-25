@@ -16,3 +16,22 @@
 .contact-wrapper {
     padding: 24px 0;
 }
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 54px 0;
+    }
+    
+    .contact-title {
+        font-size: 32px;
+    }
+    
+    .contact-content {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    .contact-wrapper {
+        padding: 24px 0;
+    }
+}

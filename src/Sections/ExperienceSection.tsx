@@ -34,7 +34,7 @@ export default function ExperienceSection(){
         return itemB.startDate - itemA.startDate;
     });
 
-    if (dimensions.width <= 992) {
+    if (dimensions.width <= 991) {
         return <div className="experience-section">
             <div className="container">
                 <div className="row">

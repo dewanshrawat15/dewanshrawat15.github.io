@@ -33,7 +33,7 @@ export default function Hero(){
         window.open(downloadResumeUrl);
     }
 
-    if (dimensions.width <= 992) {
+    if (dimensions.width <= 991) {
         return <div className="hero" id="hero">
             <div className="container">
                 <div className="col-md-4">
