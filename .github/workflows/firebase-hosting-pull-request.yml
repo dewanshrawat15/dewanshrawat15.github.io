@@ -9,7 +9,7 @@ on:
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
-    if: ${{ github.event.head_commit.message }} == "#d2p-preview"
+    if: contains(github.event.head_commit.message, '#d2p-preview')
     steps:
       - uses: actions/checkout@v4
       - run: "yarn && yarn build"
