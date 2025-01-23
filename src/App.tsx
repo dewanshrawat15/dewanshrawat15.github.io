@@ -1,17 +1,41 @@
-// src/App.jsx
+import { HeroSection } from "./components/hero";
 
-function App() {
+const App = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="bg-white p-8 rounded shadow-md">
-        <h1 className="text-2xl font-bold mb-4">Hello Tailwind!</h1>
-        <p className="text-gray-700">This is a basic React app with Tailwind CSS.</p>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">
-              Click me
-          </button>
-      </div>
-    </div>
+    <>
+      <HeroSection
+        imageUrl="./profile-image.jpeg"
+        title="Dewansh Rawat"
+        subtitle="Builder | Generalist | Guitarist | Foodie"
+        socialIcons={[
+          {
+            icon: "github",
+            url: "https://github.com/dewanshrawat15",
+          },
+          {
+            icon: "facebook",
+            url: "https://facebook.com/dewanshrawat15",
+          },
+          {
+            icon: "instagram",
+            url: "https://instagram.com/dewanshrawat15",
+          },
+          {
+            icon: "linkedin",
+            url: "https://linkedin.com/in/dewanshrawat15",
+          },
+          {
+            icon: "medium",
+            url: "https://dewanshrawat15.medium.com",
+          },
+          {
+            icon: "spotify",
+            url: "https://open.spotify.com/dewanshrawat15",
+          },
+        ]}
+      />
+    </>
   );
-}
+};
 
 export default App;
