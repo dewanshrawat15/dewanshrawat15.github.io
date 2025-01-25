@@ -2,24 +2,20 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on PR
-on:
-  push:
-    branches:
-      - "*"
+on: pull_request
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
 jobs:
   build_and_preview:
-    runs-on: ubuntu-latest
     if: github.event.head_commit.message == '#d2p-preview'
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: "yarn && yarn build"
+      - run: yarn && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
-        id: deploy_firebase_hosting_channel
         with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_0011 }}"
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_0011 }}
           projectId: portfolio-0011
-      - name: Lighthouse
-        uses: foo-software/lighthouse-check-action@master
-        with:
-          urls: ${{ fromJson(steps.deploy_firebase_hosting_channel.outputs.urls)[0] }}
