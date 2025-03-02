@@ -22,7 +22,7 @@ export const ExperienceItem = ({
         delay: 0.2,
       }}
     >
-      <div className="w-full justify-between flex flex-row">
+      <div className="hidden md:flex w-full justify-between md:flex-row">
         <div className="flex flex-col">
           <h3 className="font-sans font-semibold text-lg">
             {experience.company}
@@ -36,6 +36,22 @@ export const ExperienceItem = ({
             {getExperienceDateTimeString(experience.startDate)} -{" "}
             {getExperienceDateTimeString(experience.endDate)}
           </span>
+        </div>
+      </div>
+      <div className="block md:hidden">
+        <div className="flex flex-col">
+          <h3 className="font-sans font-semibold text-lg">
+            {experience.company}
+          </h3>
+          <h5 className="font-sans text-gray-500 text-sm">
+            {experience.position}
+          </h5>
+          <div className="flex">
+            <span className="text-gray-500 font-sans text-sm font-light">
+              {getExperienceDateTimeString(experience.startDate)} -{" "}
+              {getExperienceDateTimeString(experience.endDate)}
+            </span>
+          </div>
         </div>
       </div>
     </motion.div>
