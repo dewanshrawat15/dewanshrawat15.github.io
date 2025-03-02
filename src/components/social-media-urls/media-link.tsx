@@ -51,23 +51,24 @@ export const MediaLink = ({
         duration: 0.5,
         delay: 0.1 * index,
       }}
-      className="duration-200 hover:scale-110 scale-100"
     >
-      <a
-        href={mediaLink.url}
-        target="_blank"
-        className="text-black underline cursor-pointer font-medium"
-      >
-        <span className="hidden md:block">{mediaLink.type}</span>
-        {mediaIcon !== null ? (
-          <FontAwesomeIcon
-            icon={mediaIcon}
-            className="block w-6 h-6 md:hidden"
-          />
-        ) : (
-          <></>
-        )}
-      </a>
+      <div className="duration-200 hover:scale-110 scale-100">
+        <a
+          href={mediaLink.url}
+          target="_blank"
+          className="text-black underline cursor-pointer font-medium"
+        >
+          <span className="hidden md:block">{mediaLink.type}</span>
+          {mediaIcon !== null ? (
+            <FontAwesomeIcon
+              icon={mediaIcon}
+              className="block w-6 h-6 md:hidden"
+            />
+          ) : (
+            <></>
+          )}
+        </a>
+      </div>
     </motion.div>
   );
 };
