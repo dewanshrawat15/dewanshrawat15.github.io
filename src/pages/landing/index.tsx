@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <div id="hero">
       <div className="flex px-12 py-4">
-        <div className="w-full md:w-3/5 pt-32">
+        <div className="w-full md:w-3/5 pt-20 sm:pt-32">
           <h1 className="font-sans font-bold text-lg md:text-2xl xl:text-5xl">
             My name is Dewansh Rawat, a Software Engineer working and living in
             Delhi.
