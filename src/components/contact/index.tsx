@@ -14,7 +14,7 @@ export const ContactSection = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.4,
               delay: 0.2,
             }}
           >
@@ -30,7 +30,7 @@ export const ContactSection = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.4,
               delay: 0.2,
             }}
           >

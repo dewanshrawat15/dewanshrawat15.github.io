@@ -26,7 +26,7 @@ export const Experience = () => {
               y: 0,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.4,
             }}
           >
             <h1 className="font-sans font-extralight text-gray-500 text-lg md:text-2xl xl:text-5xl">
