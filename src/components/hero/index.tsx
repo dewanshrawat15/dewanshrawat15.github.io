@@ -33,6 +33,7 @@ export const Hero = () => {
             }}
             transition={{
               duration: 0.5,
+              delay: 0.1,
             }}
           >
             <p className="text-sm md:text-md xl:text-xl text-gray-500 font-extralight mt-4 md:mt-12">
