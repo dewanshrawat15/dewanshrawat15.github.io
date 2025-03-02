@@ -15,7 +15,7 @@ export const ContactSection = () => {
             }}
             transition={{
               duration: 0.5,
-              delay: 0.4,
+              delay: 0.2,
             }}
           >
             <h1 className="font-sans font-bold text-xl md:text-2xl xl:text-5xl">
@@ -31,13 +31,14 @@ export const ContactSection = () => {
             }}
             transition={{
               duration: 0.5,
-              delay: 0.4,
+              delay: 0.2,
             }}
           >
             <h2 className="font-sans font-bold text-gray-600 text-xl md:text-2xl xl:text-5xl">
               Get in touch.
             </h2>
           </motion.div>
+          <br />
           <SocialMediaURLs />
         </div>
       </div>
