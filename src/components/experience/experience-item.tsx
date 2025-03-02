@@ -18,7 +18,7 @@ export const ExperienceItem = ({
         y: 0,
       }}
       transition={{
-        duration: 0.7,
+        duration: 0.4,
         delay: 0.2,
       }}
     >

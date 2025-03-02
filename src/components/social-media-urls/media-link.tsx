@@ -48,7 +48,7 @@ export const MediaLink = ({
         y: 0,
       }}
       transition={{
-        duration: 0.5,
+        duration: 0.4,
         delay: 0.1 * index,
       }}
     >

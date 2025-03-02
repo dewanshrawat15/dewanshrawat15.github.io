@@ -16,7 +16,7 @@ export const Hero = () => {
               y: 0,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.4,
             }}
           >
             <h1 className="font-sans font-bold text-lg md:text-2xl xl:text-5xl">
@@ -32,7 +32,7 @@ export const Hero = () => {
               opacity: 1,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.4,
               delay: 0.1,
             }}
           >
