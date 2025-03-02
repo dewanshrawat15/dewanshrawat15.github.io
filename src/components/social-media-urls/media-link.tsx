@@ -9,10 +9,13 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMemo } from "react";
 import { URLType } from "../../utils/models";
+import { motion } from "motion/react";
 
 export const MediaLink = ({
   mediaLink,
+  index,
 }: {
+  index: number;
   mediaLink: { url: string; type: URLType };
 }) => {
   const mediaIcon = useMemo(() => {
@@ -35,7 +38,21 @@ export const MediaLink = ({
   }, [mediaLink.type]);
 
   return (
-    <div className="duration-200 hover:scale-110 scale-100">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 10,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      transition={{
+        duration: 0.5,
+        delay: 0.1 * index,
+      }}
+      className="duration-200 hover:scale-110 scale-100"
+    >
       <a
         href={mediaLink.url}
         target="_blank"
@@ -51,6 +68,6 @@ export const MediaLink = ({
           <></>
         )}
       </a>
-    </div>
+    </motion.div>
   );
 };

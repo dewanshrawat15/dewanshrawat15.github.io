@@ -1,12 +1,24 @@
+import { motion } from "motion/react";
 import { socialMediaLinks } from "./constants";
 import { MediaLink } from "./media-link";
 
 export const SocialMediaURLs = () => {
   return (
-    <div className="mt-4 flex flex-row space-x-5 md:space-x-3">
+    <motion.div
+      transition={{
+        duration: 3,
+      }}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      className="mt-4 flex flex-row space-x-5 md:space-x-3"
+    >
       {socialMediaLinks.map((mediaLink, index) => {
-        return <MediaLink key={index} mediaLink={mediaLink} />;
+        return <MediaLink index={index} key={index} mediaLink={mediaLink} />;
       })}
-    </div>
+    </motion.div>
   );
 };
