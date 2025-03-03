@@ -1,16 +1,15 @@
 // Import the functions you need from the SDKs you need
 import { FirebaseOptions, initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-const apiKey = process.env.REACT_APP_API_KEY;
-const authDomain = process.env.REACT_AUTH_DOMAIN;
-const databaseURL = process.env.REACT_DATABASE_URL;
-const projectId = process.env.REACT_PROJECT_ID;
-const storageBucket = process.env.REACT_STORAGE_BUCKET;
-const messagingSenderId = process.env.REACT_MESSAGE_SENDER_ID;
-const appId = process.env.REACT_APP_ID;
+const apiKey = import.meta.env.VITE_REACT_APP_API_KEY as string;
+const authDomain = import.meta.env.VITE_REACT_APP_AUTH_DOMAIN as string;
+const databaseURL = import.meta.env.VITE_REACT_APP_DATABASE_URL as string;
+const projectId = import.meta.env.VITE_REACT_APP_PROJECT_ID as string;
+const storageBucket = import.meta.env.VITE_REACT_APP_STORAGE_BUCKET as string;
+const messagingSenderId = import.meta.env
+  .VITE_REACT_APP_MESSAGING_SENDER_ID as string;
+const appId = import.meta.env.VITE_REACT_APP_ID as string;
 
 // Your web app's Firebase configuration
 const firebaseConfig: FirebaseOptions = {

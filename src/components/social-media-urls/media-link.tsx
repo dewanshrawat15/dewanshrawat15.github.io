@@ -1,4 +1,5 @@
 import {
+  faChrome,
   faFacebook,
   faGithub,
   faInstagram,
@@ -33,7 +34,7 @@ export const MediaLink = ({
       case "spotify":
         return faSpotify;
       default:
-        return null;
+        return faChrome;
     }
   }, [mediaLink.type]);
 

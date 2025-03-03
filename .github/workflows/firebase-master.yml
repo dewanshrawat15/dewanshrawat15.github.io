@@ -26,13 +26,13 @@ jobs:
       - name: Build the app
         run: yarn build:prod
         env: # <--- Correct way to set environment variables
-          REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
-          REACT_APP_AUTH_DOMAIN: ${{ secrets.REACT_APP_AUTH_DOMAIN }}
-          REACT_APP_DATABASE_URL: ${{ secrets.REACT_APP_DATABASE_URL }}
-          REACT_APP_PROJECT_ID: ${{ secrets.REACT_APP_PROJECT_ID }}
-          REACT_APP_STORAGE_BUCKET: ${{ secrets.REACT_APP_STORAGE_BUCKET }}
-          REACT_APP_MESSAGING_SENDER_ID: ${{ secrets.REACT_APP_MESSAGING_SENDER_ID }}
-          REACT_APP_APP_ID: ${{ secrets.REACT_APP_APP_ID }}
+          VITE_REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
+          VITE_REACT_APP_AUTH_DOMAIN: ${{ secrets.REACT_APP_AUTH_DOMAIN }}
+          VITE_REACT_APP_DATABASE_URL: ${{ secrets.REACT_APP_DATABASE_URL }}
+          VITE_REACT_APP_PROJECT_ID: ${{ secrets.REACT_APP_PROJECT_ID }}
+          VITE_REACT_APP_STORAGE_BUCKET: ${{ secrets.REACT_APP_STORAGE_BUCKET }}
+          VITE_REACT_APP_MESSAGING_SENDER_ID: ${{ secrets.REACT_APP_MESSAGING_SENDER_ID }}
+          VITE_REACT_APP_ID: ${{ secrets.REACT_APP_APP_ID }}
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
