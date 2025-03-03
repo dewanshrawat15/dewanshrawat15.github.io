@@ -1,6 +1,6 @@
 import { ProfessionalExperience } from "../../utils/models";
 
-export const workingExperience: ProfessionalExperience[] = [
+export const defaultWorkingExperience: ProfessionalExperience[] = [
   {
     position: "Founding Engineer",
     company: "Highstock",

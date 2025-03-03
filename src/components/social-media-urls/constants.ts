@@ -1,6 +1,6 @@
 import { URLProps } from "../../utils/models";
 
-export const socialMediaLinks: URLProps[] = [
+export const defaultSocialMediaLinks: URLProps[] = [
   {
     url: "https://facebook.com/dewanshrawat15",
     type: "facebook",

@@ -1,9 +1,10 @@
 import { useMemo } from "react";
-import { workingExperience } from "./constants";
 import { ExperienceItem } from "./experience-item";
 import { motion } from "motion/react";
+import { useLandingPageStore } from "../../utils/store";
 
 export const Experience = () => {
+  const { workingExperience } = useLandingPageStore();
   const experienceItems = useMemo(
     () =>
       workingExperience.sort(

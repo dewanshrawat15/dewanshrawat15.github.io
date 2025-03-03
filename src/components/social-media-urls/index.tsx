@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
-import { socialMediaLinks } from "./constants";
 import { MediaLink } from "./media-link";
+import { useLandingPageStore } from "../../utils/store";
 
 export const SocialMediaURLs = () => {
+  const { socialMediaLinks } = useLandingPageStore();
   return (
     <motion.div
       transition={{
