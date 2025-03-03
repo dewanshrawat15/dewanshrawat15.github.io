@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { setInitialData } from "../../utils/hooks";
 
 export const ExperiencePage = () => {
-
   const isDataInitialized = useRef<boolean | null>(null);
 
   useEffect(() => {

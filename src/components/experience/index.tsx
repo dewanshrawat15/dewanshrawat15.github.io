@@ -30,7 +30,7 @@ export const Experience = () => {
               duration: 0.4,
             }}
           >
-            <h1 className="font-sans font-extralight text-gray-500 text-lg md:text-2xl xl:text-5xl">
+            <h1 className="font-poppins font-semibold text-gray-600 text-lg md:text-2xl xl:text-5xl">
               Past Experience
             </h1>
           </motion.div>

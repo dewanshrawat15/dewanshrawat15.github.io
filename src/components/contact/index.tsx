@@ -18,7 +18,7 @@ export const ContactSection = () => {
               delay: 0.2,
             }}
           >
-            <h1 className="font-sans font-bold text-xl md:text-2xl xl:text-5xl">
+            <h1 className="font-poppins font-bold text-xl md:text-2xl xl:text-5xl">
               Let's get to know each other.
             </h1>
           </motion.div>
@@ -34,7 +34,7 @@ export const ContactSection = () => {
               delay: 0.2,
             }}
           >
-            <h2 className="font-sans font-bold text-gray-600 text-xl md:text-2xl xl:text-5xl">
+            <h2 className="font-poppins font-bold text-gray-600 text-xl md:text-2xl xl:text-5xl">
               Get in touch.
             </h2>
           </motion.div>
