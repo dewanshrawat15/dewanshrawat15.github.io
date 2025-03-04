@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Log Head Commit
-        run: |
-          echo "Head Commit: ${{ toJSON(github.event.head_commit) }}"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
