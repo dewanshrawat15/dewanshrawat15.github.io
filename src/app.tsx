@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import { lazy, Suspense } from "react";
+import { RouterLoader } from "./components/router-loader";
 
 const LandingPage = lazy(() => import("./pages/landing"));
 const BlogPage = lazy(() => import("./pages/blog"));
@@ -10,7 +11,7 @@ const RouteNotFoundPage = lazy(() => import("./pages/not-found"));
 export const App = () => {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<RouterLoader />}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/blog" element={<BlogPage />} />
