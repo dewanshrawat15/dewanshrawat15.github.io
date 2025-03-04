@@ -57,7 +57,7 @@ export const MediaLink = ({
         <a
           href={mediaLink.url}
           target="_blank"
-          className="text-black underline cursor-pointer font-medium"
+          className="text-black font-poppins underline cursor-pointer font-medium"
         >
           <span className="hidden md:block">{mediaLink.type}</span>
           {mediaIcon !== null ? (

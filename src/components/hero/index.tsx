@@ -36,7 +36,7 @@ export const Hero = () => {
               delay: 0.1,
             }}
           >
-            <p className="text-sm md:text-md xl:text-xl text-gray-600 font-light mt-4 md:mt-12">
+            <p className="text-sm md:text-md xl:text-xl font-poppins text-gray-600 font-light mt-4 md:mt-12">
               I'm a full-stack engineer specializing in crafting innovative web
               and mobile solutions using technologies like React, Typescript,
               and Python. I excel at solving complex problems, optimizing
