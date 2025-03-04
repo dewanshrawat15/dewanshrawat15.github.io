@@ -4,7 +4,7 @@ import { Experience } from "../../components/experience";
 import { ContactSection } from "../../components/contact";
 import { useFirebaseData } from "../../utils/hooks";
 
-export const LandingPage = () => {
+export default function LandingPage() {
   useFirebaseData();
   return (
     <>
@@ -14,4 +14,4 @@ export const LandingPage = () => {
       <Footer />
     </>
   );
-};
+}

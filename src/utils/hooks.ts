@@ -17,25 +17,25 @@ export const useFirebaseData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const socialMediaSnapshot = collection(db, "socialMediaLinks");
-        const experienceSnapshot = collection(db, "workingExperience");
-        const socialMediaData = (await getDocs(socialMediaSnapshot)).docs.map(
-          (doc) => {
-            return doc.data() as URLProps;
-          }
-        );
-        const experienceData = (await getDocs(experienceSnapshot)).docs.map(
-          (doc) => {
-            const docData = doc.data();
-            const startDateTimestamp: Timestamp = docData.startDate;
-            const endDateTimestamp: Timestamp | undefined = docData.endDate;
-            return {
-              ...docData,
-              startDate: startDateTimestamp.toDate(),
-              endDate: endDateTimestamp?.toDate(),
-            } as ProfessionalExperience;
-          }
-        );
+        const [socialMediaSnapshot, experienceSnapshot] = await Promise.all([
+          getDocs(collection(db, "socialMediaLinks")),
+          getDocs(collection(db, "workingExperience")),
+        ]);
+
+        const socialMediaData = socialMediaSnapshot.docs.map((doc) => {
+          return doc.data() as URLProps;
+        });
+
+        const experienceData = experienceSnapshot.docs.map((doc) => {
+          const docData = doc.data();
+          const startDateTimestamp: Timestamp = docData.startDate;
+          const endDateTimestamp: Timestamp | undefined = docData.endDate;
+          return {
+            ...docData,
+            startDate: startDateTimestamp.toDate(),
+            endDate: endDateTimestamp?.toDate(),
+          } as ProfessionalExperience;
+        });
 
         setSocialMediaLinks(socialMediaData);
         setWorkingExperience(experienceData);

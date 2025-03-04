@@ -1,20 +1,24 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import { LandingPage } from "./pages/landing";
-import { BlogPage } from "./pages/blog";
-import { ProjectsPage } from "./pages/projects";
-import { ExperiencePage } from "./pages/experience";
-import { RouteNotFoundPage } from "./pages/not-found";
+import { lazy, Suspense } from "react";
+
+const LandingPage = lazy(() => import("./pages/landing"));
+const BlogPage = lazy(() => import("./pages/blog"));
+const ProjectsPage = lazy(() => import("./pages/projects"));
+const ExperiencePage = lazy(() => import("./pages/experience"));
+const RouteNotFoundPage = lazy(() => import("./pages/not-found"));
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/experience" element={<ExperiencePage />} />
-        <Route path="*" element={<RouteNotFoundPage />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="*" element={<RouteNotFoundPage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };

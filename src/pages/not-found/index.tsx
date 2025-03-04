@@ -1,4 +1,4 @@
-export const RouteNotFoundPage = () => {
+export default function RouteNotFoundPage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="text-center">
@@ -21,4 +21,4 @@ export const RouteNotFoundPage = () => {
       </div>
     </div>
   );
-};
+}

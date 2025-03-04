@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { setInitialData } from "../../utils/hooks";
 
-export const ExperiencePage = () => {
+export default function ExperiencePage() {
   const isDataInitialized = useRef<boolean | null>(null);
 
   useEffect(() => {
@@ -19,4 +19,4 @@ export const ExperiencePage = () => {
       <h1 className="font-poppins text-2xl">Experience Page</h1>
     </>
   );
-};
+}
