@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import { lazy, Suspense } from "react";
 import { RouterLoader } from "./components/router-loader";
 
@@ -8,18 +8,33 @@ const ProjectsPage = lazy(() => import("./pages/projects"));
 const ExperiencePage = lazy(() => import("./pages/experience"));
 const RouteNotFoundPage = lazy(() => import("./pages/not-found"));
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/blog",
+    element: <BlogPage />,
+  },
+  {
+    path: "/projects",
+    element: <ProjectsPage />,
+  },
+  {
+    path: "/experience",
+    element: <ExperiencePage />,
+  },
+  {
+    path: "*",
+    element: <RouteNotFoundPage />,
+  },
+]);
+
 export const App = () => {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<RouterLoader />}>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="*" element={<RouteNotFoundPage />} />
-        </Routes>
-      </Suspense>
-    </BrowserRouter>
+    <Suspense fallback={<RouterLoader />}>
+      <RouterProvider router={router} />
+    </Suspense>
   );
 };

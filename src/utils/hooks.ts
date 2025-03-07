@@ -2,9 +2,8 @@ import { useEffect } from "react";
 import { db } from "./firebase";
 import { collection, getDocs, Timestamp } from "firebase/firestore";
 import { ProfessionalExperience, URLProps } from "./models";
-import { defaultSocialMediaLinks } from "../components/social-media-urls/constants";
-import { defaultWorkingExperience } from "../components/experience/constants";
 import { useLandingPageStore } from "./store";
+import { defaultSocialMediaLinks, defaultWorkingExperience } from "./constants";
 
 export const useFirebaseData = () => {
   const {

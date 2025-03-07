@@ -4,8 +4,10 @@ import { getExperienceDateTimeString } from "../../utils/utils";
 
 export const ExperienceItem = ({
   experience,
+  showDescription,
 }: {
   experience: ProfessionalExperience;
+  showDescription?: boolean;
 }) => {
   return (
     <motion.div
@@ -54,6 +56,15 @@ export const ExperienceItem = ({
           </div>
         </div>
       </div>
+      {showDescription ? (
+        <div className="block pt-4">
+          <p className="font-poppins font-light text-sm md:text-md lg:text-lg">
+            {experience.description}
+          </p>
+        </div>
+      ) : (
+        <></>
+      )}
     </motion.div>
   );
 };
