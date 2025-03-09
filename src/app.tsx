@@ -2,11 +2,38 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { lazy, Suspense } from "react";
 import { RouterLoader } from "./components/router-loader";
 
-const LandingPage = lazy(() => import("./pages/landing"));
-const BlogPage = lazy(() => import("./pages/blog"));
-const ProjectsPage = lazy(() => import("./pages/projects"));
-const ExperiencePage = lazy(() => import("./pages/experience"));
-const RouteNotFoundPage = lazy(() => import("./pages/not-found"));
+const delay = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms));
+
+const lazyWithDelay = <T extends React.ComponentType<any>>(
+  importPromise: Promise<{ default: T }>
+): React.LazyExoticComponent<T> => {
+  return lazy<T>(async () => {
+    try {
+      await delay(1000);
+      return await importPromise;
+    } catch (error) {
+      console.error("Lazy loading error:", error);
+      throw error;
+    }
+  });
+};
+
+const LandingPage = lazyWithDelay(
+  import("./pages/landing").then((module) => ({ default: module.default }))
+);
+const BlogPage = lazyWithDelay(
+  import("./pages/blog").then((module) => ({ default: module.default }))
+);
+const ProjectsPage = lazyWithDelay(
+  import("./pages/projects").then((module) => ({ default: module.default }))
+);
+const ExperiencePage = lazyWithDelay(
+  import("./pages/experience").then((module) => ({ default: module.default }))
+);
+const RouteNotFoundPage = lazyWithDelay(
+  import("./pages/not-found").then((module) => ({ default: module.default }))
+);
 
 const router = createBrowserRouter([
   {

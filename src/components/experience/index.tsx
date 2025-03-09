@@ -4,7 +4,6 @@ import { motion } from "motion/react";
 import { useLandingPageStore } from "../../utils/store";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router";
 
 export const Experience = () => {
   const { workingExperience } = useLandingPageStore();
@@ -37,12 +36,13 @@ export const Experience = () => {
             <h1 className="font-poppins font-semibold text-gray-600 text-lg md:text-2xl xl:text-5xl">
               Past Experience
             </h1>
-            <Link to={"/experience"}>
-              <FontAwesomeIcon
-                icon={faLink}
-                className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gray-600"
-              />
-            </Link>
+            <FontAwesomeIcon
+              onClick={() => {
+                window.location.href = "/experience";
+              }}
+              icon={faLink}
+              className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gray-600 cursor-pointer"
+            />
           </motion.div>
           <div className="flex flex-col space-y-4 mt-10">
             {experienceItems.map((experience, index) => (
