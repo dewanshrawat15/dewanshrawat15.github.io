@@ -1,1 +1,0 @@
-import{j as t}from"./react-DapV1oyE.js";import"./cookie-CjNA3c7L.js";function s(){return t.jsx(t.Fragment,{children:t.jsx("h1",{className:"font-poppins text-2xl",children:"Projects Page"})})}export{s as default};
