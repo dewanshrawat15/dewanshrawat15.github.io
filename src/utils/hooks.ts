@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { db } from "./firebase";
 import { collection, getDocs, Timestamp } from "firebase/firestore";
-import { ProfessionalExperience, URLProps } from "./models";
+import { ProfessionalExperience, ProjectCard, URLProps } from "./models";
 import { useLandingPageStore } from "./store";
 import { defaultSocialMediaLinks, defaultWorkingExperience } from "./constants";
 
@@ -9,17 +9,21 @@ export const useFirebaseData = () => {
   const {
     socialMediaLinks,
     workingExperience,
+    projects,
     setSocialMediaLinks,
     setWorkingExperience,
+    setProjects,
   } = useLandingPageStore();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [socialMediaSnapshot, experienceSnapshot] = await Promise.all([
-          getDocs(collection(db, "socialMediaLinks")),
-          getDocs(collection(db, "workingExperience")),
-        ]);
+        const [socialMediaSnapshot, experienceSnapshot, projectsSnapshot] =
+          await Promise.all([
+            getDocs(collection(db, "socialMediaLinks")),
+            getDocs(collection(db, "workingExperience")),
+            getDocs(collection(db, "projects")),
+          ]);
 
         const socialMediaData = socialMediaSnapshot.docs.map((doc) => {
           return doc.data() as URLProps;
@@ -35,21 +39,27 @@ export const useFirebaseData = () => {
             endDate: endDateTimestamp?.toDate(),
           } as ProfessionalExperience;
         });
+        const projectsData = projectsSnapshot.docs.map((doc) => {
+          return doc.data() as ProjectCard;
+        });
+        console.info(projectsData);
 
         setSocialMediaLinks(socialMediaData);
         setWorkingExperience(experienceData);
+        setProjects(projectsData);
       } catch (error) {
         console.error("Error fetching data: ", error);
         console.error("Using static data");
         setSocialMediaLinks(defaultSocialMediaLinks);
         setWorkingExperience(defaultWorkingExperience);
+        setProjects([]);
       }
     };
 
     fetchData();
   }, []);
 
-  return { socialMediaLinks, workingExperience };
+  return { socialMediaLinks, workingExperience, projects };
 };
 
 export const setInitialData = async () => {

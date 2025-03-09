@@ -18,3 +18,11 @@ export interface ProfessionalExperience {
   endDate?: Date;
   description: string;
 }
+
+export interface ProjectCard {
+  github?: string;
+  id: number;
+  logoUrl?: string;
+  projectTitle: string;
+  projectTagline: string;
+}

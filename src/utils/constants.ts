@@ -1,4 +1,4 @@
-import { ProfessionalExperience, URLProps } from "./models";
+import { ProfessionalExperience, ProjectCard, URLProps } from "./models";
 
 export const defaultWorkingExperience: ProfessionalExperience[] = [
   {
@@ -76,5 +76,71 @@ export const defaultSocialMediaLinks: URLProps[] = [
   {
     url: "mailto:dewanshrawat.work@gmail.com",
     type: "mail",
+  },
+];
+
+export const defaultProjectsData: ProjectCard[] = [
+  {
+    github: "https://github.com/dewanshrawat15/Tinder-Bot",
+    id: 7,
+    projectTitle: "Tinder Bot",
+    projectTagline:
+      "A bot that uses facebook auth to login and find matches on Tinder.",
+  },
+  {
+    id: 5,
+    projectTagline:
+      "Made a portfolio website for students to be able to update their portfolio from an app.",
+    github: "https://github.com/dscbvppune/folio-app",
+    projectTitle: "Folio",
+  },
+  {
+    github: "https://github.com/dewanshrawat15/Heart-Disease-Prediction",
+    id: 8,
+    projectTagline:
+      "Built a machine learning model to classify patients having Heart diseases or not from given dataset.",
+    projectTitle: "Heart Disease Prediction",
+  },
+  {
+    projectTitle: "Historia",
+    projectTagline:
+      "A ReactJS based chrome extension to keep track of Visual Browser History.",
+    github: "https://github.com/historia-inout",
+    id: 1,
+  },
+  {
+    id: 9,
+    projectTagline:
+      "A smart attendance management system that reduces paperwork.",
+    github: "https://github.com/dewanshrawat15/Scan-Q",
+    projectTitle: "ScanQ",
+  },
+  {
+    id: 2,
+    projectTitle: "NPTEL Downloader",
+    github: "https://github.com/dewanshrawat15/NPTEL-downloader",
+    projectTagline:
+      "Download NPTEL course page videos using the NPTEL Downloader Script",
+  },
+  {
+    projectTitle: "Cats vs Dogs Classifier",
+    id: 3,
+    projectTagline:
+      "Cats vs Dogs classifier based on Transfer Learning approach.",
+    github: "https://github.com/dewanshrawat15/Cats-vs-Dogs-Classifier",
+  },
+  {
+    projectTagline:
+      "A mobile app using which you can control basic MacOS functions.",
+    id: 4,
+    github: "https://github.com/dewanshrawat15/Jack",
+    projectTitle: "Jack",
+  },
+  {
+    github: "https://github.com/dewanshrawat15/Alfred",
+    projectTitle: "Alfred",
+    id: 6,
+    projectTagline:
+      "A mobile app predicts the genres of TV Shows/Movies by their poster.",
   },
 ];

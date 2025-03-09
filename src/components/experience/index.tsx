@@ -40,7 +40,7 @@ export const Experience = () => {
             <Link to={"/experience"}>
               <FontAwesomeIcon
                 icon={faLink}
-                className="w-7 h-7 text-gray-600"
+                className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 text-gray-600"
               />
             </Link>
           </motion.div>
