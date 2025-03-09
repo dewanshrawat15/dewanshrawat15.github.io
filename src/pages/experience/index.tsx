@@ -3,7 +3,7 @@ import { ExperienceDescription } from "../../components/experience/experience-de
 import { useFirebaseData } from "../../utils/hooks";
 import { ExperienceItem } from "../../components/experience/experience-item";
 import { Footer } from "../../components/footer";
-// import { Header } from "../../components/header";
+import { Header } from "../../components/header";
 
 export default function ExperiencePage() {
   const { workingExperience } = useFirebaseData();
@@ -16,7 +16,7 @@ export default function ExperiencePage() {
   );
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <ExperienceDescription />
       <div className="px-12 pt-4 pb-12 flex flex-col space-y-4 mt-5 md:mt-7 lg:mt-10">
         {experienceItems.map((experience, index) => (
