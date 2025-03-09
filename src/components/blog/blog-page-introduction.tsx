@@ -4,7 +4,7 @@ export const BlogPageIntroDescription = () => {
   return (
     <div id="experience-page">
       <div className="flex px-12 py-4">
-        <div className="w-full md:w-3/5 pt-7 sm:pt-20">
+        <div className="w-full md:w-3/5 pt-7 sm:pt-10">
           <motion.div
             initial={{
               opacity: 0,
