@@ -1,5 +1,10 @@
 import { create } from "zustand";
-import { ProfessionalExperience, ProjectCard, URLProps } from "./models";
+import {
+  BlogPost,
+  ProfessionalExperience,
+  ProjectCard,
+  URLProps,
+} from "./models";
 
 interface LandingPageStore {
   socialMediaLinks: URLProps[];
@@ -8,6 +13,8 @@ interface LandingPageStore {
   setWorkingExperience: (exp: ProfessionalExperience[]) => void;
   projects: ProjectCard[];
   setProjects: (newProjects: ProjectCard[]) => void;
+  blogPosts: BlogPost[];
+  setBlogs: (blogItems: BlogPost[]) => void;
 }
 
 export const useLandingPageStore = create<LandingPageStore>((set) => ({
@@ -19,4 +26,6 @@ export const useLandingPageStore = create<LandingPageStore>((set) => ({
     set({ socialMediaLinks: newLinks }),
   setWorkingExperience: (newExp: ProfessionalExperience[]) =>
     set({ workingExperience: newExp }),
+  blogPosts: [],
+  setBlogs: (blogItems) => set({ blogPosts: blogItems }),
 }));

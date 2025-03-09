@@ -1,7 +1,17 @@
+import { BlogArticlesList } from "../../components/blog/blog-articles-list";
+import { BlogPageIntroDescription } from "../../components/blog/blog-page-introduction";
+import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
+import { useFirebaseData } from "../../utils/hooks";
+
 export default function BlogPage() {
+  useFirebaseData();
   return (
     <>
-      <h1 className="font-poppins text-2xl">Blog Page</h1>
+      <Header />
+      <BlogPageIntroDescription />
+      <BlogArticlesList />
+      <Footer />
     </>
   );
 }

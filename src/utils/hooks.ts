@@ -1,29 +1,33 @@
 import { useEffect } from "react";
 import { db } from "./firebase";
 import { collection, getDocs, Timestamp } from "firebase/firestore";
-import { ProfessionalExperience, ProjectCard, URLProps } from "./models";
+import {
+  BlogPost,
+  ProfessionalExperience,
+  ProjectCard,
+  URLProps,
+} from "./models";
 import { useLandingPageStore } from "./store";
 import { defaultSocialMediaLinks, defaultWorkingExperience } from "./constants";
 
 export const useFirebaseData = () => {
-  const {
-    socialMediaLinks,
-    workingExperience,
-    projects,
-    setSocialMediaLinks,
-    setWorkingExperience,
-    setProjects,
-  } = useLandingPageStore();
+  const { setSocialMediaLinks, setWorkingExperience, setProjects, setBlogs } =
+    useLandingPageStore();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [socialMediaSnapshot, experienceSnapshot, projectsSnapshot] =
-          await Promise.all([
-            getDocs(collection(db, "socialMediaLinks")),
-            getDocs(collection(db, "workingExperience")),
-            getDocs(collection(db, "projects")),
-          ]);
+        const [
+          socialMediaSnapshot,
+          experienceSnapshot,
+          projectsSnapshot,
+          blogSnapshot,
+        ] = await Promise.all([
+          getDocs(collection(db, "socialMediaLinks")),
+          getDocs(collection(db, "workingExperience")),
+          getDocs(collection(db, "projects")),
+          getDocs(collection(db, "blogs")),
+        ]);
 
         const socialMediaData = socialMediaSnapshot.docs.map((doc) => {
           return doc.data() as URLProps;
@@ -42,24 +46,28 @@ export const useFirebaseData = () => {
         const projectsData = projectsSnapshot.docs.map((doc) => {
           return doc.data() as ProjectCard;
         });
-        console.info(projectsData);
+        const blogsData = blogSnapshot.docs.map(
+          (doc) => doc.data() as BlogPost
+        );
 
         setSocialMediaLinks(socialMediaData);
         setWorkingExperience(experienceData);
         setProjects(projectsData);
+        setBlogs(blogsData);
       } catch (error) {
         console.error("Error fetching data: ", error);
         console.error("Using static data");
         setSocialMediaLinks(defaultSocialMediaLinks);
         setWorkingExperience(defaultWorkingExperience);
         setProjects([]);
+        setBlogs([]);
       }
     };
 
     fetchData();
   }, []);
 
-  return { socialMediaLinks, workingExperience, projects };
+  return {};
 };
 
 export const setInitialData = async () => {

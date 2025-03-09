@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
-import { useFirebaseData } from "../../utils/hooks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "motion/react";
+import { useLandingPageStore } from "../../utils/store";
 
 interface FeatureCardProps {
   title: string;
@@ -57,7 +57,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 };
 
 export const ProjectShowcase: React.FC = () => {
-  const { projects } = useFirebaseData();
+  const { projects } = useLandingPageStore();
 
   const projectsData = useMemo(
     () => projects.sort((a, b) => a.id - b.id),

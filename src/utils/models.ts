@@ -26,3 +26,11 @@ export interface ProjectCard {
   projectTitle: string;
   projectTagline: string;
 }
+
+export interface BlogPost {
+  imgURL?: string;
+  description: string;
+  title: string;
+  date: string;
+  workshop: string;
+}

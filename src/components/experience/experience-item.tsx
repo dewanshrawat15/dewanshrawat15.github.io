@@ -58,7 +58,7 @@ export const ExperienceItem = ({
       </div>
       {showDescription ? (
         <div className="block pt-4">
-          <p className="font-poppins font-light text-sm md:text-md lg:text-lg">
+          <p className="font-poppins font-light text-sm md:text-md xl:text-xl">
             {experience.description}
           </p>
         </div>

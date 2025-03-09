@@ -4,9 +4,11 @@ import { useFirebaseData } from "../../utils/hooks";
 import { ExperienceItem } from "../../components/experience/experience-item";
 import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
+import { useLandingPageStore } from "../../utils/store";
 
 export default function ExperiencePage() {
-  const { workingExperience } = useFirebaseData();
+  useFirebaseData();
+  const { workingExperience } = useLandingPageStore();
   const experienceItems = useMemo(
     () =>
       workingExperience.sort(
