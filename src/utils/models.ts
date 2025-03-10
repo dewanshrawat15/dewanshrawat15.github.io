@@ -30,6 +30,7 @@ export interface ProjectCard {
 export interface BlogPost {
   imgURL?: string;
   description: string;
+  slug: string;
   title: string;
   date: string;
   workshop: string;

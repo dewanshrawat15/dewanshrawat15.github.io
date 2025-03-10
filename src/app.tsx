@@ -34,6 +34,9 @@ const ExperiencePage = lazyWithDelay(
 const RouteNotFoundPage = lazyWithDelay(
   import("./pages/not-found").then((module) => ({ default: module.default }))
 );
+const BlogDetailPage = lazyWithDelay(
+  import("./pages/blog-detail").then((module) => ({ default: module.default }))
+);
 
 const router = createBrowserRouter([
   {
@@ -43,6 +46,10 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <BlogPage />,
+  },
+  {
+    path: "/blog/:id",
+    element: <BlogDetailPage />,
   },
   {
     path: "/projects",
