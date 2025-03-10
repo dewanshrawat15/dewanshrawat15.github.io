@@ -32,14 +32,14 @@ export const RouterLoader = () => {
   const finalQuote = useMemo(() => quote[0], [quote]);
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center bg-white px-32 py-48">
-      <h1 className="font-poppins font-bold text-2xl">
+    <div className="w-full h-full flex flex-col items-center justify-center bg-white px-4 sm:px-32 py-48">
+      <h1 className="font-poppins font-bold text-xl md:text-2xl text-center">
         Structuring website content
       </h1>
-      <p className="mt-4 w-2/3 font-poppins font-normal text-xl text-center">
+      <p className="mt-4 w-2/3 font-poppins font-normal text-lg md:text-xl text-center">
         Dewansh Rawat once said...
       </p>
-      <p className="mt-1 w-2/3 font-poppins font-light text-base text-center">
+      <p className="mt-1 w-2/3 font-poppins font-light text-sm md:text-base text-center">
         {finalQuote}
       </p>
     </div>
