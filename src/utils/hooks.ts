@@ -8,7 +8,12 @@ import {
   URLProps,
 } from "./models";
 import { useLandingPageStore } from "./store";
-import { defaultSocialMediaLinks, defaultWorkingExperience } from "./constants";
+import {
+  defaultBlogPosts,
+  defaultProjectsData,
+  defaultSocialMediaLinks,
+  defaultWorkingExperience,
+} from "./constants";
 
 export const useFirebaseData = () => {
   const { setSocialMediaLinks, setWorkingExperience, setProjects, setBlogs } =
@@ -17,6 +22,9 @@ export const useFirebaseData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        if (import.meta.env.MODE === "production") {
+          throw new Error("Don't fetch data in production.");
+        }
         const [
           socialMediaSnapshot,
           experienceSnapshot,
@@ -57,10 +65,17 @@ export const useFirebaseData = () => {
       } catch (error) {
         console.error("Error fetching data: ", error);
         console.error("Using static data");
-        setSocialMediaLinks(defaultSocialMediaLinks);
-        setWorkingExperience(defaultWorkingExperience);
-        setProjects([]);
-        setBlogs([]);
+        setSocialMediaLinks(defaultSocialMediaLinks as URLProps[]);
+        const workingExperience = defaultWorkingExperience.map((doc) => {
+          return {
+            ...doc,
+            startDate: new Date(doc.startDate),
+            endDate: doc.endDate ? new Date(doc.endDate) : undefined,
+          };
+        });
+        setWorkingExperience(workingExperience);
+        setProjects(defaultProjectsData);
+        setBlogs(defaultBlogPosts);
       }
     };
 
