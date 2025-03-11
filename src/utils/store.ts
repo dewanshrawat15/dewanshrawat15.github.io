@@ -5,6 +5,7 @@ import {
   ProjectCard,
   URLProps,
 } from "./models";
+import { User } from "firebase/auth";
 
 interface LandingPageStore {
   socialMediaLinks: URLProps[];
@@ -28,4 +29,14 @@ export const useLandingPageStore = create<LandingPageStore>((set) => ({
     set({ workingExperience: newExp }),
   blogPosts: [],
   setBlogs: (blogItems) => set({ blogPosts: blogItems }),
+}));
+
+interface AuthStore {
+  user?: User;
+  setUser: (user?: User) => void;
+}
+
+export const useAuthStore = create<AuthStore>((set) => ({
+  user: undefined,
+  setUser: (newUser?: User) => set({ user: newUser }),
 }));

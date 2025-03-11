@@ -31,12 +31,12 @@ const ProjectsPage = lazyWithDelay(
 const ExperiencePage = lazyWithDelay(
   import("./pages/experience").then((module) => ({ default: module.default }))
 );
-const RouteNotFoundPage = lazyWithDelay(
-  import("./pages/not-found").then((module) => ({ default: module.default }))
-);
 const BlogDetailPage = lazyWithDelay(
   import("./pages/blog-detail").then((module) => ({ default: module.default }))
 );
+const SignInPage = lazy(() => import("./pages/sign-in"));
+const AdminPage = lazy(() => import("./pages/admin"));
+const RouteNotFoundPage = lazy(() => import("./pages/not-found"));
 
 const router = createBrowserRouter([
   {
@@ -58,6 +58,14 @@ const router = createBrowserRouter([
   {
     path: "/experience",
     element: <ExperiencePage />,
+  },
+  {
+    path: "/sign-in",
+    element: <SignInPage />,
+  },
+  {
+    path: "/admin",
+    element: <AdminPage />,
   },
   {
     path: "*",
