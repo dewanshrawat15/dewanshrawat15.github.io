@@ -19,7 +19,6 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   signOut,
-  User,
 } from "firebase/auth";
 import { useNavigate } from "react-router";
 
