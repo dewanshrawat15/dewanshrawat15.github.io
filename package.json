@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:prod": "node scripts/fetchDataForProd.ts && tsc -b && vite build --mode production",
+    "build:prod": "node scripts/fetchDataForProd.ts && tsc -b && vite build --mode production && node scripts/generateSitemap.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -21,6 +21,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.2.0",
+    "sitemap": "^8.0.0",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
